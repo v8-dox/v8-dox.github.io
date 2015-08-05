@@ -1,0 +1,301 @@
+\hypertarget{classv8_1_1_object}{}\section{v8\+:\+:Object Class Reference}
+\label{classv8_1_1_object}\index{v8\+::\+Object@{v8\+::\+Object}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_object_a97717c7b7fdc556c3a7fad14877ca912}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Set} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ key, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value, Property\+Attribute attribs=None)\label{classv8_1_1_object_a97717c7b7fdc556c3a7fad14877ca912}
+
+\item 
+\hypertarget{classv8_1_1_object_aa588c4de7f0e4db47a2f22acfaa774fd}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Set} (uint32\+\_\+t index, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value)\label{classv8_1_1_object_aa588c4de7f0e4db47a2f22acfaa774fd}
+
+\item 
+\hypertarget{classv8_1_1_object_a42bf74b18b3d9280612620df3d2c13e0}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Force\+Set} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ key, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value, Property\+Attribute attribs=None)\label{classv8_1_1_object_a42bf74b18b3d9280612620df3d2c13e0}
+
+\item 
+\hypertarget{classv8_1_1_object_a59bd849c1cdb2aa1033423ee21b2ede9}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Get} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ key)\label{classv8_1_1_object_a59bd849c1cdb2aa1033423ee21b2ede9}
+
+\item 
+\hypertarget{classv8_1_1_object_a7310ce3ee18744c0971356dad8e2bed1}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Get} (uint32\+\_\+t index)\label{classv8_1_1_object_a7310ce3ee18744c0971356dad8e2bed1}
+
+\item 
+\hypertarget{classv8_1_1_object_ada7a824246df2e8a9b7476bd63a54b2e}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Has} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)\label{classv8_1_1_object_ada7a824246df2e8a9b7476bd63a54b2e}
+
+\item 
+\hypertarget{classv8_1_1_object_aec3bd916e6796e7d1b4cda31874c963d}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Delete} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)\label{classv8_1_1_object_aec3bd916e6796e7d1b4cda31874c963d}
+
+\item 
+\hypertarget{classv8_1_1_object_ac7d6916233e21ca58c623793da89d578}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Force\+Delete} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ key)\label{classv8_1_1_object_ac7d6916233e21ca58c623793da89d578}
+
+\item 
+\hypertarget{classv8_1_1_object_a12a53d31423d7da6da3960cde76bfea5}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Has} (uint32\+\_\+t index)\label{classv8_1_1_object_a12a53d31423d7da6da3960cde76bfea5}
+
+\item 
+\hypertarget{classv8_1_1_object_a67efb8fba62c35fec415977d2ec12ae3}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Delete} (uint32\+\_\+t index)\label{classv8_1_1_object_a67efb8fba62c35fec415977d2ec12ae3}
+
+\item 
+\hypertarget{classv8_1_1_object_aeba9bd0dd01a04a35c63763ea650c83c}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Set\+Accessor} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ name, \hyperlink{namespacev8_a3016fe071826349d1370a700e71be094}{Accessor\+Getter} getter, Accessor\+Setter setter=0, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ data=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$(), \hyperlink{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{Access\+Control} settings=D\+E\+F\+A\+U\+L\+T, Property\+Attribute attribute=None)\label{classv8_1_1_object_aeba9bd0dd01a04a35c63763ea650c83c}
+
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_array}{Array} $>$ \hyperlink{classv8_1_1_object_a0e28660353b6da64f9e2769260f31001}{Get\+Property\+Names} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_object_a171fc92c6e695d9c944f9e5d7670ed11}{Get\+Prototype} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_object_a2a1ab58bf92984255f767946eeff1199}{Set\+Prototype} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ prototype)
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ \hyperlink{classv8_1_1_object_aa3b8aaece354c6af98b98e0ae9abe13d}{Find\+Instance\+In\+Prototype\+Chain} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_function_template}{Function\+Template} $>$ tmpl)
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_object_a2dc22d2a2acf9eab4ed2965149e48af9}{Object\+Proto\+To\+String} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T int \hyperlink{classv8_1_1_object_affaee480d3f50d5ac7a640db5aa8e89d}{Internal\+Field\+Count} ()
+\item 
+\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_object_aa3324fdf652d8ac3b2f27faa0559231d}{Get\+Internal\+Field} (int index)
+\item 
+V8\+E\+X\+P\+O\+R\+T void \hyperlink{classv8_1_1_object_a94e24494687ea499471d41e914eeb90d}{Set\+Internal\+Field} (int index, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value)
+\item 
+void $\ast$ \hyperlink{classv8_1_1_object_a8ef1f3e0d4f4cecc54d5e0248bc45694}{Get\+Pointer\+From\+Internal\+Field} (int index)
+\item 
+V8\+E\+X\+P\+O\+R\+T void \hyperlink{classv8_1_1_object_a5e79966b79d69ef3a7b3b0d91414ec2c}{Set\+Pointer\+In\+Internal\+Field} (int index, void $\ast$value)
+\item 
+\hypertarget{classv8_1_1_object_ad5f2524b42102c4feb63fe5e17eaec83}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Has\+Real\+Named\+Property} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)\label{classv8_1_1_object_ad5f2524b42102c4feb63fe5e17eaec83}
+
+\item 
+\hypertarget{classv8_1_1_object_ae1835a3c20cb3bf485e575f4c82aa5af}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Has\+Real\+Indexed\+Property} (uint32\+\_\+t index)\label{classv8_1_1_object_ae1835a3c20cb3bf485e575f4c82aa5af}
+
+\item 
+\hypertarget{classv8_1_1_object_a7d3dbdffefc92245e04b0828aa0e770d}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Has\+Real\+Named\+Callback\+Property} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)\label{classv8_1_1_object_a7d3dbdffefc92245e04b0828aa0e770d}
+
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_object_ab955e6c94dc6bf3e65e5355eb3d2d876}{Get\+Real\+Named\+Property\+In\+Prototype\+Chain} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_object_a353c1568c4de35ef3f3065b5a4aecc50}{Get\+Real\+Named\+Property} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_object_ad0791109068a7816d65a06bbc9f6f870}{Has\+Named\+Lookup\+Interceptor} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_object_afd36ea440a254335bde065a4ceafffb3}{Has\+Indexed\+Lookup\+Interceptor} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T void \hyperlink{classv8_1_1_object_aa2299eda3240be1e76b7d5c2af7a6bbc}{Turn\+On\+Access\+Check} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T int \hyperlink{classv8_1_1_object_a5309f7a349feb906a05ee45b6feeaab1}{Get\+Identity\+Hash} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_object_a0040e3012d621b25f580407bacebf95f}{Set\+Hidden\+Value} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value)
+\item 
+\hypertarget{classv8_1_1_object_af3634e494683aee31ea57ca493cc016a}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Get\+Hidden\+Value} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)\label{classv8_1_1_object_af3634e494683aee31ea57ca493cc016a}
+
+\item 
+\hypertarget{classv8_1_1_object_ac88c826e949768226fc88a812110038c}{}V8\+E\+X\+P\+O\+R\+T bool {\bfseries Delete\+Hidden\+Value} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ key)\label{classv8_1_1_object_ac88c826e949768226fc88a812110038c}
+
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_object_a76d0c5021dd74a57239ad64d1cb1c83c}{Is\+Dirty} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ \hyperlink{classv8_1_1_object_a45a67c1b0408922403048b59a5bc22b2}{Clone} ()
+\item 
+V8\+E\+X\+P\+O\+R\+T void \hyperlink{classv8_1_1_object_a3f08aee708af5e2856e65e81b22edc61}{Set\+Indexed\+Properties\+To\+Pixel\+Data} (uint8\+\_\+t $\ast$data, int length)
+\item 
+\hypertarget{classv8_1_1_object_a984cb47ed59b73d3d1b32f393a653cd4}{}bool {\bfseries Has\+Indexed\+Properties\+In\+Pixel\+Data} ()\label{classv8_1_1_object_a984cb47ed59b73d3d1b32f393a653cd4}
+
+\item 
+\hypertarget{classv8_1_1_object_af2cefd0bcc50b19bb23b93b493ceb3d2}{}uint8\+\_\+t $\ast$ {\bfseries Get\+Indexed\+Properties\+Pixel\+Data} ()\label{classv8_1_1_object_af2cefd0bcc50b19bb23b93b493ceb3d2}
+
+\item 
+\hypertarget{classv8_1_1_object_ac6af430db5a41a0c9b6cacb507d95e0d}{}int {\bfseries Get\+Indexed\+Properties\+Pixel\+Data\+Length} ()\label{classv8_1_1_object_ac6af430db5a41a0c9b6cacb507d95e0d}
+
+\item 
+V8\+E\+X\+P\+O\+R\+T void \hyperlink{classv8_1_1_object_a53be627cd653a5591038a4d81a908f64}{Set\+Indexed\+Properties\+To\+External\+Array\+Data} (void $\ast$data, External\+Array\+Type array\+\_\+type, int number\+\_\+of\+\_\+elements)
+\item 
+\hypertarget{classv8_1_1_object_ae3c884315aaba6d11d3663a8569fe8f1}{}bool {\bfseries Has\+Indexed\+Properties\+In\+External\+Array\+Data} ()\label{classv8_1_1_object_ae3c884315aaba6d11d3663a8569fe8f1}
+
+\item 
+\hypertarget{classv8_1_1_object_a7763a639b0ec6d35f645d0d2facfd8ce}{}void $\ast$ {\bfseries Get\+Indexed\+Properties\+External\+Array\+Data} ()\label{classv8_1_1_object_a7763a639b0ec6d35f645d0d2facfd8ce}
+
+\item 
+\hypertarget{classv8_1_1_object_a02e0652188d3a9c557b07ac2ba037b23}{}External\+Array\+Type {\bfseries Get\+Indexed\+Properties\+External\+Array\+Data\+Type} ()\label{classv8_1_1_object_a02e0652188d3a9c557b07ac2ba037b23}
+
+\item 
+\hypertarget{classv8_1_1_object_a9aa725628f4d3371999663e6611efeb3}{}int {\bfseries Get\+Indexed\+Properties\+External\+Array\+Data\+Length} ()\label{classv8_1_1_object_a9aa725628f4d3371999663e6611efeb3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_object_a45c986af65c199e7f453719d03de7650}{}static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ {\bfseries New} ()\label{classv8_1_1_object_a45c986af65c199e7f453719d03de7650}
+
+\item 
+\hypertarget{classv8_1_1_object_a1f9ac46d0b164197318ce81dc0ec1343}{}static \hyperlink{classv8_1_1_object}{Object} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1_value}{Value} $\ast$obj)\label{classv8_1_1_object_a1f9ac46d0b164197318ce81dc0ec1343}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java\+Script object (E\+C\+M\+A-\/262, 4.\+3.\+3) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_object_a45a67c1b0408922403048b59a5bc22b2}{}\index{v8\+::\+Object@{v8\+::\+Object}!Clone@{Clone}}
+\index{Clone@{Clone}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf Object}$>$ v8\+::\+Object\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a45a67c1b0408922403048b59a5bc22b2}
+Clone this object with a fast but shallow copy. Values will point to the same values as the original object. \hypertarget{classv8_1_1_object_aa3b8aaece354c6af98b98e0ae9abe13d}{}\index{v8\+::\+Object@{v8\+::\+Object}!Find\+Instance\+In\+Prototype\+Chain@{Find\+Instance\+In\+Prototype\+Chain}}
+\index{Find\+Instance\+In\+Prototype\+Chain@{Find\+Instance\+In\+Prototype\+Chain}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Find\+Instance\+In\+Prototype\+Chain}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf Object}$>$ v8\+::\+Object\+::\+Find\+Instance\+In\+Prototype\+Chain (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf Function\+Template} $>$}]{tmpl}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_aa3b8aaece354c6af98b98e0ae9abe13d}
+Finds an instance of the given function template in the prototype chain. \hypertarget{classv8_1_1_object_a5309f7a349feb906a05ee45b6feeaab1}{}\index{v8\+::\+Object@{v8\+::\+Object}!Get\+Identity\+Hash@{Get\+Identity\+Hash}}
+\index{Get\+Identity\+Hash@{Get\+Identity\+Hash}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Get\+Identity\+Hash}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T int v8\+::\+Object\+::\+Get\+Identity\+Hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a5309f7a349feb906a05ee45b6feeaab1}
+Returns the identity hash for this object. The current implemenation uses a hidden property on the object to store the identity hash.
+
+The return value will never be 0. Also, it is not guaranteed to be unique. \hypertarget{classv8_1_1_object_aa3324fdf652d8ac3b2f27faa0559231d}{}\index{v8\+::\+Object@{v8\+::\+Object}!Get\+Internal\+Field@{Get\+Internal\+Field}}
+\index{Get\+Internal\+Field@{Get\+Internal\+Field}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Get\+Internal\+Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<$ {\bf Value} $>$ v8\+::\+Object\+::\+Get\+Internal\+Field (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_object_aa3324fdf652d8ac3b2f27faa0559231d}
+Gets the value in an internal field. \hypertarget{classv8_1_1_object_a8ef1f3e0d4f4cecc54d5e0248bc45694}{}\index{v8\+::\+Object@{v8\+::\+Object}!Get\+Pointer\+From\+Internal\+Field@{Get\+Pointer\+From\+Internal\+Field}}
+\index{Get\+Pointer\+From\+Internal\+Field@{Get\+Pointer\+From\+Internal\+Field}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Get\+Pointer\+From\+Internal\+Field}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ v8\+::\+Object\+::\+Get\+Pointer\+From\+Internal\+Field (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_object_a8ef1f3e0d4f4cecc54d5e0248bc45694}
+Gets a native pointer from an internal field. \hypertarget{classv8_1_1_object_a0e28660353b6da64f9e2769260f31001}{}\index{v8\+::\+Object@{v8\+::\+Object}!Get\+Property\+Names@{Get\+Property\+Names}}
+\index{Get\+Property\+Names@{Get\+Property\+Names}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Get\+Property\+Names}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf Array}$>$ v8\+::\+Object\+::\+Get\+Property\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a0e28660353b6da64f9e2769260f31001}
+Returns an array containing the names of the enumerable properties of this object, including properties from prototype objects. The array returned by this method contains the same values as would be enumerated by a for-\/in statement over this object. \hypertarget{classv8_1_1_object_a171fc92c6e695d9c944f9e5d7670ed11}{}\index{v8\+::\+Object@{v8\+::\+Object}!Get\+Prototype@{Get\+Prototype}}
+\index{Get\+Prototype@{Get\+Prototype}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Get\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf Value}$>$ v8\+::\+Object\+::\+Get\+Prototype (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a171fc92c6e695d9c944f9e5d7670ed11}
+Get the prototype object. This does not skip objects marked to be skipped by {\bfseries proto} and it does not consult the security handler. \hypertarget{classv8_1_1_object_a353c1568c4de35ef3f3065b5a4aecc50}{}\index{v8\+::\+Object@{v8\+::\+Object}!Get\+Real\+Named\+Property@{Get\+Real\+Named\+Property}}
+\index{Get\+Real\+Named\+Property@{Get\+Real\+Named\+Property}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Get\+Real\+Named\+Property}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf Value}$>$ v8\+::\+Object\+::\+Get\+Real\+Named\+Property (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{key}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a353c1568c4de35ef3f3065b5a4aecc50}
+If result.\+Is\+Empty() no real property was located on the object or in the prototype chain. This means interceptors in the prototype chain are not called. \hypertarget{classv8_1_1_object_ab955e6c94dc6bf3e65e5355eb3d2d876}{}\index{v8\+::\+Object@{v8\+::\+Object}!Get\+Real\+Named\+Property\+In\+Prototype\+Chain@{Get\+Real\+Named\+Property\+In\+Prototype\+Chain}}
+\index{Get\+Real\+Named\+Property\+In\+Prototype\+Chain@{Get\+Real\+Named\+Property\+In\+Prototype\+Chain}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Get\+Real\+Named\+Property\+In\+Prototype\+Chain}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf Value}$>$ v8\+::\+Object\+::\+Get\+Real\+Named\+Property\+In\+Prototype\+Chain (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{key}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_ab955e6c94dc6bf3e65e5355eb3d2d876}
+If result.\+Is\+Empty() no real property was located in the prototype chain. This means interceptors in the prototype chain are not called. \hypertarget{classv8_1_1_object_afd36ea440a254335bde065a4ceafffb3}{}\index{v8\+::\+Object@{v8\+::\+Object}!Has\+Indexed\+Lookup\+Interceptor@{Has\+Indexed\+Lookup\+Interceptor}}
+\index{Has\+Indexed\+Lookup\+Interceptor@{Has\+Indexed\+Lookup\+Interceptor}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Has\+Indexed\+Lookup\+Interceptor}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+Object\+::\+Has\+Indexed\+Lookup\+Interceptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_afd36ea440a254335bde065a4ceafffb3}
+Tests for an index lookup interceptor. \hypertarget{classv8_1_1_object_ad0791109068a7816d65a06bbc9f6f870}{}\index{v8\+::\+Object@{v8\+::\+Object}!Has\+Named\+Lookup\+Interceptor@{Has\+Named\+Lookup\+Interceptor}}
+\index{Has\+Named\+Lookup\+Interceptor@{Has\+Named\+Lookup\+Interceptor}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Has\+Named\+Lookup\+Interceptor}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+Object\+::\+Has\+Named\+Lookup\+Interceptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_ad0791109068a7816d65a06bbc9f6f870}
+Tests for a named lookup interceptor. \hypertarget{classv8_1_1_object_affaee480d3f50d5ac7a640db5aa8e89d}{}\index{v8\+::\+Object@{v8\+::\+Object}!Internal\+Field\+Count@{Internal\+Field\+Count}}
+\index{Internal\+Field\+Count@{Internal\+Field\+Count}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Internal\+Field\+Count}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T int v8\+::\+Object\+::\+Internal\+Field\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_affaee480d3f50d5ac7a640db5aa8e89d}
+Gets the number of internal fields for this \hyperlink{classv8_1_1_object}{Object}. \hypertarget{classv8_1_1_object_a76d0c5021dd74a57239ad64d1cb1c83c}{}\index{v8\+::\+Object@{v8\+::\+Object}!Is\+Dirty@{Is\+Dirty}}
+\index{Is\+Dirty@{Is\+Dirty}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Is\+Dirty}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+Object\+::\+Is\+Dirty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a76d0c5021dd74a57239ad64d1cb1c83c}
+Returns true if this is an instance of an api function (one created from a function created from a function template) and has been modified since it was created. Note that this method is conservative and may return true for objects that haven\textquotesingle{}t actually been modified. \hypertarget{classv8_1_1_object_a2dc22d2a2acf9eab4ed2965149e48af9}{}\index{v8\+::\+Object@{v8\+::\+Object}!Object\+Proto\+To\+String@{Object\+Proto\+To\+String}}
+\index{Object\+Proto\+To\+String@{Object\+Proto\+To\+String}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Object\+Proto\+To\+String}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+Object\+::\+Object\+Proto\+To\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a2dc22d2a2acf9eab4ed2965149e48af9}
+Call builtin Object.\+prototype.\+to\+String on this object. This is different from Value\+::\+To\+String() that may call user-\/defined to\+String function. This one does not. \hypertarget{classv8_1_1_object_a0040e3012d621b25f580407bacebf95f}{}\index{v8\+::\+Object@{v8\+::\+Object}!Set\+Hidden\+Value@{Set\+Hidden\+Value}}
+\index{Set\+Hidden\+Value@{Set\+Hidden\+Value}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Set\+Hidden\+Value}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+Object\+::\+Set\+Hidden\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{key, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{value}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a0040e3012d621b25f580407bacebf95f}
+Access hidden properties on Java\+Script objects. These properties are hidden from the executing Java\+Script and only accessible through the \hyperlink{classv8_1_1_v8}{V8} C++ A\+P\+I. Hidden properties introduced by \hyperlink{classv8_1_1_v8}{V8} internally (for example the identity hash) are prefixed with \char`\"{}v8\+::\char`\"{}. \hypertarget{classv8_1_1_object_a53be627cd653a5591038a4d81a908f64}{}\index{v8\+::\+Object@{v8\+::\+Object}!Set\+Indexed\+Properties\+To\+External\+Array\+Data@{Set\+Indexed\+Properties\+To\+External\+Array\+Data}}
+\index{Set\+Indexed\+Properties\+To\+External\+Array\+Data@{Set\+Indexed\+Properties\+To\+External\+Array\+Data}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Set\+Indexed\+Properties\+To\+External\+Array\+Data}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T void v8\+::\+Object\+::\+Set\+Indexed\+Properties\+To\+External\+Array\+Data (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{External\+Array\+Type}]{array\+\_\+type, }
+\item[{int}]{number\+\_\+of\+\_\+elements}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a53be627cd653a5591038a4d81a908f64}
+Set the backing store of the indexed properties to be managed by the embedding layer. Access to the indexed properties will follow the rules spelled out for the Canvas\+Array subtypes in the Web\+G\+L specification. Note\+: The embedding program still owns the data and needs to ensure that the backing store is preserved while \hyperlink{classv8_1_1_v8}{V8} has a reference. \hypertarget{classv8_1_1_object_a3f08aee708af5e2856e65e81b22edc61}{}\index{v8\+::\+Object@{v8\+::\+Object}!Set\+Indexed\+Properties\+To\+Pixel\+Data@{Set\+Indexed\+Properties\+To\+Pixel\+Data}}
+\index{Set\+Indexed\+Properties\+To\+Pixel\+Data@{Set\+Indexed\+Properties\+To\+Pixel\+Data}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Set\+Indexed\+Properties\+To\+Pixel\+Data}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T void v8\+::\+Object\+::\+Set\+Indexed\+Properties\+To\+Pixel\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a3f08aee708af5e2856e65e81b22edc61}
+Set the backing store of the indexed properties to be managed by the embedding layer. Access to the indexed properties will follow the rules spelled out in Canvas\+Pixel\+Array. Note\+: The embedding program still owns the data and needs to ensure that the backing store is preserved while \hyperlink{classv8_1_1_v8}{V8} has a reference. \hypertarget{classv8_1_1_object_a94e24494687ea499471d41e914eeb90d}{}\index{v8\+::\+Object@{v8\+::\+Object}!Set\+Internal\+Field@{Set\+Internal\+Field}}
+\index{Set\+Internal\+Field@{Set\+Internal\+Field}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Set\+Internal\+Field}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T void v8\+::\+Object\+::\+Set\+Internal\+Field (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{value}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a94e24494687ea499471d41e914eeb90d}
+Sets the value in an internal field. \hypertarget{classv8_1_1_object_a5e79966b79d69ef3a7b3b0d91414ec2c}{}\index{v8\+::\+Object@{v8\+::\+Object}!Set\+Pointer\+In\+Internal\+Field@{Set\+Pointer\+In\+Internal\+Field}}
+\index{Set\+Pointer\+In\+Internal\+Field@{Set\+Pointer\+In\+Internal\+Field}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Set\+Pointer\+In\+Internal\+Field}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T void v8\+::\+Object\+::\+Set\+Pointer\+In\+Internal\+Field (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{void $\ast$}]{value}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a5e79966b79d69ef3a7b3b0d91414ec2c}
+Sets a native pointer in an internal field. \hypertarget{classv8_1_1_object_a2a1ab58bf92984255f767946eeff1199}{}\index{v8\+::\+Object@{v8\+::\+Object}!Set\+Prototype@{Set\+Prototype}}
+\index{Set\+Prototype@{Set\+Prototype}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Set\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+Object\+::\+Set\+Prototype (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{prototype}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_a2a1ab58bf92984255f767946eeff1199}
+Set the prototype object. This does not skip objects marked to be skipped by {\bfseries proto} and it does not consult the security handler. \hypertarget{classv8_1_1_object_aa2299eda3240be1e76b7d5c2af7a6bbc}{}\index{v8\+::\+Object@{v8\+::\+Object}!Turn\+On\+Access\+Check@{Turn\+On\+Access\+Check}}
+\index{Turn\+On\+Access\+Check@{Turn\+On\+Access\+Check}!v8\+::\+Object@{v8\+::\+Object}}
+\subsubsection[{Turn\+On\+Access\+Check}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T void v8\+::\+Object\+::\+Turn\+On\+Access\+Check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_object_aa2299eda3240be1e76b7d5c2af7a6bbc}
+Turns on access check on the object if the object is an instance of a template that has access check callbacks. If an object has no access check info, the object cannot be accessed by anyone. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

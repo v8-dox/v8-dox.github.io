@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1_function}{}\section{v8\+:\+:Function Class Reference}
+\label{classv8_1_1_function}\index{v8\+::\+Function@{v8\+::\+Function}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Function\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1_function}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_function_a7461d71d7a0bf6e510d16200a7c64501}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ {\bfseries New\+Instance} () const \label{classv8_1_1_function_a7461d71d7a0bf6e510d16200a7c64501}
+
+\item 
+\hypertarget{classv8_1_1_function_a8a154fe47d441ae9baaf4e76b2efeadc}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ {\bfseries New\+Instance} (int argc, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ argv\mbox{[}$\,$\mbox{]}) const \label{classv8_1_1_function_a8a154fe47d441ae9baaf4e76b2efeadc}
+
+\item 
+\hypertarget{classv8_1_1_function_ac61877494d2d8bb81fcef96003ec4059}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Call} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ recv, int argc, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ argv\mbox{[}$\,$\mbox{]})\label{classv8_1_1_function_ac61877494d2d8bb81fcef96003ec4059}
+
+\item 
+\hypertarget{classv8_1_1_function_ab7abce9df66a4b02f8297c0ab0d5e090}{}V8\+E\+X\+P\+O\+R\+T void {\bfseries Set\+Name} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ name)\label{classv8_1_1_function_ab7abce9df66a4b02f8297c0ab0d5e090}
+
+\item 
+\hypertarget{classv8_1_1_function_ac8b07c4d3e6079ac8a7fb17c1784f456}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Get\+Name} () const \label{classv8_1_1_function_ac8b07c4d3e6079ac8a7fb17c1784f456}
+
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_function_a2eff94c159ec39792bf3ec52c81e045c}{Get\+Inferred\+Name} () const 
+\item 
+V8\+E\+X\+P\+O\+R\+T int \hyperlink{classv8_1_1_function_a3ae29205851ecbf99ab8ba03559fb849}{Get\+Script\+Line\+Number} () const 
+\item 
+V8\+E\+X\+P\+O\+R\+T int \hyperlink{classv8_1_1_function_a81c14d8ec5996630ef56c524b19084c2}{Get\+Script\+Column\+Number} () const 
+\item 
+\hypertarget{classv8_1_1_function_ae2fd80461eebc1896df8b608e90b9236}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Get\+Script\+Id} () const \label{classv8_1_1_function_ae2fd80461eebc1896df8b608e90b9236}
+
+\item 
+\hypertarget{classv8_1_1_function_a9dfe892a6af9d2799abe3e24e726c0b1}{}V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_script_origin}{Script\+Origin} {\bfseries Get\+Script\+Origin} () const \label{classv8_1_1_function_a9dfe892a6af9d2799abe3e24e726c0b1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_function_af24f38bcc0769519816cda1f6a154ff8}{}static \hyperlink{classv8_1_1_function}{Function} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1_value}{Value} $\ast$obj)\label{classv8_1_1_function_af24f38bcc0769519816cda1f6a154ff8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_function_ae8687c89a18c0811d799becfba666406}{}static V8\+E\+X\+P\+O\+R\+T const int {\bfseries k\+Line\+Offset\+Not\+Found}\label{classv8_1_1_function_ae8687c89a18c0811d799becfba666406}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java\+Script function object (E\+C\+M\+A-\/262, 15.\+3). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_function_a2eff94c159ec39792bf3ec52c81e045c}{}\index{v8\+::\+Function@{v8\+::\+Function}!Get\+Inferred\+Name@{Get\+Inferred\+Name}}
+\index{Get\+Inferred\+Name@{Get\+Inferred\+Name}!v8\+::\+Function@{v8\+::\+Function}}
+\subsubsection[{Get\+Inferred\+Name}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf Handle}$<${\bf Value}$>$ v8\+::\+Function\+::\+Get\+Inferred\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_function_a2eff94c159ec39792bf3ec52c81e045c}
+Name inferred from variable or property assignment of this function. Used to facilitate debugging and profiling of Java\+Script code written in an O\+O style, where many functions are anonymous but are assigned to object properties. \hypertarget{classv8_1_1_function_a81c14d8ec5996630ef56c524b19084c2}{}\index{v8\+::\+Function@{v8\+::\+Function}!Get\+Script\+Column\+Number@{Get\+Script\+Column\+Number}}
+\index{Get\+Script\+Column\+Number@{Get\+Script\+Column\+Number}!v8\+::\+Function@{v8\+::\+Function}}
+\subsubsection[{Get\+Script\+Column\+Number}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T int v8\+::\+Function\+::\+Get\+Script\+Column\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_function_a81c14d8ec5996630ef56c524b19084c2}
+Returns zero based column number of function body and k\+Line\+Offset\+Not\+Found if no information available. \hypertarget{classv8_1_1_function_a3ae29205851ecbf99ab8ba03559fb849}{}\index{v8\+::\+Function@{v8\+::\+Function}!Get\+Script\+Line\+Number@{Get\+Script\+Line\+Number}}
+\index{Get\+Script\+Line\+Number@{Get\+Script\+Line\+Number}!v8\+::\+Function@{v8\+::\+Function}}
+\subsubsection[{Get\+Script\+Line\+Number}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T int v8\+::\+Function\+::\+Get\+Script\+Line\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_function_a3ae29205851ecbf99ab8ba03559fb849}
+Returns zero based line number of function body and k\+Line\+Offset\+Not\+Found if no information available. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

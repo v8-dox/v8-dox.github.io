@@ -1,0 +1,70 @@
+\hypertarget{classv8_1_1_persistent_value_map}{}\section{v8\+:\+:Persistent\+Value\+Map$<$ K, V, Traits $>$ Class Template Reference}
+\label{classv8_1_1_persistent_value_map}\index{v8\+::\+Persistent\+Value\+Map$<$ K, V, Traits $>$@{v8\+::\+Persistent\+Value\+Map$<$ K, V, Traits $>$}}
+Inheritance diagram for v8\+:\+:Persistent\+Value\+Map$<$ K, V, Traits $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1_persistent_value_map}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_persistent_value_map_a81ed968e13bcef1cd97a09fd024f30f2}{}typedef \hyperlink{classv8_1_1_persistent_value_map_base}{Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::\hyperlink{classv8_1_1_persistent_value_map_base_1_1_persistent_value_reference}{Persistent\+Value\+Reference} {\bfseries Persistent\+Value\+Reference}\label{classv8_1_1_persistent_value_map_a81ed968e13bcef1cd97a09fd024f30f2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_persistent_value_map_af8000a75ef84fa719724dc4dadc1e5ee}{}{\bfseries Persistent\+Value\+Map} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\label{classv8_1_1_persistent_value_map_af8000a75ef84fa719724dc4dadc1e5ee}
+
+\item 
+\hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}$<$ V $>$ \hyperlink{classv8_1_1_persistent_value_map_af1b5e39f5d0275d8d58d787de5a181d9}{Set} (const K \&key, \hyperlink{classv8_1_1_local}{Local}$<$ V $>$ value)
+\item 
+\hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}$<$ V $>$ \hyperlink{classv8_1_1_persistent_value_map_a31f69108cbb1b481ca5112c22c274681}{Set} (const K \&key, \hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}$<$ V $>$ value)
+\item 
+\hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}$<$ V $>$ \hyperlink{classv8_1_1_persistent_value_map_ad145a27f7433da2e79c53325047a1303}{Set\+Unique} (const K \&key, \hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}$<$ V $>$ $\ast$persistent)
+\item 
+\hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}$<$ V $>$ \hyperlink{classv8_1_1_persistent_value_map_a4a6ea22cb9a1adbf52e14f92e6370693}{Set} (const K \&key, \hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}$<$ V $>$ value, \hyperlink{classv8_1_1_persistent_value_map_base_1_1_persistent_value_reference}{Persistent\+Value\+Reference} $\ast$reference)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_persistent_value_map_af1b5e39f5d0275d8d58d787de5a181d9}{}\index{v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}!Set@{Set}}
+\index{Set@{Set}!v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename V, typename Traits$>$ {\bf Unique\+Persistent}$<$V$>$ {\bf v8\+::\+Persistent\+Value\+Map}$<$ K, V, Traits $>$\+::Set (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key, }
+\item[{{\bf Local}$<$ V $>$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_value_map_af1b5e39f5d0275d8d58d787de5a181d9}
+Put value into map. Depending on Traits\+::k\+Is\+Weak, the value will be held by the map strongly or weakly. Returns old value as \hyperlink{classv8_1_1_unique_persistent}{Unique\+Persistent}. \hypertarget{classv8_1_1_persistent_value_map_a31f69108cbb1b481ca5112c22c274681}{}\index{v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}!Set@{Set}}
+\index{Set@{Set}!v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename V, typename Traits$>$ {\bf Unique\+Persistent}$<$V$>$ {\bf v8\+::\+Persistent\+Value\+Map}$<$ K, V, Traits $>$\+::Set (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key, }
+\item[{{\bf Unique\+Persistent}$<$ V $>$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_value_map_a31f69108cbb1b481ca5112c22c274681}
+Put value into map, like \hyperlink{classv8_1_1_persistent_value_map_af1b5e39f5d0275d8d58d787de5a181d9}{Set(const K\&, Local$<$\+V$>$)}. \hypertarget{classv8_1_1_persistent_value_map_a4a6ea22cb9a1adbf52e14f92e6370693}{}\index{v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}!Set@{Set}}
+\index{Set@{Set}!v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename V, typename Traits$>$ {\bf Unique\+Persistent}$<$V$>$ {\bf v8\+::\+Persistent\+Value\+Map}$<$ K, V, Traits $>$\+::Set (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key, }
+\item[{{\bf Unique\+Persistent}$<$ V $>$}]{value, }
+\item[{{\bf Persistent\+Value\+Reference} $\ast$}]{reference}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_value_map_a4a6ea22cb9a1adbf52e14f92e6370693}
+Put a value into the map and update the reference. Restrictions of Get\+Reference apply here as well. \hypertarget{classv8_1_1_persistent_value_map_ad145a27f7433da2e79c53325047a1303}{}\index{v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}!Set\+Unique@{Set\+Unique}}
+\index{Set\+Unique@{Set\+Unique}!v8\+::\+Persistent\+Value\+Map@{v8\+::\+Persistent\+Value\+Map}}
+\subsubsection[{Set\+Unique}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename V, typename Traits$>$ {\bf Unique\+Persistent}$<$V$>$ {\bf v8\+::\+Persistent\+Value\+Map}$<$ K, V, Traits $>$\+::Set\+Unique (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key, }
+\item[{{\bf Unique\+Persistent}$<$ V $>$ $\ast$}]{persistent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_value_map_ad145a27f7433da2e79c53325047a1303}
+Put the value into the map, and set the \textquotesingle{}weak\textquotesingle{} callback when demanded by the Traits class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8-\/util.\+h\end{DoxyCompactItemize}

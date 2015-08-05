@@ -1,0 +1,43 @@
+\hypertarget{classv8_1_1_external}{}\section{v8\+:\+:External Class Reference}
+\label{classv8_1_1_external}\index{v8\+::\+External@{v8\+::\+External}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:External\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1_external}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_external_a17d89761a1fa35f7b526c3e1305738d1}{}V8\+E\+X\+P\+O\+R\+T void $\ast$ {\bfseries Value} () const \label{classv8_1_1_external_a17d89761a1fa35f7b526c3e1305738d1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_external_ae22c392d352c75ebded75092337aaedd}{}static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Wrap} (void $\ast$data)\label{classv8_1_1_external_ae22c392d352c75ebded75092337aaedd}
+
+\item 
+\hypertarget{classv8_1_1_external_a8a3d966cf493d986adb7a53a17651a8b}{}static void $\ast$ {\bfseries Unwrap} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ obj)\label{classv8_1_1_external_a8a3d966cf493d986adb7a53a17651a8b}
+
+\item 
+\hypertarget{classv8_1_1_external_ae4ff3030216c7fd1a27db59aae5d2e39}{}static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_external}{External} $>$ {\bfseries New} (void $\ast$value)\label{classv8_1_1_external_ae4ff3030216c7fd1a27db59aae5d2e39}
+
+\item 
+\hypertarget{classv8_1_1_external_a4711aba26710c5dd72f11cb81808f9c2}{}static \hyperlink{classv8_1_1_external}{External} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1_value}{Value} $\ast$obj)\label{classv8_1_1_external_a4711aba26710c5dd72f11cb81808f9c2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java\+Script value that wraps a C++ void$\ast$. This type of value is mainly used to associate C++ data structures with Java\+Script objects.
+
+The Wrap function \hyperlink{classv8_1_1_v8}{V8} will return the most optimal \hyperlink{classv8_1_1_value}{Value} object wrapping the C++ void$\ast$. The type of the value is not guaranteed to be an \hyperlink{classv8_1_1_external}{External} object and no assumptions about its type should be made. To access the wrapped value Unwrap should be used, all other operations on that object will lead to unpredictable results. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

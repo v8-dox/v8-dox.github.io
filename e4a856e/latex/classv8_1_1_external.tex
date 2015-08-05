@@ -1,0 +1,56 @@
+\hypertarget{classv8_1_1_external}{}\section{v8\+:\+:External Class Reference}
+\label{classv8_1_1_external}\index{v8\+::\+External@{v8\+::\+External}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:External\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1_external}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1_external_a6d9451cdca76110fd9a972480cbee37d}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (V8\+\_\+\+I\+N\+L\+I\+N\+E(static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ Wrap(void $\ast$value)))
+\item 
+\hyperlink{classv8_1_1_external_aa07bb6176354067d21965515c1d988f2}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (V8\+\_\+\+I\+N\+L\+I\+N\+E(static void $\ast$Unwrap(\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ obj)))
+\item 
+\hypertarget{classv8_1_1_external_aa1d750d608a80332bcc7a8d92a3af201}{}{\bfseries V8\+\_\+\+I\+N\+L\+I\+N\+E} (static \hyperlink{classv8_1_1_external}{External} $\ast$Cast(\hyperlink{classv8_1_1_value}{Value} $\ast$obj))\label{classv8_1_1_external_aa1d750d608a80332bcc7a8d92a3af201}
+
+\item 
+\hypertarget{classv8_1_1_external_a17d89761a1fa35f7b526c3e1305738d1}{}V8\+E\+X\+P\+O\+R\+T void $\ast$ {\bfseries Value} () const \label{classv8_1_1_external_a17d89761a1fa35f7b526c3e1305738d1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_external_ae4ff3030216c7fd1a27db59aae5d2e39}{}static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_external}{External} $>$ {\bfseries New} (void $\ast$value)\label{classv8_1_1_external_ae4ff3030216c7fd1a27db59aae5d2e39}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java\+Script value that wraps a C++ void$\ast$. This type of value is mainly used to associate C++ data structures with Java\+Script objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_external_a6d9451cdca76110fd9a972480cbee37d}{}\index{v8\+::\+External@{v8\+::\+External}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}!v8\+::\+External@{v8\+::\+External}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+External\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D (
+\begin{DoxyParamCaption}
+\item[{V8\+\_\+\+I\+N\+L\+I\+N\+E(static {\bf Local}$<$ {\bf Value} $>$ Wrap(void $\ast$value))}]{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_external_a6d9451cdca76110fd9a972480cbee37d}
+Deprecated, use New instead. \hypertarget{classv8_1_1_external_aa07bb6176354067d21965515c1d988f2}{}\index{v8\+::\+External@{v8\+::\+External}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}!v8\+::\+External@{v8\+::\+External}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+External\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D (
+\begin{DoxyParamCaption}
+\item[{V8\+\_\+\+I\+N\+L\+I\+N\+E(static void $\ast$Unwrap({\bf Handle}$<$ {\bf Value} $>$ obj))}]{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_external_aa07bb6176354067d21965515c1d988f2}
+Deprecated, use a combination of Cast and \hyperlink{classv8_1_1_value}{Value} instead. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

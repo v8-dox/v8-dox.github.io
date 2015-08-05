@@ -1,0 +1,140 @@
+\hypertarget{classv8_1_1_debug}{}\section{v8\+:\+:Debug Class Reference}
+\label{classv8_1_1_debug}\index{v8\+::\+Debug@{v8\+::\+Debug}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1_debug_1_1_client_data}{Client\+Data}
+\item 
+class \hyperlink{classv8_1_1_debug_1_1_message}{Message}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{classv8_1_1_debug_a4be52510b70764b730dd1289bd9bbe37}{Event\+Callback}) (Debug\+Event event, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ exec\+\_\+state, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ event\+\_\+data, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ data)
+\item 
+typedef void($\ast$ \hyperlink{classv8_1_1_debug_aea5c8ab838a3b3c263a71828fb0767ac}{Message\+Handler}) (const uint16\+\_\+t $\ast$message, int length, \hyperlink{classv8_1_1_debug_1_1_client_data}{Client\+Data} $\ast$client\+\_\+data)
+\item 
+typedef void($\ast$ \hyperlink{classv8_1_1_debug_a0fb8f7e1f8fa47cb23f7ad72cd533c77}{Message\+Handler2}) (const \hyperlink{classv8_1_1_debug_1_1_message}{Message} \&message)
+\item 
+typedef void($\ast$ \hyperlink{classv8_1_1_debug_a442f686afe7d80928b57b3ff8ac3f6e7}{Host\+Dispatch\+Handler}) ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_debug_a745bc83ba29626b64151a1a3e9759e8a}{}static bool {\bfseries Set\+Debug\+Event\+Listener} (\hyperlink{classv8_1_1_debug_a4be52510b70764b730dd1289bd9bbe37}{Event\+Callback} that, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ data=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$())\label{classv8_1_1_debug_a745bc83ba29626b64151a1a3e9759e8a}
+
+\item 
+\hypertarget{classv8_1_1_debug_a9195f4cb819848a07dc71a5bae43274d}{}static bool {\bfseries Set\+Debug\+Event\+Listener} (\hyperlink{classv8_1_1_handle}{v8\+::\+Handle}$<$ \hyperlink{classv8_1_1_object}{v8\+::\+Object} $>$ that, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ data=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$())\label{classv8_1_1_debug_a9195f4cb819848a07dc71a5bae43274d}
+
+\item 
+\hypertarget{classv8_1_1_debug_a4db63a9c8002f967e34bd795c2d9387b}{}static void {\bfseries Debug\+Break} ()\label{classv8_1_1_debug_a4db63a9c8002f967e34bd795c2d9387b}
+
+\item 
+\hypertarget{classv8_1_1_debug_ab079dd46bc3989eb990c7ef40604c5a2}{}static void {\bfseries Set\+Message\+Handler} (\hyperlink{classv8_1_1_debug_aea5c8ab838a3b3c263a71828fb0767ac}{Message\+Handler} handler, bool message\+\_\+handler\+\_\+thread=false)\label{classv8_1_1_debug_ab079dd46bc3989eb990c7ef40604c5a2}
+
+\item 
+\hypertarget{classv8_1_1_debug_a0375563b2a1e0b4ea5f70a742209bb3f}{}static void {\bfseries Set\+Message\+Handler2} (\hyperlink{classv8_1_1_debug_a0fb8f7e1f8fa47cb23f7ad72cd533c77}{Message\+Handler2} handler)\label{classv8_1_1_debug_a0375563b2a1e0b4ea5f70a742209bb3f}
+
+\item 
+\hypertarget{classv8_1_1_debug_a2b221598c358e7e72d7801a74a69fb14}{}static void {\bfseries Send\+Command} (const uint16\+\_\+t $\ast$command, int length, \hyperlink{classv8_1_1_debug_1_1_client_data}{Client\+Data} $\ast$client\+\_\+data=N\+U\+L\+L)\label{classv8_1_1_debug_a2b221598c358e7e72d7801a74a69fb14}
+
+\item 
+\hypertarget{classv8_1_1_debug_aa55c29d5cc7b04c4fc24cd89c77f3f54}{}static void {\bfseries Set\+Host\+Dispatch\+Handler} (\hyperlink{classv8_1_1_debug_a442f686afe7d80928b57b3ff8ac3f6e7}{Host\+Dispatch\+Handler} handler, int period=100)\label{classv8_1_1_debug_aa55c29d5cc7b04c4fc24cd89c77f3f54}
+
+\item 
+static \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_debug_a0e209f780a454d01c08e4a3e378770f9}{Call} (\hyperlink{classv8_1_1_handle}{v8\+::\+Handle}$<$ \hyperlink{classv8_1_1_function}{v8\+::\+Function} $>$ fun, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ data=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$())
+\item 
+static bool \hyperlink{classv8_1_1_debug_a63f491229ef01576bfeb5814e9b14a5e}{Enable\+Agent} (const char $\ast$name, int port)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classv8_1_1_debug_a4be52510b70764b730dd1289bd9bbe37}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Event\+Callback@{Event\+Callback}}
+\index{Event\+Callback@{Event\+Callback}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{Event\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Event\+Callback) (Debug\+Event event, {\bf Handle}$<$ {\bf Object} $>$ exec\+\_\+state, {\bf Handle}$<$ {\bf Object} $>$ event\+\_\+data, {\bf Handle}$<$ {\bf Value} $>$ data)}\label{classv8_1_1_debug_a4be52510b70764b730dd1289bd9bbe37}
+\hyperlink{classv8_1_1_debug}{Debug} event callback function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the type of the debug event that triggered the callback (enum Debug\+Event) \\
+\hline
+{\em exec\+\_\+state} & execution state (Java\+Script object) \\
+\hline
+{\em event\+\_\+data} & event specific data (Java\+Script object) \\
+\hline
+{\em data} & value passed by the user to Set\+Debug\+Event\+Listener \\
+\hline
+\end{DoxyParams}
+\hypertarget{classv8_1_1_debug_a442f686afe7d80928b57b3ff8ac3f6e7}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Host\+Dispatch\+Handler@{Host\+Dispatch\+Handler}}
+\index{Host\+Dispatch\+Handler@{Host\+Dispatch\+Handler}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{Host\+Dispatch\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Host\+Dispatch\+Handler) ()}\label{classv8_1_1_debug_a442f686afe7d80928b57b3ff8ac3f6e7}
+\hyperlink{classv8_1_1_debug}{Debug} host dispatch callback function. \hypertarget{classv8_1_1_debug_aea5c8ab838a3b3c263a71828fb0767ac}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Message\+Handler@{Message\+Handler}}
+\index{Message\+Handler@{Message\+Handler}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{Message\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Message\+Handler) (const uint16\+\_\+t $\ast$message, int length, {\bf Client\+Data} $\ast$client\+\_\+data)}\label{classv8_1_1_debug_aea5c8ab838a3b3c263a71828fb0767ac}
+\hyperlink{classv8_1_1_debug}{Debug} message callback function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the debug message handler message object \\
+\hline
+{\em length} & length of the message \\
+\hline
+{\em client\+\_\+data} & the data value passed when registering the message handler\\
+\hline
+\end{DoxyParams}
+A Message\+Handler does not take posession of the message string, and must not rely on the data persisting after the handler returns.
+
+This message handler is deprecated. Use Message\+Handler2 instead. \hypertarget{classv8_1_1_debug_a0fb8f7e1f8fa47cb23f7ad72cd533c77}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Message\+Handler2@{Message\+Handler2}}
+\index{Message\+Handler2@{Message\+Handler2}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{Message\+Handler2}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Message\+Handler2) (const {\bf Message} \&message)}\label{classv8_1_1_debug_a0fb8f7e1f8fa47cb23f7ad72cd533c77}
+\hyperlink{classv8_1_1_debug}{Debug} message callback function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the debug message handler message object\\
+\hline
+\end{DoxyParams}
+A Message\+Handler does not take posession of the message data, and must not rely on the data persisting after the handler returns. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_debug_a0e209f780a454d01c08e4a3e378770f9}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Call@{Call}}
+\index{Call@{Call}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{Call}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Handle}$<${\bf Value}$>$ v8\+::\+Debug\+::\+Call (
+\begin{DoxyParamCaption}
+\item[{{\bf v8\+::\+Handle}$<$ {\bf v8\+::\+Function} $>$}]{fun, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_debug_a0e209f780a454d01c08e4a3e378770f9}
+Run a Java\+Script function in the debugger. 
+\begin{DoxyParams}{Parameters}
+{\em fun} & the function to call \\
+\hline
+{\em data} & passed as second argument to the function With this call the debugger is entered and the function specified is called with the execution state as the first argument. This makes it possible to get access to information otherwise not available during normal Java\+Script execution e.\+g. details on stack frames. The following example show a Java\+Script function which when passed to \hyperlink{classv8_1_1_debug_a0e209f780a454d01c08e4a3e378770f9}{v8\+::\+Debug\+::\+Call} will return the current line of Java\+Script execution.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\textcolor{keyword}{function} frame\_source\_line(exec\_state) \{
+  \textcolor{keywordflow}{return} exec\_state.frame(0).sourceLine();
+\}
+\end{DoxyCode}
+ \hypertarget{classv8_1_1_debug_a63f491229ef01576bfeb5814e9b14a5e}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Enable\+Agent@{Enable\+Agent}}
+\index{Enable\+Agent@{Enable\+Agent}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{Enable\+Agent}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\+::\+Debug\+::\+Enable\+Agent (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_debug_a63f491229ef01576bfeb5814e9b14a5e}
+Enable the \hyperlink{classv8_1_1_v8}{V8} builtin debug agent. The debugger agent will listen on the supplied T\+C\+P/\+I\+P port for remote debugger connection. 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the embedding application \\
+\hline
+{\em port} & the T\+C\+P/\+I\+P port to listen on \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8-\/debug.\+h\end{DoxyCompactItemize}

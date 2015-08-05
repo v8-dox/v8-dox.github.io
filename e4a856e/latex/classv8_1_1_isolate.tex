@@ -1,0 +1,95 @@
+\hypertarget{classv8_1_1_isolate}{}\section{v8\+:\+:Isolate Class Reference}
+\label{classv8_1_1_isolate}\index{v8\+::\+Isolate@{v8\+::\+Isolate}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1_isolate_1_1_scope}{Scope}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classv8_1_1_isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}{Enter} ()
+\item 
+void \hyperlink{classv8_1_1_isolate_a64a8503cafd00d1d2cadfbb0c2345054}{Exit} ()
+\item 
+void \hyperlink{classv8_1_1_isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}{Dispose} ()
+\item 
+\hyperlink{classv8_1_1_isolate_a3b07ae64c53a95def30c5b4ae899fed8}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (void Set\+Data(void $\ast$data))
+\item 
+\hyperlink{classv8_1_1_isolate_a301afcbfeba17c9e2a961fdc0e874f7d}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (void $\ast$Get\+Data())
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1_isolate}{Isolate} $\ast$ \hyperlink{classv8_1_1_isolate_a36f397e1d09e0122e89641288f348d2d}{New} ()
+\item 
+static \hyperlink{classv8_1_1_isolate}{Isolate} $\ast$ \hyperlink{classv8_1_1_isolate_aa79441b5da4438221d0f38790c4de2ed}{Get\+Current} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classv8_1_1_isolate}{Isolate} represents an isolated instance of the \hyperlink{classv8_1_1_v8}{V8} engine. \hyperlink{classv8_1_1_v8}{V8} isolates have completely separate states. Objects from one isolate must not be used in other isolates. When \hyperlink{classv8_1_1_v8}{V8} is initialized a default isolate is implicitly created and entered. The embedder can create additional isolates and use them in parallel in multiple threads. An isolate can be entered by at most one thread at any given time. The Locker/\+Unlocker A\+P\+I must be used to synchronize. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}
+Disposes the isolate. The isolate must not be entered by any thread to be disposable. \hypertarget{classv8_1_1_isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Enter@{Enter}}
+\index{Enter@{Enter}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{Enter}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Enter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}
+Methods below this point require holding a lock (using \hyperlink{classv8_1_1_locker}{Locker}) in a multi-\/threaded environment. Sets this isolate as the entered one for the current thread. Saves the previously entered one (if any), so that it can be restored when exiting. Re-\/entering an isolate is allowed. \hypertarget{classv8_1_1_isolate_a64a8503cafd00d1d2cadfbb0c2345054}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Exit@{Exit}}
+\index{Exit@{Exit}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{Exit}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_isolate_a64a8503cafd00d1d2cadfbb0c2345054}
+Exits this isolate by restoring the previously entered one in the current thread. The isolate may still stay the same, if it was entered more than once.
+
+Requires\+: this == \hyperlink{classv8_1_1_isolate_aa79441b5da4438221d0f38790c4de2ed}{Isolate\+::\+Get\+Current()}. \hypertarget{classv8_1_1_isolate_aa79441b5da4438221d0f38790c4de2ed}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Current@{Get\+Current}}
+\index{Get\+Current@{Get\+Current}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{Get\+Current}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Isolate}$\ast$ v8\+::\+Isolate\+::\+Get\+Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_isolate_aa79441b5da4438221d0f38790c4de2ed}
+Returns the entered isolate for the current thread or N\+U\+L\+L in case there is no current isolate. \hypertarget{classv8_1_1_isolate_a36f397e1d09e0122e89641288f348d2d}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!New@{New}}
+\index{New@{New}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Isolate}$\ast$ v8\+::\+Isolate\+::\+New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_isolate_a36f397e1d09e0122e89641288f348d2d}
+Creates a new isolate. Does not change the currently entered isolate.
+
+When an isolate is no longer used its resources should be freed by calling \hyperlink{classv8_1_1_isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}{Dispose()}. Using the delete operator is not allowed. \hypertarget{classv8_1_1_isolate_a3b07ae64c53a95def30c5b4ae899fed8}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Isolate\+::\+V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{void }]{Set\+Datavoid $\ast$data}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_isolate_a3b07ae64c53a95def30c5b4ae899fed8}
+Associate embedder-\/specific data with the isolate \hypertarget{classv8_1_1_isolate_a301afcbfeba17c9e2a961fdc0e874f7d}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Isolate\+::\+V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{Get\+Data()}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_isolate_a301afcbfeba17c9e2a961fdc0e874f7d}
+Retrieve embedder-\/specific data from the isolate. Returns N\+U\+L\+L if Set\+Data has never been called. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

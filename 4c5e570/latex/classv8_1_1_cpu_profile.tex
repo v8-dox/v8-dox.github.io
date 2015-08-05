@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1_cpu_profile}{}\section{v8\+:\+:Cpu\+Profile Class Reference}
+\label{classv8_1_1_cpu_profile}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classv8_1_1_cpu_profile_a382bbf10d24a2cd8b17acb8508c56a58}{Get\+Uid} () const 
+\item 
+\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_cpu_profile_afbb44d5cf0a8729c9074aba03207e5cc}{Get\+Title} () const 
+\item 
+const \hyperlink{classv8_1_1_cpu_profile_node}{Cpu\+Profile\+Node} $\ast$ \hyperlink{classv8_1_1_cpu_profile_ac056d92eaf995873d827d4697a334c6a}{Get\+Bottom\+Up\+Root} () const 
+\item 
+const \hyperlink{classv8_1_1_cpu_profile_node}{Cpu\+Profile\+Node} $\ast$ \hyperlink{classv8_1_1_cpu_profile_aec978f073af6634b6495baa65209a31f}{Get\+Top\+Down\+Root} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classv8_1_1_cpu_profile}{Cpu\+Profile} contains a C\+P\+U profile in a form of two call trees\+:
+\begin{DoxyItemize}
+\item top-\/down (from main() down to functions that do all the work);
+\item bottom-\/up call graph (in backward direction). 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_cpu_profile_ac056d92eaf995873d827d4697a334c6a}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Bottom\+Up\+Root@{Get\+Bottom\+Up\+Root}}
+\index{Get\+Bottom\+Up\+Root@{Get\+Bottom\+Up\+Root}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
+\subsubsection[{Get\+Bottom\+Up\+Root}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cpu\+Profile\+Node}$\ast$ v8\+::\+Cpu\+Profile\+::\+Get\+Bottom\+Up\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_cpu_profile_ac056d92eaf995873d827d4697a334c6a}
+Returns the root node of the bottom up call tree. \hypertarget{classv8_1_1_cpu_profile_afbb44d5cf0a8729c9074aba03207e5cc}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Title@{Get\+Title}}
+\index{Get\+Title@{Get\+Title}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
+\subsubsection[{Get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf String}$>$ v8\+::\+Cpu\+Profile\+::\+Get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_cpu_profile_afbb44d5cf0a8729c9074aba03207e5cc}
+Returns C\+P\+U profile title. \hypertarget{classv8_1_1_cpu_profile_aec978f073af6634b6495baa65209a31f}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Top\+Down\+Root@{Get\+Top\+Down\+Root}}
+\index{Get\+Top\+Down\+Root@{Get\+Top\+Down\+Root}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
+\subsubsection[{Get\+Top\+Down\+Root}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cpu\+Profile\+Node}$\ast$ v8\+::\+Cpu\+Profile\+::\+Get\+Top\+Down\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_cpu_profile_aec978f073af6634b6495baa65209a31f}
+Returns the root node of the top down call tree. \hypertarget{classv8_1_1_cpu_profile_a382bbf10d24a2cd8b17acb8508c56a58}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Uid@{Get\+Uid}}
+\index{Get\+Uid@{Get\+Uid}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
+\subsubsection[{Get\+Uid}]{\setlength{\rightskip}{0pt plus 5cm}unsigned v8\+::\+Cpu\+Profile\+::\+Get\+Uid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_cpu_profile_a382bbf10d24a2cd8b17acb8508c56a58}
+Returns C\+P\+U profile U\+I\+D (assigned by the profiler.) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

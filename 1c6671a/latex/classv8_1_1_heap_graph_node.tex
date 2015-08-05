@@ -1,0 +1,133 @@
+\hypertarget{classv8_1_1_heap_graph_node}{}\section{v8\+:\+:Heap\+Graph\+Node Class Reference}
+\label{classv8_1_1_heap_graph_node}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_heap_graph_node_ab674a58103a51abc56f99edc6a1479ed}{}enum {\bfseries Type} \{ \\*
+{\bfseries I\+N\+T\+E\+R\+N\+A\+L} = 0, 
+{\bfseries A\+R\+R\+A\+Y} = 1, 
+{\bfseries S\+T\+R\+I\+N\+G} = 2, 
+{\bfseries O\+B\+J\+E\+C\+T} = 3, 
+\\*
+{\bfseries C\+O\+D\+E} = 4, 
+{\bfseries C\+L\+O\+S\+U\+R\+E} = 5
+ \}\label{classv8_1_1_heap_graph_node_ab674a58103a51abc56f99edc6a1479ed}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Type \hyperlink{classv8_1_1_heap_graph_node_a5e07fc855bded52229e62b855fa08c5d}{Get\+Type} () const 
+\item 
+\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_heap_graph_node_af5f24ee6c07a57814e18bd317cb5576a}{Get\+Name} () const 
+\item 
+int \hyperlink{classv8_1_1_heap_graph_node_acd3bd8860aa399ac56fa8a0229af7b85}{Get\+Self\+Size} () const 
+\item 
+int \hyperlink{classv8_1_1_heap_graph_node_af2621cf83d9e06ce1f45a4c207f3475b}{Get\+Total\+Size} () const 
+\item 
+int \hyperlink{classv8_1_1_heap_graph_node_ac010b7bb0f9e3821604235a61429ab87}{Get\+Private\+Size} () const 
+\item 
+int \hyperlink{classv8_1_1_heap_graph_node_a0a49abe006755dd5536d15ae42f552d4}{Get\+Children\+Count} () const 
+\item 
+const \hyperlink{classv8_1_1_heap_graph_edge}{Heap\+Graph\+Edge} $\ast$ \hyperlink{classv8_1_1_heap_graph_node_ac3435611573e58b6614aeaab68442905}{Get\+Child} (int index) const 
+\item 
+int \hyperlink{classv8_1_1_heap_graph_node_a9de00d0733343b4b16823654813c22a1}{Get\+Retainers\+Count} () const 
+\item 
+const \hyperlink{classv8_1_1_heap_graph_edge}{Heap\+Graph\+Edge} $\ast$ \hyperlink{classv8_1_1_heap_graph_node_a260c115d00b7960a08ea34c6a8bee058}{Get\+Retainer} (int index) const 
+\item 
+int \hyperlink{classv8_1_1_heap_graph_node_a9d1d049b6ecbc94d2753f10af782ba83}{Get\+Retaining\+Paths\+Count} () const 
+\item 
+const \hyperlink{classv8_1_1_heap_graph_path}{Heap\+Graph\+Path} $\ast$ \hyperlink{classv8_1_1_heap_graph_node_a0145bac669b571f6ed3e04722402468c}{Get\+Retaining\+Path} (int index) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classv8_1_1_heap_graph_node}{Heap\+Graph\+Node} represents a node in a heap graph. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_heap_graph_node_ac3435611573e58b6614aeaab68442905}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Child@{Get\+Child}}
+\index{Get\+Child@{Get\+Child}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Child}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heap\+Graph\+Edge}$\ast$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Child (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_ac3435611573e58b6614aeaab68442905}
+Retrieves a child by index. \hypertarget{classv8_1_1_heap_graph_node_a0a49abe006755dd5536d15ae42f552d4}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Children\+Count@{Get\+Children\+Count}}
+\index{Get\+Children\+Count@{Get\+Children\+Count}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Children\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Heap\+Graph\+Node\+::\+Get\+Children\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_a0a49abe006755dd5536d15ae42f552d4}
+Returns child nodes count of the node. \hypertarget{classv8_1_1_heap_graph_node_af5f24ee6c07a57814e18bd317cb5576a}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf String}$>$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_af5f24ee6c07a57814e18bd317cb5576a}
+Returns node name. Depending on node\textquotesingle{}s type this can be the name of the constructor (for objects), the name of the function (for closures), string value, or an empty string (for compiled code). \hypertarget{classv8_1_1_heap_graph_node_ac010b7bb0f9e3821604235a61429ab87}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Private\+Size@{Get\+Private\+Size}}
+\index{Get\+Private\+Size@{Get\+Private\+Size}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Private\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Heap\+Graph\+Node\+::\+Get\+Private\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_ac010b7bb0f9e3821604235a61429ab87}
+Returns node\textquotesingle{}s private size, in bytes. That is, the size of memory that will be reclaimed having this node collected. \hypertarget{classv8_1_1_heap_graph_node_a260c115d00b7960a08ea34c6a8bee058}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Retainer@{Get\+Retainer}}
+\index{Get\+Retainer@{Get\+Retainer}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Retainer}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heap\+Graph\+Edge}$\ast$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Retainer (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_a260c115d00b7960a08ea34c6a8bee058}
+Returns a retainer by index. \hypertarget{classv8_1_1_heap_graph_node_a9de00d0733343b4b16823654813c22a1}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Retainers\+Count@{Get\+Retainers\+Count}}
+\index{Get\+Retainers\+Count@{Get\+Retainers\+Count}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Retainers\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Heap\+Graph\+Node\+::\+Get\+Retainers\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_a9de00d0733343b4b16823654813c22a1}
+Returns retainer nodes count of the node. \hypertarget{classv8_1_1_heap_graph_node_a0145bac669b571f6ed3e04722402468c}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Retaining\+Path@{Get\+Retaining\+Path}}
+\index{Get\+Retaining\+Path@{Get\+Retaining\+Path}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Retaining\+Path}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heap\+Graph\+Path}$\ast$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Retaining\+Path (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_a0145bac669b571f6ed3e04722402468c}
+Returns a retaining path by index. \hypertarget{classv8_1_1_heap_graph_node_a9d1d049b6ecbc94d2753f10af782ba83}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Retaining\+Paths\+Count@{Get\+Retaining\+Paths\+Count}}
+\index{Get\+Retaining\+Paths\+Count@{Get\+Retaining\+Paths\+Count}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Retaining\+Paths\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Heap\+Graph\+Node\+::\+Get\+Retaining\+Paths\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_a9d1d049b6ecbc94d2753f10af782ba83}
+Returns the number of simple retaining paths from the root to the node. \hypertarget{classv8_1_1_heap_graph_node_acd3bd8860aa399ac56fa8a0229af7b85}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Self\+Size@{Get\+Self\+Size}}
+\index{Get\+Self\+Size@{Get\+Self\+Size}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Self\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Heap\+Graph\+Node\+::\+Get\+Self\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_acd3bd8860aa399ac56fa8a0229af7b85}
+Returns node\textquotesingle{}s own size, in bytes. \hypertarget{classv8_1_1_heap_graph_node_af2621cf83d9e06ce1f45a4c207f3475b}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Total\+Size@{Get\+Total\+Size}}
+\index{Get\+Total\+Size@{Get\+Total\+Size}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Total\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Heap\+Graph\+Node\+::\+Get\+Total\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_af2621cf83d9e06ce1f45a4c207f3475b}
+Returns node\textquotesingle{}s network (self + reachable nodes) size, in bytes. \hypertarget{classv8_1_1_heap_graph_node_a5e07fc855bded52229e62b855fa08c5d}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
+\subsubsection[{Get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}Type v8\+::\+Heap\+Graph\+Node\+::\+Get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_heap_graph_node_a5e07fc855bded52229e62b855fa08c5d}
+Returns node type (see Heap\+Graph\+Node\+::\+Type). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

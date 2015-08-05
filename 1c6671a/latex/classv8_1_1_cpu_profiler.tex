@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1_cpu_profiler}{}\section{v8\+:\+:Cpu\+Profiler Class Reference}
+\label{classv8_1_1_cpu_profiler}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classv8_1_1_cpu_profiler_a44a4ffe2e95237dfeb892972d14d344e}{Get\+Profiles\+Count} ()
+\item 
+static const \hyperlink{classv8_1_1_cpu_profile}{Cpu\+Profile} $\ast$ \hyperlink{classv8_1_1_cpu_profiler_aca7acdfb0f9a4e7744638dddf97d5ada}{Get\+Profile} (int index, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ security\+\_\+token=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$())
+\item 
+static const \hyperlink{classv8_1_1_cpu_profile}{Cpu\+Profile} $\ast$ \hyperlink{classv8_1_1_cpu_profiler_a8165ab53a0d9669757e64efd80d4f5d0}{Find\+Profile} (unsigned uid, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ security\+\_\+token=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$())
+\item 
+static void \hyperlink{classv8_1_1_cpu_profiler_a04c07069ea985ee67a9bcd7a97ab17fc}{Start\+Profiling} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ title)
+\item 
+static const \hyperlink{classv8_1_1_cpu_profile}{Cpu\+Profile} $\ast$ \hyperlink{classv8_1_1_cpu_profiler_ac2702be592e9218e6584f562a9ad7dd8}{Stop\+Profiling} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ title, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ security\+\_\+token=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for controlling C\+P\+U profiling. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_cpu_profiler_a8165ab53a0d9669757e64efd80d4f5d0}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Find\+Profile@{Find\+Profile}}
+\index{Find\+Profile@{Find\+Profile}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+\subsubsection[{Find\+Profile}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Cpu\+Profile}$\ast$ v8\+::\+Cpu\+Profiler\+::\+Find\+Profile (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{uid, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{security\+\_\+token = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_cpu_profiler_a8165ab53a0d9669757e64efd80d4f5d0}
+Returns a profile by uid. \hypertarget{classv8_1_1_cpu_profiler_aca7acdfb0f9a4e7744638dddf97d5ada}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Get\+Profile@{Get\+Profile}}
+\index{Get\+Profile@{Get\+Profile}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+\subsubsection[{Get\+Profile}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Cpu\+Profile}$\ast$ v8\+::\+Cpu\+Profiler\+::\+Get\+Profile (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{security\+\_\+token = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_cpu_profiler_aca7acdfb0f9a4e7744638dddf97d5ada}
+Returns a profile by index. \hypertarget{classv8_1_1_cpu_profiler_a44a4ffe2e95237dfeb892972d14d344e}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Get\+Profiles\+Count@{Get\+Profiles\+Count}}
+\index{Get\+Profiles\+Count@{Get\+Profiles\+Count}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+\subsubsection[{Get\+Profiles\+Count}]{\setlength{\rightskip}{0pt plus 5cm}static int v8\+::\+Cpu\+Profiler\+::\+Get\+Profiles\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_cpu_profiler_a44a4ffe2e95237dfeb892972d14d344e}
+A note on security tokens usage. As scripts from different origins can run inside a single \hyperlink{classv8_1_1_v8}{V8} instance, it is possible to have functions from different security contexts intermixed in a single C\+P\+U profile. To avoid exposing function names belonging to other contexts, filtering by security token is performed while obtaining profiling results. Returns the number of profiles collected (doesn\textquotesingle{}t include profiles that are being collected at the moment of call.) \hypertarget{classv8_1_1_cpu_profiler_a04c07069ea985ee67a9bcd7a97ab17fc}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Start\+Profiling@{Start\+Profiling}}
+\index{Start\+Profiling@{Start\+Profiling}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+\subsubsection[{Start\+Profiling}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Cpu\+Profiler\+::\+Start\+Profiling (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_cpu_profiler_a04c07069ea985ee67a9bcd7a97ab17fc}
+Starts collecting C\+P\+U profile. Title may be an empty string. It is allowed to have several profiles being collected at once. Attempts to start collecting several profiles with the same title are silently ignored. While collecting a profile, functions from all security contexts are included in it. The token-\/based filtering is only performed when querying for a profile. \hypertarget{classv8_1_1_cpu_profiler_ac2702be592e9218e6584f562a9ad7dd8}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Stop\+Profiling@{Stop\+Profiling}}
+\index{Stop\+Profiling@{Stop\+Profiling}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+\subsubsection[{Stop\+Profiling}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Cpu\+Profile}$\ast$ v8\+::\+Cpu\+Profiler\+::\+Stop\+Profiling (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{title, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{security\+\_\+token = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_cpu_profiler_ac2702be592e9218e6584f562a9ad7dd8}
+Stops collecting C\+P\+U profile with a given title and returns it. If the title given is empty, finishes the last profile started. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

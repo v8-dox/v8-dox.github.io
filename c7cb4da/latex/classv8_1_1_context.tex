@@ -1,0 +1,174 @@
+\hypertarget{classv8_1_1_context}{}\section{v8\+:\+:Context Class Reference}
+\label{classv8_1_1_context}\index{v8\+::\+Context@{v8\+::\+Context}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1_context_1_1_scope}{Scope}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ \hyperlink{classv8_1_1_context_af5cd9f97ef6a3307c1c21f80f4b743eb}{Global} ()
+\item 
+void \hyperlink{classv8_1_1_context_a841c7dd92eb8c57df92a268a164dea97}{Detach\+Global} ()
+\item 
+void \hyperlink{classv8_1_1_context_a288d8549547f6bdf4312f5333f60f24d}{Set\+Security\+Token} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ token)
+\item 
+void \hyperlink{classv8_1_1_context_aa9e1a14982b64fd51ab87600a287bad2}{Use\+Default\+Security\+Token} ()
+\item 
+\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_context_a8e71e658633518ca7718c0f6e938c6a9}{Get\+Security\+Token} ()
+\item 
+void \hyperlink{classv8_1_1_context_a6995c49d9897eb49053f07874b825133}{Enter} ()
+\item 
+void \hyperlink{classv8_1_1_context_a2db09d4fefb26023a40d88972a4c1599}{Exit} ()
+\item 
+bool \hyperlink{classv8_1_1_context_aadec400a5da1e79e58a8770fd706b9a0}{Has\+Out\+Of\+Memory\+Exception} ()
+\item 
+void \hyperlink{classv8_1_1_context_aaf39e5adc0ef4081d591952d17c6ada5}{Set\+Data} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ data)
+\item 
+\hypertarget{classv8_1_1_context_a0c5edad65549bf11edce29bfa3bc3aef}{}\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Get\+Data} ()\label{classv8_1_1_context_a0c5edad65549bf11edce29bfa3bc3aef}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1_persistent}{Persistent}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ \hyperlink{classv8_1_1_context_af4ea79b695e75849211ae26e28f8b517}{New} (\hyperlink{classv8_1_1_extension_configuration}{Extension\+Configuration} $\ast$extensions=0, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_object_template}{Object\+Template} $>$ global\+\_\+template=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_object_template}{Object\+Template} $>$(), \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ global\+\_\+object=\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$())
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ \hyperlink{classv8_1_1_context_accfc7365efba8bce18cbf9df1c1fc79d}{Get\+Entered} ()
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ \hyperlink{classv8_1_1_context_aca2df9d70e51f241d733f4ad0eb46401}{Get\+Current} ()
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ \hyperlink{classv8_1_1_context_ad795cbbb842307a57d656dd9690fadf2}{Get\+Calling} ()
+\item 
+static bool \hyperlink{classv8_1_1_context_a5cf983417f9cfc6e1dd9228eccb78d31}{In\+Context} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_context_aeceedf6e1a7d48a588516ce2b1983d6f}{}class {\bfseries Value}\label{classv8_1_1_context_aeceedf6e1a7d48a588516ce2b1983d6f}
+
+\item 
+\hypertarget{classv8_1_1_context_ae98eaa96d1b24e087f3c3e372fb09dce}{}class {\bfseries Script}\label{classv8_1_1_context_ae98eaa96d1b24e087f3c3e372fb09dce}
+
+\item 
+\hypertarget{classv8_1_1_context_a0720b5f434e636e22a3ed34f847eec57}{}class {\bfseries Object}\label{classv8_1_1_context_a0720b5f434e636e22a3ed34f847eec57}
+
+\item 
+\hypertarget{classv8_1_1_context_ab7194606aa12931e96f8f5448d418ed0}{}class {\bfseries Function}\label{classv8_1_1_context_ab7194606aa12931e96f8f5448d418ed0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sandboxed execution context with its own set of built-\/in objects and functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_context_a841c7dd92eb8c57df92a268a164dea97}{}\index{v8\+::\+Context@{v8\+::\+Context}!Detach\+Global@{Detach\+Global}}
+\index{Detach\+Global@{Detach\+Global}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Detach\+Global}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Detach\+Global (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_a841c7dd92eb8c57df92a268a164dea97}
+Detaches the global object from its context before the global object can be reused to create a new context. \hypertarget{classv8_1_1_context_a6995c49d9897eb49053f07874b825133}{}\index{v8\+::\+Context@{v8\+::\+Context}!Enter@{Enter}}
+\index{Enter@{Enter}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Enter}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Enter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_a6995c49d9897eb49053f07874b825133}
+Enter this context. After entering a context, all code compiled and run is compiled and run in this context. If another context is already entered, this old context is saved so it can be restored when the new context is exited. \hypertarget{classv8_1_1_context_a2db09d4fefb26023a40d88972a4c1599}{}\index{v8\+::\+Context@{v8\+::\+Context}!Exit@{Exit}}
+\index{Exit@{Exit}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Exit}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_a2db09d4fefb26023a40d88972a4c1599}
+Exit this context. Exiting the current context restores the context that was in place when entering the current context. \hypertarget{classv8_1_1_context_ad795cbbb842307a57d656dd9690fadf2}{}\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Calling@{Get\+Calling}}
+\index{Get\+Calling@{Get\+Calling}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Get\+Calling}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\+::\+Context\+::\+Get\+Calling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_context_ad795cbbb842307a57d656dd9690fadf2}
+Returns the context of the calling Java\+Script code. That is the context of the top-\/most Java\+Script frame. If there are no Java\+Script frames an empty handle is returned. \hypertarget{classv8_1_1_context_aca2df9d70e51f241d733f4ad0eb46401}{}\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Current@{Get\+Current}}
+\index{Get\+Current@{Get\+Current}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Get\+Current}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\+::\+Context\+::\+Get\+Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_context_aca2df9d70e51f241d733f4ad0eb46401}
+Returns the context that is on the top of the stack. \hypertarget{classv8_1_1_context_accfc7365efba8bce18cbf9df1c1fc79d}{}\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Entered@{Get\+Entered}}
+\index{Get\+Entered@{Get\+Entered}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Get\+Entered}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\+::\+Context\+::\+Get\+Entered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_context_accfc7365efba8bce18cbf9df1c1fc79d}
+Returns the last entered context. \hypertarget{classv8_1_1_context_a8e71e658633518ca7718c0f6e938c6a9}{}\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Security\+Token@{Get\+Security\+Token}}
+\index{Get\+Security\+Token@{Get\+Security\+Token}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Get\+Security\+Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Value}$>$ v8\+::\+Context\+::\+Get\+Security\+Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_a8e71e658633518ca7718c0f6e938c6a9}
+Returns the security token of this context. \hypertarget{classv8_1_1_context_af5cd9f97ef6a3307c1c21f80f4b743eb}{}\index{v8\+::\+Context@{v8\+::\+Context}!Global@{Global}}
+\index{Global@{Global}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Global}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Object}$>$ v8\+::\+Context\+::\+Global (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_af5cd9f97ef6a3307c1c21f80f4b743eb}
+Returns the global object of the context. \hypertarget{classv8_1_1_context_aadec400a5da1e79e58a8770fd706b9a0}{}\index{v8\+::\+Context@{v8\+::\+Context}!Has\+Out\+Of\+Memory\+Exception@{Has\+Out\+Of\+Memory\+Exception}}
+\index{Has\+Out\+Of\+Memory\+Exception@{Has\+Out\+Of\+Memory\+Exception}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Has\+Out\+Of\+Memory\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Context\+::\+Has\+Out\+Of\+Memory\+Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_aadec400a5da1e79e58a8770fd706b9a0}
+Returns true if the context has experienced an out of memory situation. \hypertarget{classv8_1_1_context_a5cf983417f9cfc6e1dd9228eccb78d31}{}\index{v8\+::\+Context@{v8\+::\+Context}!In\+Context@{In\+Context}}
+\index{In\+Context@{In\+Context}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{In\+Context}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\+::\+Context\+::\+In\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_context_a5cf983417f9cfc6e1dd9228eccb78d31}
+Returns true if \hyperlink{classv8_1_1_v8}{V8} has a current context. \hypertarget{classv8_1_1_context_af4ea79b695e75849211ae26e28f8b517}{}\index{v8\+::\+Context@{v8\+::\+Context}!New@{New}}
+\index{New@{New}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Persistent}$<${\bf Context}$>$ v8\+::\+Context\+::\+New (
+\begin{DoxyParamCaption}
+\item[{{\bf Extension\+Configuration} $\ast$}]{extensions = {\ttfamily 0}, }
+\item[{{\bf Handle}$<$ {\bf Object\+Template} $>$}]{global\+\_\+template = {\ttfamily {\bf Handle}$<$~{\bf Object\+Template}~$>$()}, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{global\+\_\+object = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_context_af4ea79b695e75849211ae26e28f8b517}
+Creates a new context. \hypertarget{classv8_1_1_context_aaf39e5adc0ef4081d591952d17c6ada5}{}\index{v8\+::\+Context@{v8\+::\+Context}!Set\+Data@{Set\+Data}}
+\index{Set\+Data@{Set\+Data}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Set\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Set\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{data}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_aaf39e5adc0ef4081d591952d17c6ada5}
+Associate an additional data object with the context. This is mainly used with the debugger to provide additional information on the context through the debugger A\+P\+I. \hypertarget{classv8_1_1_context_a288d8549547f6bdf4312f5333f60f24d}{}\index{v8\+::\+Context@{v8\+::\+Context}!Set\+Security\+Token@{Set\+Security\+Token}}
+\index{Set\+Security\+Token@{Set\+Security\+Token}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Set\+Security\+Token}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Set\+Security\+Token (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{token}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_a288d8549547f6bdf4312f5333f60f24d}
+Sets the security token for the context. To access an object in another context, the security tokens must match. \hypertarget{classv8_1_1_context_aa9e1a14982b64fd51ab87600a287bad2}{}\index{v8\+::\+Context@{v8\+::\+Context}!Use\+Default\+Security\+Token@{Use\+Default\+Security\+Token}}
+\index{Use\+Default\+Security\+Token@{Use\+Default\+Security\+Token}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection[{Use\+Default\+Security\+Token}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Use\+Default\+Security\+Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_context_aa9e1a14982b64fd51ab87600a287bad2}
+Restores the security token to the default value. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

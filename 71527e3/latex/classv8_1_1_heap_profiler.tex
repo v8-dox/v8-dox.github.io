@@ -1,0 +1,99 @@
+\hypertarget{classv8_1_1_heap_profiler}{}\section{v8\+:\+:Heap\+Profiler Class Reference}
+\label{classv8_1_1_heap_profiler}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1_retained_object_info}{Retained\+Object\+Info} $\ast$($\ast$ \hyperlink{classv8_1_1_heap_profiler_a696d8d6590879eeb5a4ad2814eafb599}{Wrapper\+Info\+Callback}) (uint16\+\_\+t class\+\_\+id, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ wrapper)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classv8_1_1_heap_profiler_a739a665268bba6e640890464ccb60d26}{Get\+Snapshots\+Count} ()
+\item 
+static const \hyperlink{classv8_1_1_heap_snapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1_heap_profiler_ad547f406908880cc7dc0453fe83cc216}{Get\+Snapshot} (int index)
+\item 
+static const \hyperlink{classv8_1_1_heap_snapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1_heap_profiler_a1f77545176060f21239bd1a78e3967a7}{Find\+Snapshot} (unsigned uid)
+\item 
+static const \hyperlink{classv8_1_1_heap_snapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1_heap_profiler_a39e6df3b54335e183ca57edae1dc78e7}{Take\+Snapshot} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ title, Heap\+Snapshot\+::\+Type type=Heap\+Snapshot\+::k\+Full, \hyperlink{classv8_1_1_activity_control}{Activity\+Control} $\ast$control=N\+U\+L\+L)
+\item 
+static void \hyperlink{classv8_1_1_heap_profiler_af01cf79839c61b5cc6a92c422fd9875f}{Delete\+All\+Snapshots} ()
+\item 
+static void \hyperlink{classv8_1_1_heap_profiler_ae83d1fc891a24ecafdca44fca2dbe07a}{Define\+Wrapper\+Class} (uint16\+\_\+t class\+\_\+id, \hyperlink{classv8_1_1_heap_profiler_a696d8d6590879eeb5a4ad2814eafb599}{Wrapper\+Info\+Callback} callback)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint16\+\_\+t \hyperlink{classv8_1_1_heap_profiler_a272c9af3ea5cd90a2737af3d22a7eb78}{k\+Persistent\+Handle\+No\+Class\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for controlling heap profiling. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classv8_1_1_heap_profiler_a696d8d6590879eeb5a4ad2814eafb599}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Wrapper\+Info\+Callback@{Wrapper\+Info\+Callback}}
+\index{Wrapper\+Info\+Callback@{Wrapper\+Info\+Callback}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Wrapper\+Info\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Retained\+Object\+Info}$\ast$($\ast$ v8\+::\+Heap\+Profiler\+::\+Wrapper\+Info\+Callback) (uint16\+\_\+t class\+\_\+id, {\bf Handle}$<$ {\bf Value} $>$ wrapper)}\label{classv8_1_1_heap_profiler_a696d8d6590879eeb5a4ad2814eafb599}
+Callback function invoked for obtaining \hyperlink{classv8_1_1_retained_object_info}{Retained\+Object\+Info} for the given Java\+Script wrapper object. It is prohibited to enter \hyperlink{classv8_1_1_v8}{V8} while the callback is running\+: only getters on the handle and Get\+Pointer\+From\+Internal\+Field on the objects are allowed. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_heap_profiler_ae83d1fc891a24ecafdca44fca2dbe07a}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Define\+Wrapper\+Class@{Define\+Wrapper\+Class}}
+\index{Define\+Wrapper\+Class@{Define\+Wrapper\+Class}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Define\+Wrapper\+Class}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Heap\+Profiler\+::\+Define\+Wrapper\+Class (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{class\+\_\+id, }
+\item[{{\bf Wrapper\+Info\+Callback}}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_ae83d1fc891a24ecafdca44fca2dbe07a}
+Binds a callback to embedder\textquotesingle{}s class I\+D. \hypertarget{classv8_1_1_heap_profiler_af01cf79839c61b5cc6a92c422fd9875f}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Delete\+All\+Snapshots@{Delete\+All\+Snapshots}}
+\index{Delete\+All\+Snapshots@{Delete\+All\+Snapshots}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Delete\+All\+Snapshots}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Heap\+Profiler\+::\+Delete\+All\+Snapshots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_af01cf79839c61b5cc6a92c422fd9875f}
+Deletes all snapshots taken. All previously returned pointers to snapshots and their contents become invalid after this call. \hypertarget{classv8_1_1_heap_profiler_a1f77545176060f21239bd1a78e3967a7}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Find\+Snapshot@{Find\+Snapshot}}
+\index{Find\+Snapshot@{Find\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Find\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Find\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{uid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_a1f77545176060f21239bd1a78e3967a7}
+Returns a profile by uid. \hypertarget{classv8_1_1_heap_profiler_ad547f406908880cc7dc0453fe83cc216}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Snapshot@{Get\+Snapshot}}
+\index{Get\+Snapshot@{Get\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Get\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Get\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_ad547f406908880cc7dc0453fe83cc216}
+Returns a snapshot by index. \hypertarget{classv8_1_1_heap_profiler_a739a665268bba6e640890464ccb60d26}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Snapshots\+Count@{Get\+Snapshots\+Count}}
+\index{Get\+Snapshots\+Count@{Get\+Snapshots\+Count}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Get\+Snapshots\+Count}]{\setlength{\rightskip}{0pt plus 5cm}static int v8\+::\+Heap\+Profiler\+::\+Get\+Snapshots\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_a739a665268bba6e640890464ccb60d26}
+Returns the number of snapshots taken. \hypertarget{classv8_1_1_heap_profiler_a39e6df3b54335e183ca57edae1dc78e7}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Take\+Snapshot@{Take\+Snapshot}}
+\index{Take\+Snapshot@{Take\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Take\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Take\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{title, }
+\item[{Heap\+Snapshot\+::\+Type}]{type = {\ttfamily HeapSnapshot\+:\+:kFull}, }
+\item[{{\bf Activity\+Control} $\ast$}]{control = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_a39e6df3b54335e183ca57edae1dc78e7}
+Takes a heap snapshot and returns it. Title may be an empty string. See Heap\+Snapshot\+::\+Type for types description. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classv8_1_1_heap_profiler_a272c9af3ea5cd90a2737af3d22a7eb78}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!k\+Persistent\+Handle\+No\+Class\+Id@{k\+Persistent\+Handle\+No\+Class\+Id}}
+\index{k\+Persistent\+Handle\+No\+Class\+Id@{k\+Persistent\+Handle\+No\+Class\+Id}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{k\+Persistent\+Handle\+No\+Class\+Id}]{\setlength{\rightskip}{0pt plus 5cm}const uint16\+\_\+t v8\+::\+Heap\+Profiler\+::k\+Persistent\+Handle\+No\+Class\+Id = 0\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_a272c9af3ea5cd90a2737af3d22a7eb78}
+Default value of persistent handle class I\+D. Must not be used to define a class. Can be used to reset a class of a persistent handle. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

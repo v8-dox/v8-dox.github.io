@@ -1,0 +1,255 @@
+\hypertarget{classv8_1_1_persistent}{}\section{v8\+:\+:Persistent$<$ T, M $>$ Class Template Reference}
+\label{classv8_1_1_persistent}\index{v8\+::\+Persistent$<$ T, M $>$@{v8\+::\+Persistent$<$ T, M $>$}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent_a5ce14612215393683d814056015a102d}{Persistent} ()
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent_a37ec0a2c08eea4b397272a1a0fe0138c}{Persistent} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ that)
+\item 
+{\footnotesize template$<$class S , class M2 $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent_aaf9eb7c4e6d0ef2c81a2c08238653578}{Persistent} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&that)
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent_a22331e91572784cd5ed5519739bb50c7}{Persistent} (const \hyperlink{classv8_1_1_persistent}{Persistent} \&that)
+\item 
+\hypertarget{classv8_1_1_persistent_ace17fd143fb6414d305871bf0a53ef57}{}{\footnotesize template$<$class S , class M2 $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E {\bfseries Persistent} (const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&that)\label{classv8_1_1_persistent_ace17fd143fb6414d305871bf0a53ef57}
+
+\item 
+\hypertarget{classv8_1_1_persistent_aa1db9923b3212fb8ce57868217858b39}{}V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent}{Persistent} \& {\bfseries operator=} (const \hyperlink{classv8_1_1_persistent}{Persistent} \&that)\label{classv8_1_1_persistent_aa1db9923b3212fb8ce57868217858b39}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a11104ee8739cb1f25e40fd17d746b48f}{}{\footnotesize template$<$class S , class M2 $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent}{Persistent} \& {\bfseries operator=} (const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&that)\label{classv8_1_1_persistent_a11104ee8739cb1f25e40fd17d746b48f}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent_a7d4d2bebfe3919e447e22adc15464e25}{$\sim$\+Persistent} ()
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1_persistent_a5912223c89179157015246728223c051}{Reset} ()
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1_persistent_a415a9da7e5a5b89de59503b3619e0358}{Reset} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ \&other)
+\item 
+{\footnotesize template$<$class S , class M2 $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1_persistent_a276ec37d0314920f811619edc2344736}{Reset} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&other)
+\item 
+\hypertarget{classv8_1_1_persistent_aced3795228cff3439e80a83de63248a7}{}{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (\char`\"{}Use \hyperlink{classv8_1_1_persistent_a5912223c89179157015246728223c051}{Reset} instead\char`\"{}, V8\+\_\+\+I\+N\+L\+I\+N\+E void Dispose())\label{classv8_1_1_persistent_aced3795228cff3439e80a83de63248a7}
+
+\item 
+\hypertarget{classv8_1_1_persistent_ac98fb0185b3800b9d18d3b8927e73fcd}{}V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries Is\+Empty} () const \label{classv8_1_1_persistent_ac98fb0185b3800b9d18d3b8927e73fcd}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a8d2c96e559ac88f6201d98cb2a626808}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S $>$ \& {\bfseries As} ()\label{classv8_1_1_persistent_a8d2c96e559ac88f6201d98cb2a626808}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a41962af8e4363b8596ad18f0a48732bd}{}{\footnotesize template$<$class S , class M2 $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator==} (const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&that) const \label{classv8_1_1_persistent_a41962af8e4363b8596ad18f0a48732bd}
+
+\item 
+\hypertarget{classv8_1_1_persistent_aeff86d7ea8a95aa363e507babc873bd3}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator==} (const \hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ \&that) const \label{classv8_1_1_persistent_aeff86d7ea8a95aa363e507babc873bd3}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a54c04c2cfdb13a7af2ba5de1591cb941}{}{\footnotesize template$<$class S , class M2 $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator!=} (const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&that) const \label{classv8_1_1_persistent_a54c04c2cfdb13a7af2ba5de1591cb941}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a391f3d39db1f9950a89b97509411f76d}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator!=} (const \hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ \&that) const \label{classv8_1_1_persistent_a391f3d39db1f9950a89b97509411f76d}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a64018567a9080bfd9e63435a2e8bb97d}{}{\footnotesize template$<$typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1_weak_callback_data}{Weak\+Callback\+Data}$<$ T, P $>$\+::Callback callback)\label{classv8_1_1_persistent_a64018567a9080bfd9e63435a2e8bb97d}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a897423b1a6e79f1f01330fb8c7c1fbd0}{}{\footnotesize template$<$typename S , typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1_weak_callback_data}{Weak\+Callback\+Data}$<$ S, P $>$\+::Callback callback)\label{classv8_1_1_persistent_a897423b1a6e79f1f01330fb8c7c1fbd0}
+
+\item 
+\hypertarget{classv8_1_1_persistent_ab6bd795d0257c5bd44500a9c616a6679}{}{\footnotesize template$<$typename S , typename P $>$ }\\{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (\char`\"{}Use Set\+Weak instead\char`\"{}, V8\+\_\+\+I\+N\+L\+I\+N\+E void Make\+Weak(P $\ast$parameter, typename \hyperlink{classv8_1_1_weak_reference_callbacks}{Weak\+Reference\+Callbacks}$<$ S, P $>$\+::Revivable callback))\label{classv8_1_1_persistent_ab6bd795d0257c5bd44500a9c616a6679}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a468f93b10323db8e2b379e016f1c14dc}{}{\footnotesize template$<$typename P $>$ }\\{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (\char`\"{}Use Set\+Weak instead\char`\"{}, V8\+\_\+\+I\+N\+L\+I\+N\+E void Make\+Weak(P $\ast$parameter, typename \hyperlink{classv8_1_1_weak_reference_callbacks}{Weak\+Reference\+Callbacks}$<$ T, P $>$\+::Revivable callback))\label{classv8_1_1_persistent_a468f93b10323db8e2b379e016f1c14dc}
+
+\item 
+\hypertarget{classv8_1_1_persistent_af1a1228291c5272f224b41080b5a2e45}{}V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Clear\+Weak} ()\label{classv8_1_1_persistent_af1a1228291c5272f224b41080b5a2e45}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1_persistent_ad2d7495af17c3ae917f1fbb8c36c9f86}{Mark\+Independent} ()
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1_persistent_a94fd3d423f3e437e9d880e6f7271f7f1}{Mark\+Partially\+Dependent} ()
+\item 
+\hypertarget{classv8_1_1_persistent_a4789d71037fe5c69dc282e7f3f4e5ac7}{}V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries Is\+Independent} () const \label{classv8_1_1_persistent_a4789d71037fe5c69dc282e7f3f4e5ac7}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{classv8_1_1_persistent_ae4fe9f57506755db8c4e1e1babafce71}{Is\+Near\+Death} () const 
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E bool \hyperlink{classv8_1_1_persistent_a088127d75c3c6405f76e8208c9b22204}{Is\+Weak} () const 
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1_persistent_ae13a65ef19dd410fd8eb1ef970139149}{Set\+Wrapper\+Class\+Id} (uint16\+\_\+t class\+\_\+id)
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E uint16\+\_\+t \hyperlink{classv8_1_1_persistent_ac5d361fcc04f2f02e30f116e3c3a9699}{Wrapper\+Class\+Id} () const 
+\item 
+\hypertarget{classv8_1_1_persistent_a71d71df553603c5a96d5e5a7eb37ee6a}{}{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (\char`\"{}This will be removed\char`\"{}, V8\+\_\+\+I\+N\+L\+I\+N\+E T $\ast$Clear\+And\+Leak())\label{classv8_1_1_persistent_a71d71df553603c5a96d5e5a7eb37ee6a}
+
+\item 
+\hypertarget{classv8_1_1_persistent_af776992b2486ea731e92ffc059b02a08}{}{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (\char`\"{}This will be removed\char`\"{}, V8\+\_\+\+I\+N\+L\+I\+N\+E void Clear())\label{classv8_1_1_persistent_af776992b2486ea731e92ffc059b02a08}
+
+\item 
+\hypertarget{classv8_1_1_persistent_ace50a178e3b772f75611e22e41fae974}{}{\footnotesize template$<$class S , class M2 $>$ }\\void {\bfseries Copy} (const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&that)\label{classv8_1_1_persistent_ace50a178e3b772f75611e22e41fae974}
+
+\item 
+\hypertarget{classv8_1_1_persistent_abe81d9e008a4becee09bcc531786eda4}{}{\footnotesize template$<$class S $>$ }\\void {\bfseries Reset} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ \&other)\label{classv8_1_1_persistent_abe81d9e008a4becee09bcc531786eda4}
+
+\item 
+\hypertarget{classv8_1_1_persistent_ab60cedeaccb2d37ab270e8b67a4668e3}{}{\footnotesize template$<$class S , class M2 $>$ }\\void {\bfseries Reset} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1_persistent}{Persistent}$<$ S, M2 $>$ \&other)\label{classv8_1_1_persistent_ab60cedeaccb2d37ab270e8b67a4668e3}
+
+\item 
+\hypertarget{classv8_1_1_persistent_ab828a612fde16d07c48909266912bb9b}{}{\footnotesize template$<$typename S , typename P $>$ }\\void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1_weak_callback_data}{Weak\+Callback\+Data}$<$ S, P $>$\+::Callback callback)\label{classv8_1_1_persistent_ab828a612fde16d07c48909266912bb9b}
+
+\item 
+\hypertarget{classv8_1_1_persistent_af7837e06a2fbed3bdb2cc83f3b953ec7}{}{\footnotesize template$<$typename P $>$ }\\void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1_weak_callback_data}{Weak\+Callback\+Data}$<$ T, P $>$\+::Callback callback)\label{classv8_1_1_persistent_af7837e06a2fbed3bdb2cc83f3b953ec7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_persistent_aa20fd9af0b410df9e887689ef97c28dd}{}{\footnotesize template$<$class S $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1_persistent}{Persistent}$<$ T $>$ \& {\bfseries Cast} (\hyperlink{classv8_1_1_persistent}{Persistent}$<$ S $>$ \&that)\label{classv8_1_1_persistent_aa20fd9af0b410df9e887689ef97c28dd}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_persistent_aba4f0964bdacf2bbf62cf876e5d28d0a}{}class {\bfseries Isolate}\label{classv8_1_1_persistent_aba4f0964bdacf2bbf62cf876e5d28d0a}
+
+\item 
+\hypertarget{classv8_1_1_persistent_abc0f7da619e9e72510dc07ed7b5ff6d8}{}class {\bfseries Utils}\label{classv8_1_1_persistent_abc0f7da619e9e72510dc07ed7b5ff6d8}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a67ca1a2d91273eaf85fb3d23ba8ce984}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Handle}\label{classv8_1_1_persistent_a67ca1a2d91273eaf85fb3d23ba8ce984}
+
+\item 
+\hypertarget{classv8_1_1_persistent_afb872edb4aac7ba55f0da004113aa2b0}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Local}\label{classv8_1_1_persistent_afb872edb4aac7ba55f0da004113aa2b0}
+
+\item 
+\hypertarget{classv8_1_1_persistent_ad845ec8872174be0a9ca9a3dd1898d30}{}{\footnotesize template$<$class F1 , class F2 $>$ }\\class {\bfseries Persistent}\label{classv8_1_1_persistent_ad845ec8872174be0a9ca9a3dd1898d30}
+
+\item 
+\hypertarget{classv8_1_1_persistent_a53f604d3d6f2dc0647df33c9979f116a}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Return\+Value}\label{classv8_1_1_persistent_a53f604d3d6f2dc0647df33c9979f116a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, class M$>$class v8\+::\+Persistent$<$ T, M $>$}
+
+An object reference that is independent of any handle scope. Where a \hyperlink{classv8_1_1_local}{Local} handle only lives as long as the \hyperlink{classv8_1_1_handle_scope}{Handle\+Scope} in which it was allocated, a \hyperlink{classv8_1_1_persistent}{Persistent} handle remains valid until it is explicitly disposed.
+
+A persistent handle contains a reference to a storage cell within the \hyperlink{namespacev8}{v8} engine which holds an object value and which is updated by the garbage collector whenever the object is moved. A new storage cell can be created using the constructor or \hyperlink{classv8_1_1_persistent_a5912223c89179157015246728223c051}{Persistent\+::\+Reset} and existing handles can be disposed using \hyperlink{classv8_1_1_persistent_a5912223c89179157015246728223c051}{Persistent\+::\+Reset}.
+
+Copy, assignment and destructor bevavior is controlled by the traits class M. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classv8_1_1_persistent_a5ce14612215393683d814056015a102d}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
+\index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Persistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent}$<$ T, M $>$\+::{\bf Persistent} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_a5ce14612215393683d814056015a102d}
+A \hyperlink{classv8_1_1_persistent}{Persistent} with no storage cell. \hypertarget{classv8_1_1_persistent_a37ec0a2c08eea4b397272a1a0fe0138c}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
+\index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Persistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent}$<$ T, M $>$\+::{\bf Persistent} (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Handle}$<$ S $>$}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_a37ec0a2c08eea4b397272a1a0fe0138c}
+Construct a \hyperlink{classv8_1_1_persistent}{Persistent} from a \hyperlink{classv8_1_1_handle}{Handle}. When the \hyperlink{classv8_1_1_handle}{Handle} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. \hypertarget{classv8_1_1_persistent_aaf9eb7c4e6d0ef2c81a2c08238653578}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
+\index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Persistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ template$<$class S , class M2 $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent}$<$ T, M $>$\+::{\bf Persistent} (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{const {\bf Persistent}$<$ S, M2 $>$ \&}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_aaf9eb7c4e6d0ef2c81a2c08238653578}
+Construct a \hyperlink{classv8_1_1_persistent}{Persistent} from a \hyperlink{classv8_1_1_persistent}{Persistent}. When the \hyperlink{classv8_1_1_persistent}{Persistent} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. \hypertarget{classv8_1_1_persistent_a22331e91572784cd5ed5519739bb50c7}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
+\index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Persistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent}$<$ T, M $>$\+::{\bf Persistent} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Persistent}$<$ T, M $>$ \&}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_a22331e91572784cd5ed5519739bb50c7}
+The copy constructors and assignment operator create a \hyperlink{classv8_1_1_persistent}{Persistent} exactly as the \hyperlink{classv8_1_1_persistent}{Persistent} constructor, but the Copy function from the traits class is called, allowing the setting of flags based on the copied \hyperlink{classv8_1_1_persistent}{Persistent}. \hypertarget{classv8_1_1_persistent_a7d4d2bebfe3919e447e22adc15464e25}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!````~Persistent@{$\sim$\+Persistent}}
+\index{````~Persistent@{$\sim$\+Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{$\sim$\+Persistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent}$<$ T, M $>$\+::$\sim${\bf Persistent} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_persistent_a7d4d2bebfe3919e447e22adc15464e25}
+The destructor will dispose the \hyperlink{classv8_1_1_persistent}{Persistent} based on the k\+Reset\+In\+Destructor flags in the traits class. Since not calling dispose can result in a memory leak, it is recommended to always set this flag. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_persistent_ae4fe9f57506755db8c4e1e1babafce71}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Is\+Near\+Death@{Is\+Near\+Death}}
+\index{Is\+Near\+Death@{Is\+Near\+Death}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Is\+Near\+Death}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class M $>$ bool {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Is\+Near\+Death (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_persistent_ae4fe9f57506755db8c4e1e1babafce71}
+Checks if the handle holds the only reference to an object. \hypertarget{classv8_1_1_persistent_a088127d75c3c6405f76e8208c9b22204}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Is\+Weak@{Is\+Weak}}
+\index{Is\+Weak@{Is\+Weak}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Is\+Weak}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class M $>$ bool {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Is\+Weak (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_persistent_a088127d75c3c6405f76e8208c9b22204}
+Returns true if the handle\textquotesingle{}s reference is weak. \hypertarget{classv8_1_1_persistent_ad2d7495af17c3ae917f1fbb8c36c9f86}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Mark\+Independent@{Mark\+Independent}}
+\index{Mark\+Independent@{Mark\+Independent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Mark\+Independent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class M $>$ void {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Mark\+Independent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_persistent_ad2d7495af17c3ae917f1fbb8c36c9f86}
+Marks the reference to this object independent. Garbage collector is free to ignore any object groups containing this object. Weak callback for an independent handle should not assume that it will be preceded by a global G\+C prologue callback or followed by a global G\+C epilogue callback. \hypertarget{classv8_1_1_persistent_a94fd3d423f3e437e9d880e6f7271f7f1}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Mark\+Partially\+Dependent@{Mark\+Partially\+Dependent}}
+\index{Mark\+Partially\+Dependent@{Mark\+Partially\+Dependent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Mark\+Partially\+Dependent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class M $>$ void {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Mark\+Partially\+Dependent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_persistent_a94fd3d423f3e437e9d880e6f7271f7f1}
+Marks the reference to this object partially dependent. Partially dependent handles only depend on other partially dependent handles and these dependencies are provided through object groups. It provides a way to build smaller object groups for young objects that represent only a subset of all external dependencies. This mark is automatically cleared after each garbage collection. \hypertarget{classv8_1_1_persistent_a5912223c89179157015246728223c051}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Reset@{Reset}}
+\index{Reset@{Reset}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class M $>$ void {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_persistent_a5912223c89179157015246728223c051}
+If non-\/empty, destroy the underlying storage cell Is\+Empty() will return true after this call. \hypertarget{classv8_1_1_persistent_a415a9da7e5a5b89de59503b3619e0358}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Reset@{Reset}}
+\index{Reset@{Reset}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{const {\bf Handle}$<$ S $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_persistent_a415a9da7e5a5b89de59503b3619e0358}
+If non-\/empty, destroy the underlying storage cell and create a new one with the contents of other if other is non empty \hypertarget{classv8_1_1_persistent_a276ec37d0314920f811619edc2344736}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Reset@{Reset}}
+\index{Reset@{Reset}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ template$<$class S , class M2 $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{const {\bf Persistent}$<$ S, M2 $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_persistent_a276ec37d0314920f811619edc2344736}
+If non-\/empty, destroy the underlying storage cell and create a new one with the contents of other if other is non empty \hypertarget{classv8_1_1_persistent_ae13a65ef19dd410fd8eb1ef970139149}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Set\+Wrapper\+Class\+Id@{Set\+Wrapper\+Class\+Id}}
+\index{Set\+Wrapper\+Class\+Id@{Set\+Wrapper\+Class\+Id}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Set\+Wrapper\+Class\+Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class M $>$ void {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Set\+Wrapper\+Class\+Id (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{class\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_persistent_ae13a65ef19dd410fd8eb1ef970139149}
+Assigns a wrapper class I\+D to the handle. See \hyperlink{classv8_1_1_retained_object_info}{Retained\+Object\+Info} interface description in \hyperlink{v8-profiler_8h_source}{v8-\/profiler.\+h} for details. \hypertarget{classv8_1_1_persistent_ac5d361fcc04f2f02e30f116e3c3a9699}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Wrapper\+Class\+Id@{Wrapper\+Class\+Id}}
+\index{Wrapper\+Class\+Id@{Wrapper\+Class\+Id}!v8\+::\+Persistent@{v8\+::\+Persistent}}
+\subsubsection[{Wrapper\+Class\+Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class M $>$ uint16\+\_\+t {\bf v8\+::\+Persistent}$<$ T, M $>$\+::Wrapper\+Class\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_persistent_ac5d361fcc04f2f02e30f116e3c3a9699}
+Returns the class I\+D previously assigned to this handle or 0 if no class I\+D was previously assigned. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

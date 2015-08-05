@@ -1,0 +1,260 @@
+\hypertarget{classv8_1_1_string}{}\section{v8\+:\+:String Class Reference}
+\label{classv8_1_1_string}\index{v8\+::\+String@{v8\+::\+String}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1_string}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1_string_1_1_ascii_value}{Ascii\+Value}
+\item 
+class \hyperlink{classv8_1_1_string_1_1_external_ascii_string_resource}{External\+Ascii\+String\+Resource}
+\item 
+class \hyperlink{classv8_1_1_string_1_1_external_string_resource}{External\+String\+Resource}
+\item 
+class \hyperlink{classv8_1_1_string_1_1_external_string_resource_base}{External\+String\+Resource\+Base}
+\item 
+class \hyperlink{classv8_1_1_string_1_1_utf8_value}{Utf8\+Value}
+\item 
+class \hyperlink{classv8_1_1_string_1_1_value}{Value}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classv8_1_1_string_a9ce7f1458ffd08f8eb2b9c8dc056e616}{Write\+Options} \{ {\bfseries N\+O\+\_\+\+O\+P\+T\+I\+O\+N\+S} = 0, 
+{\bfseries H\+I\+N\+T\+\_\+\+M\+A\+N\+Y\+\_\+\+W\+R\+I\+T\+E\+S\+\_\+\+E\+X\+P\+E\+C\+T\+E\+D} = 1, 
+{\bfseries N\+O\+\_\+\+N\+U\+L\+L\+\_\+\+T\+E\+R\+M\+I\+N\+A\+T\+I\+O\+N} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\+E\+X\+P\+O\+R\+T int \hyperlink{classv8_1_1_string_a812edd5c3beffb3a08ff94103ac31f23}{Length} () const 
+\item 
+V8\+E\+X\+P\+O\+R\+T int \hyperlink{classv8_1_1_string_a11d12cdcd49afe5a8bb12646fd8ec17a}{Utf8\+Length} () const 
+\item 
+\hypertarget{classv8_1_1_string_acb1144b0652bc44345bf2d52b1455c05}{}V8\+E\+X\+P\+O\+R\+T int {\bfseries Write} (uint16\+\_\+t $\ast$buffer, int start=0, int length=-\/1, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+N\+S) const \label{classv8_1_1_string_acb1144b0652bc44345bf2d52b1455c05}
+
+\item 
+\hypertarget{classv8_1_1_string_af60c183b13ca1caebc7ea5d4bde593e6}{}V8\+E\+X\+P\+O\+R\+T int {\bfseries Write\+Ascii} (char $\ast$buffer, int start=0, int length=-\/1, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+N\+S) const \label{classv8_1_1_string_af60c183b13ca1caebc7ea5d4bde593e6}
+
+\item 
+\hypertarget{classv8_1_1_string_ae8dca2507fe29952310f6ed65bcb58a4}{}V8\+E\+X\+P\+O\+R\+T int {\bfseries Write\+Utf8} (char $\ast$buffer, int length=-\/1, int $\ast$nchars\+\_\+ref=N\+U\+L\+L, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+N\+S) const \label{classv8_1_1_string_ae8dca2507fe29952310f6ed65bcb58a4}
+
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_string_a945ba040efb2bffb14c04eda492767ac}{Is\+External} () const 
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_string_a1b136ebc0ac30df9357e09b5486ca0a3}{Is\+External\+Ascii} () const 
+\item 
+\hyperlink{classv8_1_1_string_1_1_external_string_resource}{External\+String\+Resource} $\ast$ \hyperlink{classv8_1_1_string_a1a78c6fe39dbdd6322ca576e224f0cba}{Get\+External\+String\+Resource} () const 
+\item 
+V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_string_1_1_external_ascii_string_resource}{External\+Ascii\+String\+Resource} $\ast$ \hyperlink{classv8_1_1_string_a4b1245ec290ee25ee64c803fc85693d7}{Get\+External\+Ascii\+String\+Resource} () const 
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_string_a6419e6b87e73bf03e326dd862fdca495}{Make\+External} (\hyperlink{classv8_1_1_string_1_1_external_string_resource}{External\+String\+Resource} $\ast$resource)
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_string_ad1970efe9119a63f667c4acbdccda424}{Make\+External} (\hyperlink{classv8_1_1_string_1_1_external_ascii_string_resource}{External\+Ascii\+String\+Resource} $\ast$resource)
+\item 
+V8\+E\+X\+P\+O\+R\+T bool \hyperlink{classv8_1_1_string_ac24779f37e73d8af36092cca294804c3}{Can\+Make\+External} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1_string}{v8\+::\+String} $>$ \hyperlink{classv8_1_1_string_a148c0f01dca1c477eba42717068a2c7e}{Empty} ()
+\item 
+\hypertarget{classv8_1_1_string_a826d60798dc152cea64a7636737b03b9}{}static \hyperlink{classv8_1_1_string}{String} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1_value}{v8\+::\+Value} $\ast$obj)\label{classv8_1_1_string_a826d60798dc152cea64a7636737b03b9}
+
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_af0f9c44d85056bd575c01e8be7cc1b01}{New} (const char $\ast$data, int length=-\/1)
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_a0a2f209db9234477210b8dbf50d50048}{New} (const uint16\+\_\+t $\ast$data, int length=-\/1)
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_a496a7a6bb043ae49da105e2648e26c20}{New\+Symbol} (const char $\ast$data, int length=-\/1)
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_ab561c791f3ea409a969c3785ce6996c5}{Concat} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ left, \hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$right)
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_a4de1bc36a0c6fe52d12726b85d0853f1}{New\+External} (\hyperlink{classv8_1_1_string_1_1_external_string_resource}{External\+String\+Resource} $\ast$resource)
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_a07c47bf675b802c550984fa24511a589}{New\+External} (\hyperlink{classv8_1_1_string_1_1_external_ascii_string_resource}{External\+Ascii\+String\+Resource} $\ast$resource)
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_a49b2b16c53998e22f3ad9d06fb49a3fd}{New\+Undetectable} (const char $\ast$data, int length=-\/1)
+\item 
+static V8\+E\+X\+P\+O\+R\+T \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ \hyperlink{classv8_1_1_string_a7b39f3e76d0d62a5ca8dafc976599c57}{New\+Undetectable} (const uint16\+\_\+t $\ast$data, int length=-\/1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java\+Script string value (E\+C\+M\+A-\/262, 4.\+3.\+17). 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classv8_1_1_string_a9ce7f1458ffd08f8eb2b9c8dc056e616}{}\index{v8\+::\+String@{v8\+::\+String}!Write\+Options@{Write\+Options}}
+\index{Write\+Options@{Write\+Options}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Write\+Options}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+String\+::\+Write\+Options}}\label{classv8_1_1_string_a9ce7f1458ffd08f8eb2b9c8dc056e616}
+Write the contents of the string to an external buffer. If no arguments are given, expects the buffer to be large enough to hold the entire string and N\+U\+L\+L terminator. Copies the contents of the string and the N\+U\+L\+L terminator into the buffer.
+
+Write\+Utf8 will not write partial U\+T\+F-\/8 sequences, preferring to stop before the end of the buffer.
+
+Copies up to length characters into the output buffer. Only null-\/terminates if there is enough space in the buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer into which the string will be copied. \\
+\hline
+{\em start} & The starting position within the string at which copying begins. \\
+\hline
+{\em length} & The number of characters to copy from the string. For Write\+Utf8 the number of bytes in the buffer. \\
+\hline
+{\em nchars\+\_\+ref} & The number of characters written, can be N\+U\+L\+L. \\
+\hline
+{\em options} & Various options that might affect performance of this or subsequent operations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters copied to the buffer excluding the null terminator. For Write\+Utf8\+: The number of bytes copied to the buffer including the null terminator (if written). 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_string_ac24779f37e73d8af36092cca294804c3}{}\index{v8\+::\+String@{v8\+::\+String}!Can\+Make\+External@{Can\+Make\+External}}
+\index{Can\+Make\+External@{Can\+Make\+External}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Can\+Make\+External}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+String\+::\+Can\+Make\+External (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_string_ac24779f37e73d8af36092cca294804c3}
+Returns true if this string can be made external. \hypertarget{classv8_1_1_string_ab561c791f3ea409a969c3785ce6996c5}{}\index{v8\+::\+String@{v8\+::\+String}!Concat@{Concat}}
+\index{Concat@{Concat}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Concat}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+Concat (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{left, }
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_ab561c791f3ea409a969c3785ce6996c5}
+Creates a new string by concatenating the left and the right strings passed in as parameters. \hypertarget{classv8_1_1_string_a148c0f01dca1c477eba42717068a2c7e}{}\index{v8\+::\+String@{v8\+::\+String}!Empty@{Empty}}
+\index{Empty@{Empty}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Empty}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf v8\+::\+Local}$<${\bf v8\+::\+String}$>$ v8\+::\+String\+::\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_a148c0f01dca1c477eba42717068a2c7e}
+A zero length string. \hypertarget{classv8_1_1_string_a4b1245ec290ee25ee64c803fc85693d7}{}\index{v8\+::\+String@{v8\+::\+String}!Get\+External\+Ascii\+String\+Resource@{Get\+External\+Ascii\+String\+Resource}}
+\index{Get\+External\+Ascii\+String\+Resource@{Get\+External\+Ascii\+String\+Resource}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Get\+External\+Ascii\+String\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T {\bf External\+Ascii\+String\+Resource}$\ast$ v8\+::\+String\+::\+Get\+External\+Ascii\+String\+Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_string_a4b1245ec290ee25ee64c803fc85693d7}
+Get the \hyperlink{classv8_1_1_string_1_1_external_ascii_string_resource}{External\+Ascii\+String\+Resource} for an external A\+S\+C\+I\+I string. Returns N\+U\+L\+L if \hyperlink{classv8_1_1_string_a1b136ebc0ac30df9357e09b5486ca0a3}{Is\+External\+Ascii()} doesn\textquotesingle{}t return true. \hypertarget{classv8_1_1_string_a1a78c6fe39dbdd6322ca576e224f0cba}{}\index{v8\+::\+String@{v8\+::\+String}!Get\+External\+String\+Resource@{Get\+External\+String\+Resource}}
+\index{Get\+External\+String\+Resource@{Get\+External\+String\+Resource}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Get\+External\+String\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}{\bf String\+::\+External\+String\+Resource} $\ast$ v8\+::\+String\+::\+Get\+External\+String\+Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_string_a1a78c6fe39dbdd6322ca576e224f0cba}
+Get the \hyperlink{classv8_1_1_string_1_1_external_string_resource}{External\+String\+Resource} for an external string. Returns N\+U\+L\+L if \hyperlink{classv8_1_1_string_a945ba040efb2bffb14c04eda492767ac}{Is\+External()} doesn\textquotesingle{}t return true. \hypertarget{classv8_1_1_string_a945ba040efb2bffb14c04eda492767ac}{}\index{v8\+::\+String@{v8\+::\+String}!Is\+External@{Is\+External}}
+\index{Is\+External@{Is\+External}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Is\+External}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+String\+::\+Is\+External (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_string_a945ba040efb2bffb14c04eda492767ac}
+Returns true if the string is external \hypertarget{classv8_1_1_string_a1b136ebc0ac30df9357e09b5486ca0a3}{}\index{v8\+::\+String@{v8\+::\+String}!Is\+External\+Ascii@{Is\+External\+Ascii}}
+\index{Is\+External\+Ascii@{Is\+External\+Ascii}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Is\+External\+Ascii}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+String\+::\+Is\+External\+Ascii (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_string_a1b136ebc0ac30df9357e09b5486ca0a3}
+Returns true if the string is both external and A\+S\+C\+I\+I \hypertarget{classv8_1_1_string_a812edd5c3beffb3a08ff94103ac31f23}{}\index{v8\+::\+String@{v8\+::\+String}!Length@{Length}}
+\index{Length@{Length}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T int v8\+::\+String\+::\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_string_a812edd5c3beffb3a08ff94103ac31f23}
+Returns the number of characters in this string. \hypertarget{classv8_1_1_string_a6419e6b87e73bf03e326dd862fdca495}{}\index{v8\+::\+String@{v8\+::\+String}!Make\+External@{Make\+External}}
+\index{Make\+External@{Make\+External}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Make\+External}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+String\+::\+Make\+External (
+\begin{DoxyParamCaption}
+\item[{{\bf External\+String\+Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_string_a6419e6b87e73bf03e326dd862fdca495}
+Associate an external string resource with this string by transforming it in place so that existing references to this string in the Java\+Script heap will use the external string resource. The external string resource\textquotesingle{}s character contents need to be equivalent to this string. Returns true if the string has been changed to be an external string. The string is not modified if the operation fails. See New\+External for information on the lifetime of the resource. \hypertarget{classv8_1_1_string_ad1970efe9119a63f667c4acbdccda424}{}\index{v8\+::\+String@{v8\+::\+String}!Make\+External@{Make\+External}}
+\index{Make\+External@{Make\+External}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Make\+External}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T bool v8\+::\+String\+::\+Make\+External (
+\begin{DoxyParamCaption}
+\item[{{\bf External\+Ascii\+String\+Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1_string_ad1970efe9119a63f667c4acbdccda424}
+Associate an external string resource with this string by transforming it in place so that existing references to this string in the Java\+Script heap will use the external string resource. The external string resource\textquotesingle{}s character contents need to be equivalent to this string. Returns true if the string has been changed to be an external string. The string is not modified if the operation fails. See New\+External for information on the lifetime of the resource. \hypertarget{classv8_1_1_string_af0f9c44d85056bd575c01e8be7cc1b01}{}\index{v8\+::\+String@{v8\+::\+String}!New@{New}}
+\index{New@{New}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+New (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_af0f9c44d85056bd575c01e8be7cc1b01}
+Allocates a new string from either U\+T\+F-\/8 encoded or A\+S\+C\+I\+I data. The second parameter \textquotesingle{}length\textquotesingle{} gives the buffer length. If the data is U\+T\+F-\/8 encoded, the caller must be careful to supply the length parameter. If it is not given, the function calls \textquotesingle{}strlen\textquotesingle{} to determine the buffer length, it might be wrong if \textquotesingle{}data\textquotesingle{} contains a null character. \hypertarget{classv8_1_1_string_a0a2f209db9234477210b8dbf50d50048}{}\index{v8\+::\+String@{v8\+::\+String}!New@{New}}
+\index{New@{New}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+New (
+\begin{DoxyParamCaption}
+\item[{const uint16\+\_\+t $\ast$}]{data, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_a0a2f209db9234477210b8dbf50d50048}
+Allocates a new string from 16-\/bit character codes. \hypertarget{classv8_1_1_string_a4de1bc36a0c6fe52d12726b85d0853f1}{}\index{v8\+::\+String@{v8\+::\+String}!New\+External@{New\+External}}
+\index{New\+External@{New\+External}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{New\+External}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+New\+External (
+\begin{DoxyParamCaption}
+\item[{{\bf External\+String\+Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_a4de1bc36a0c6fe52d12726b85d0853f1}
+Creates a new external string using the data defined in the given resource. When the external string is no longer live on \hyperlink{classv8_1_1_v8}{V8}\textquotesingle{}s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. \hypertarget{classv8_1_1_string_a07c47bf675b802c550984fa24511a589}{}\index{v8\+::\+String@{v8\+::\+String}!New\+External@{New\+External}}
+\index{New\+External@{New\+External}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{New\+External}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+New\+External (
+\begin{DoxyParamCaption}
+\item[{{\bf External\+Ascii\+String\+Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_a07c47bf675b802c550984fa24511a589}
+Creates a new external string using the A\+S\+C\+I\+I data defined in the given resource. When the external string is no longer live on \hyperlink{classv8_1_1_v8}{V8}\textquotesingle{}s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. \hypertarget{classv8_1_1_string_a496a7a6bb043ae49da105e2648e26c20}{}\index{v8\+::\+String@{v8\+::\+String}!New\+Symbol@{New\+Symbol}}
+\index{New\+Symbol@{New\+Symbol}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{New\+Symbol}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+New\+Symbol (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_a496a7a6bb043ae49da105e2648e26c20}
+Creates a symbol. Returns one if it exists already. \hypertarget{classv8_1_1_string_a49b2b16c53998e22f3ad9d06fb49a3fd}{}\index{v8\+::\+String@{v8\+::\+String}!New\+Undetectable@{New\+Undetectable}}
+\index{New\+Undetectable@{New\+Undetectable}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{New\+Undetectable}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+New\+Undetectable (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_a49b2b16c53998e22f3ad9d06fb49a3fd}
+Creates an undetectable string from the supplied A\+S\+C\+I\+I or U\+T\+F-\/8 data. \hypertarget{classv8_1_1_string_a7b39f3e76d0d62a5ca8dafc976599c57}{}\index{v8\+::\+String@{v8\+::\+String}!New\+Undetectable@{New\+Undetectable}}
+\index{New\+Undetectable@{New\+Undetectable}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{New\+Undetectable}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+E\+X\+P\+O\+R\+T {\bf Local}$<${\bf String}$>$ v8\+::\+String\+::\+New\+Undetectable (
+\begin{DoxyParamCaption}
+\item[{const uint16\+\_\+t $\ast$}]{data, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_string_a7b39f3e76d0d62a5ca8dafc976599c57}
+Creates an undetectable string from the supplied 16-\/bit character codes. \hypertarget{classv8_1_1_string_a11d12cdcd49afe5a8bb12646fd8ec17a}{}\index{v8\+::\+String@{v8\+::\+String}!Utf8\+Length@{Utf8\+Length}}
+\index{Utf8\+Length@{Utf8\+Length}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection[{Utf8\+Length}]{\setlength{\rightskip}{0pt plus 5cm}V8\+E\+X\+P\+O\+R\+T int v8\+::\+String\+::\+Utf8\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_string_a11d12cdcd49afe5a8bb12646fd8ec17a}
+Returns the number of bytes in the U\+T\+F-\/8 encoded representation of this string. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

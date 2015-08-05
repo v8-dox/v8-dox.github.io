@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1_unlocker}{}\section{v8\+:\+:Unlocker Class Reference}
+\label{classv8_1_1_unlocker}\index{v8\+::\+Unlocker@{v8\+::\+Unlocker}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+
+
+\subsection{Detailed Description}
+Multiple threads in \hyperlink{classv8_1_1_v8}{V8} are allowed, but only one thread at a time is allowed to use \hyperlink{classv8_1_1_v8}{V8}. The definition of \textquotesingle{}using \hyperlink{classv8_1_1_v8}{V8}\textquotesingle{} includes accessing handles or holding onto object pointers obtained from \hyperlink{classv8_1_1_v8}{V8} handles. It is up to the user of \hyperlink{classv8_1_1_v8}{V8} to ensure (perhaps with locking) that this constraint is not violated.
+
+If you wish to start using \hyperlink{classv8_1_1_v8}{V8} in a thread you can do this by constructing a \hyperlink{classv8_1_1_locker}{v8\+::\+Locker} object. After the code using \hyperlink{classv8_1_1_v8}{V8} has completed for the current thread you can call the destructor. This can be combined with C++ scope-\/based construction as follows\+:
+
+
+\begin{DoxyCode}
+...
+\{
+  \hyperlink{classv8_1_1_locker}{v8::Locker} locker;
+  ...
+  \textcolor{comment}{// Code using V8 goes here.}
+  ...
+\} \textcolor{comment}{// Destructor called here}
+\end{DoxyCode}
+
+
+If you wish to stop using \hyperlink{classv8_1_1_v8}{V8} in a thread A you can do this by either by destroying the \hyperlink{classv8_1_1_locker}{v8\+::\+Locker} object as above or by constructing a \hyperlink{classv8_1_1_unlocker}{v8\+::\+Unlocker} object\+:
+
+
+\begin{DoxyCode}
+\{
+  \hyperlink{classv8_1_1_unlocker}{v8::Unlocker} unlocker;
+  ...
+  \textcolor{comment}{// Code not using V8 goes here while V8 can run in another thread.}
+  ...
+\} \textcolor{comment}{// Destructor called here.}
+\end{DoxyCode}
+
+
+The \hyperlink{classv8_1_1_unlocker}{Unlocker} object is intended for use in a long-\/running callback from \hyperlink{classv8_1_1_v8}{V8}, where you want to release the \hyperlink{classv8_1_1_v8}{V8} lock for other threads to use.
+
+The \hyperlink{classv8_1_1_locker}{v8\+::\+Locker} is a recursive lock. That is, you can lock more than once in a given thread. This can be useful if you have code that can be called either from code that holds the lock or from code that does not. The \hyperlink{classv8_1_1_unlocker}{Unlocker} is not recursive so you can not have several Unlockers on the stack at once, and you can not use an \hyperlink{classv8_1_1_unlocker}{Unlocker} in a thread that is not inside a \hyperlink{classv8_1_1_locker}{Locker}\textquotesingle{}s scope.
+
+An unlocker will unlock several lockers if it has to and reinstate the correct depth of locking on its destruction. eg.\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// V8 not locked.}
+\{
+  \hyperlink{classv8_1_1_locker}{v8::Locker} locker;
+  \textcolor{comment}{// V8 locked.}
+  \{
+    \hyperlink{classv8_1_1_locker}{v8::Locker} another\_locker;
+    \textcolor{comment}{// V8 still locked (2 levels).}
+    \{
+      \hyperlink{classv8_1_1_unlocker}{v8::Unlocker} unlocker;
+      \textcolor{comment}{// V8 not locked.}
+    \}
+    \textcolor{comment}{// V8 locked again (2 levels).}
+  \}
+  \textcolor{comment}{// V8 still locked (1 level).}
+\}
+\textcolor{comment}{// V8 Now no longer locked.}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

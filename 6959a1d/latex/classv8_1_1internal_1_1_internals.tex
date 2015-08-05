@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_internals}{}\section{v8\+:\+:internal\+:\+:Internals Class Reference}
+\label{classv8_1_1internal_1_1_internals}\index{v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a2d3dc335df00b84e7e242e40012238ae}{}static bool {\bfseries Has\+Heap\+Object\+Tag} (internal\+::\+Object $\ast$value)\label{classv8_1_1internal_1_1_internals_a2d3dc335df00b84e7e242e40012238ae}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a6163342aeb37f207d618d9fb5d646a04}{}static bool {\bfseries Has\+Smi\+Tag} (internal\+::\+Object $\ast$value)\label{classv8_1_1internal_1_1_internals_a6163342aeb37f207d618d9fb5d646a04}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a9a26879dad8b7fdd38ebbeaad162b96c}{}static int {\bfseries Smi\+Value} (internal\+::\+Object $\ast$value)\label{classv8_1_1internal_1_1_internals_a9a26879dad8b7fdd38ebbeaad162b96c}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_aec6dbaf56b230e37eef5ed1ed0e56a9b}{}static int {\bfseries Get\+Instance\+Type} (internal\+::\+Object $\ast$obj)\label{classv8_1_1internal_1_1_internals_aec6dbaf56b230e37eef5ed1ed0e56a9b}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a77c94e6b4e68d6c73dec78d81a0c219a}{}static void $\ast$ {\bfseries Get\+External\+Pointer} (internal\+::\+Object $\ast$obj)\label{classv8_1_1internal_1_1_internals_a77c94e6b4e68d6c73dec78d81a0c219a}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a072f010fdf69ea2c0d7145190221410f}{}static bool {\bfseries Is\+External\+Two\+Byte\+String} (int instance\+\_\+type)\label{classv8_1_1internal_1_1_internals_a072f010fdf69ea2c0d7145190221410f}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a457c0c73d5fdf4cc577133edce0ce37b}{}{\footnotesize template$<$typename T $>$ }\\static T {\bfseries Read\+Field} (\hyperlink{classv8_1_1_object}{Object} $\ast$ptr, int offset)\label{classv8_1_1internal_1_1_internals_a457c0c73d5fdf4cc577133edce0ce37b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a0902a596b5656b4592157eaacc020512}{}static const int {\bfseries k\+Heap\+Object\+Map\+Offset} = 0\label{classv8_1_1internal_1_1_internals_a0902a596b5656b4592157eaacc020512}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a39ea290dfaa9de300bd79aa73a874a88}{}static const int {\bfseries k\+Map\+Instance\+Type\+Offset} = sizeof(void$\ast$) + sizeof(int)\label{classv8_1_1internal_1_1_internals_a39ea290dfaa9de300bd79aa73a874a88}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a8c2b35069864f567ca0c571310dd90a1}{}static const int {\bfseries k\+String\+Resource\+Offset} = 2 $\ast$ sizeof(void$\ast$)\label{classv8_1_1internal_1_1_internals_a8c2b35069864f567ca0c571310dd90a1}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a2f7609ff68b17c9fc15d58bd2dee47aa}{}static const int {\bfseries k\+Proxy\+Proxy\+Offset} = sizeof(void$\ast$)\label{classv8_1_1internal_1_1_internals_a2f7609ff68b17c9fc15d58bd2dee47aa}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_af8faf3ff3271d26bafa6ca0ea87e2a57}{}static const int {\bfseries k\+J\+S\+Object\+Header\+Size} = 3 $\ast$ sizeof(void$\ast$)\label{classv8_1_1internal_1_1_internals_af8faf3ff3271d26bafa6ca0ea87e2a57}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a5c39a86b30463928ea719def66916507}{}static const int {\bfseries k\+Full\+String\+Representation\+Mask} = 0x07\label{classv8_1_1internal_1_1_internals_a5c39a86b30463928ea719def66916507}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a73faf917416d2519b65c7255e77a74ce}{}static const int {\bfseries k\+External\+Two\+Byte\+Representation\+Tag} = 0x03\label{classv8_1_1internal_1_1_internals_a73faf917416d2519b65c7255e77a74ce}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_ab82a7885d90f825ba1e20defdcb749be}{}static V8\+E\+X\+P\+O\+R\+T int {\bfseries k\+J\+S\+Object\+Type}\label{classv8_1_1internal_1_1_internals_ab82a7885d90f825ba1e20defdcb749be}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_a613844c85afb4e5f1c8a42bbb519d3a1}{}static V8\+E\+X\+P\+O\+R\+T int {\bfseries k\+First\+Nonstring\+Type}\label{classv8_1_1internal_1_1_internals_a613844c85afb4e5f1c8a42bbb519d3a1}
+
+\item 
+\hypertarget{classv8_1_1internal_1_1_internals_af263ee9229311eefdc05ad96160e4161}{}static V8\+E\+X\+P\+O\+R\+T int {\bfseries k\+Proxy\+Type}\label{classv8_1_1internal_1_1_internals_af263ee9229311eefdc05ad96160e4161}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class exports constants and functionality from within \hyperlink{namespacev8}{v8} that is necessary to implement inline functions in the \hyperlink{namespacev8}{v8} api. Don\textquotesingle{}t depend on functions and constants defined here. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,33 @@
+\hypertarget{classv8_1_1_weak_reference_callbacks}{}\section{v8\+:\+:Weak\+Reference\+Callbacks$<$ T, P $>$ Class Template Reference}
+\label{classv8_1_1_weak_reference_callbacks}\index{v8\+::\+Weak\+Reference\+Callbacks$<$ T, P $>$@{v8\+::\+Weak\+Reference\+Callbacks$<$ T, P $>$}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_weak_reference_callbacks_ab87af73c31b7a907687126d0c4fa485a}{}typedef void($\ast$ {\bfseries Revivable}) (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_persistent}{Persistent}$<$ T $>$ $\ast$object, P $\ast$parameter)\label{classv8_1_1_weak_reference_callbacks_ab87af73c31b7a907687126d0c4fa485a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename P$>$class v8\+::\+Weak\+Reference\+Callbacks$<$ T, P $>$}
+
+A weak reference callback function.
+
+This callback should either explicitly invoke Dispose on $\vert$object$\vert$ if \hyperlink{classv8_1_1_v8}{V8} wrapper is not needed anymore, or \textquotesingle{}revive\textquotesingle{} it by invocation of Make\+Weak.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the weak global object to be reclaimed by the garbage collector \\
+\hline
+{\em parameter} & the value passed in when making the weak global object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

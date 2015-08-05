@@ -1,0 +1,109 @@
+\hypertarget{classv8_1_1_handle}{}\section{v8\+:\+:Handle$<$ T $>$ Class Template Reference}
+\label{classv8_1_1_handle}\index{v8\+::\+Handle$<$ T $>$@{v8\+::\+Handle$<$ T $>$}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Handle$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1_handle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1_handle_a0005cb917206b7e4800d19d4eca68e21}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (\hyperlink{classv8_1_1_handle}{Handle}())
+\item 
+\hyperlink{classv8_1_1_handle_a1e20fd64391338cda4daabd6dcb569e8}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (explicit \hyperlink{classv8_1_1_handle}{Handle}(T $\ast$val))
+\item 
+{\footnotesize template$<$class S $>$ }\\\hyperlink{classv8_1_1_handle_a947012938048fb8159ccdeb63b3e6a0f}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (\hyperlink{classv8_1_1_handle}{Handle}(\hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ that))
+\item 
+\hyperlink{classv8_1_1_handle_a77848ecb0ef455dfd0d6c70b469f44d9}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (bool Is\+Empty() const)
+\item 
+\hyperlink{classv8_1_1_handle_ad2464f7c221a91e14caa0343312e36f9}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (void Clear())
+\item 
+\hypertarget{classv8_1_1_handle_ad0580b75ccf7af4cfb74b5e5c1bfb2fd}{}{\bfseries V8\+\_\+\+I\+N\+L\+I\+N\+E} (T $\ast$operator-\/$>$() const)\label{classv8_1_1_handle_ad0580b75ccf7af4cfb74b5e5c1bfb2fd}
+
+\item 
+\hypertarget{classv8_1_1_handle_aad1d16e28c0e6941172dc9dd24d3617a}{}{\bfseries V8\+\_\+\+I\+N\+L\+I\+N\+E} (T $\ast$operator$\ast$() const)\label{classv8_1_1_handle_aad1d16e28c0e6941172dc9dd24d3617a}
+
+\item 
+{\footnotesize template$<$class S $>$ }\\\hyperlink{classv8_1_1_handle_abd3168074b63e88cc07d8451e177027f}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (bool operator==(\hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ that) const)
+\item 
+{\footnotesize template$<$class S $>$ }\\\hyperlink{classv8_1_1_handle_a85f5fb0108672950759ccc99cc8348a8}{V8\+\_\+\+I\+N\+L\+I\+N\+E} (bool operator!=(\hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ that) const)
+\item 
+\hypertarget{classv8_1_1_handle_a7a264b2c3e58c4003f5968a7c0ef347e}{}{\footnotesize template$<$class S $>$ }\\{\bfseries V8\+\_\+\+I\+N\+L\+I\+N\+E} (static \hyperlink{classv8_1_1_handle}{Handle}$<$ T $>$ Cast(\hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ that))\label{classv8_1_1_handle_a7a264b2c3e58c4003f5968a7c0ef347e}
+
+\item 
+\hypertarget{classv8_1_1_handle_ad78a29a0d4766f2e0e0a4d95a047efc3}{}{\footnotesize template$<$class S $>$ }\\{\bfseries V8\+\_\+\+I\+N\+L\+I\+N\+E} (\hyperlink{classv8_1_1_handle}{Handle}$<$ S $>$ As())\label{classv8_1_1_handle_ad78a29a0d4766f2e0e0a4d95a047efc3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class v8\+::\+Handle$<$ T $>$}
+
+An object reference managed by the \hyperlink{namespacev8}{v8} garbage collector.
+
+All objects returned from \hyperlink{namespacev8}{v8} have to be tracked by the garbage collector so that it knows that the objects are still alive. Also, because the garbage collector may move objects, it is unsafe to point directly to an object. Instead, all objects are stored in handles which are known by the garbage collector and updated whenever an object moves. Handles should always be passed by value (except in cases like out-\/parameters) and they should never be allocated on the heap.
+
+There are two types of handles\+: local and persistent handles. \hyperlink{classv8_1_1_local}{Local} handles are light-\/weight and transient and typically used in local operations. They are managed by Handle\+Scopes. \hyperlink{classv8_1_1_persistent}{Persistent} handles can be used when storing objects across several independent operations and have to be explicitly deallocated when they\textquotesingle{}re no longer used.
+
+It is safe to extract the object stored in the handle by dereferencing the handle (for instance, to extract the Object$\ast$ from a Handle$<$\+Object$>$); the value will still be governed by a handle behind the scenes and the same rules apply to these values as to their handles. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_handle_a0005cb917206b7e4800d19d4eca68e21}{}\index{v8\+::\+Handle@{v8\+::\+Handle}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Handle@{v8\+::\+Handle}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf v8\+::\+Handle}$<$ T $>$\+::V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ T $>$()                     }]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_handle_a0005cb917206b7e4800d19d4eca68e21}
+Creates an empty handle. \hypertarget{classv8_1_1_handle_a1e20fd64391338cda4daabd6dcb569e8}{}\index{v8\+::\+Handle@{v8\+::\+Handle}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Handle@{v8\+::\+Handle}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf v8\+::\+Handle}$<$ T $>$\+::V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{explicit }]{HandleT $\ast$val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_handle_a1e20fd64391338cda4daabd6dcb569e8}
+Creates a new handle for the specified value. \hypertarget{classv8_1_1_handle_a947012938048fb8159ccdeb63b3e6a0f}{}\index{v8\+::\+Handle@{v8\+::\+Handle}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Handle@{v8\+::\+Handle}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ {\bf v8\+::\+Handle}$<$ T $>$\+::V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ T $>$({\bf Handle}$<$ S $>$ that)                              }]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_handle_a947012938048fb8159ccdeb63b3e6a0f}
+Creates a handle for the contents of the specified handle. This constructor allows you to pass handles as arguments by value and to assign between handles. However, if you try to assign between incompatible handles, for instance from a Handle$<$\+String$>$ to a Handle$<$\+Number$>$ it will cause a compile-\/time error. Assigning between compatible handles, for instance assigning a Handle$<$\+String$>$ to a variable declared as Handle$<$\+Value$>$, is legal because \hyperlink{classv8_1_1_string}{String} is a subclass of \hyperlink{classv8_1_1_value}{Value}. This check fails when trying to convert between incompatible handles. For example, converting from a Handle$<$\+String$>$ to a Handle$<$\+Number$>$.\hypertarget{classv8_1_1_handle_a77848ecb0ef455dfd0d6c70b469f44d9}{}\index{v8\+::\+Handle@{v8\+::\+Handle}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Handle@{v8\+::\+Handle}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf v8\+::\+Handle}$<$ T $>$\+::V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{bool Is\+Empty()}]{const}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_handle_a77848ecb0ef455dfd0d6c70b469f44d9}
+Returns true if the handle is empty. \hypertarget{classv8_1_1_handle_ad2464f7c221a91e14caa0343312e36f9}{}\index{v8\+::\+Handle@{v8\+::\+Handle}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Handle@{v8\+::\+Handle}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf v8\+::\+Handle}$<$ T $>$\+::V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{void }]{Clear()}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_handle_ad2464f7c221a91e14caa0343312e36f9}
+Sets the handle to be empty. Is\+Empty() will then return true. \hypertarget{classv8_1_1_handle_abd3168074b63e88cc07d8451e177027f}{}\index{v8\+::\+Handle@{v8\+::\+Handle}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Handle@{v8\+::\+Handle}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ {\bf v8\+::\+Handle}$<$ T $>$\+::V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{bool}]{operator = {\ttfamily =({\bf Handle}$<$S$>$~that)~const}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_handle_abd3168074b63e88cc07d8451e177027f}
+Checks whether two handles are the same. Returns true if both are empty, or if the objects to which they refer are identical. The handles\textquotesingle{} references are not checked. \hypertarget{classv8_1_1_handle_a85f5fb0108672950759ccc99cc8348a8}{}\index{v8\+::\+Handle@{v8\+::\+Handle}!V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}}
+\index{V8\+\_\+\+I\+N\+L\+I\+N\+E@{V8\+\_\+\+I\+N\+L\+I\+N\+E}!v8\+::\+Handle@{v8\+::\+Handle}}
+\subsubsection[{V8\+\_\+\+I\+N\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ {\bf v8\+::\+Handle}$<$ T $>$\+::V8\+\_\+\+I\+N\+L\+I\+N\+E (
+\begin{DoxyParamCaption}
+\item[{bool operator!                                }]{ = {\ttfamily ({\bf Handle}$<$S$>$~that)~const}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_handle_a85f5fb0108672950759ccc99cc8348a8}
+Checks whether two handles are different. Returns true if only one of the handles is empty, or if the objects to which they refer are different. The handles\textquotesingle{} references are not checked. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

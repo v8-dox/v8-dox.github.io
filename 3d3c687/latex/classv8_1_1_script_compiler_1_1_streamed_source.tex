@@ -1,0 +1,35 @@
+\hypertarget{classv8_1_1_script_compiler_1_1_streamed_source}{}\section{v8\+:\+:Script\+Compiler\+:\+:Streamed\+Source Class Reference}
+\label{classv8_1_1_script_compiler_1_1_streamed_source}\index{v8\+::\+Script\+Compiler\+::\+Streamed\+Source@{v8\+::\+Script\+Compiler\+::\+Streamed\+Source}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_script_compiler_1_1_streamed_source_a17b52f85ac22120e687b16357d662da2}{}enum {\bfseries Encoding} \{ {\bfseries O\+N\+E\+\_\+\+B\+Y\+T\+E}, 
+{\bfseries T\+W\+O\+\_\+\+B\+Y\+T\+E}, 
+{\bfseries U\+T\+F8}
+ \}\label{classv8_1_1_script_compiler_1_1_streamed_source_a17b52f85ac22120e687b16357d662da2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_script_compiler_1_1_streamed_source_a4da404a49e48a12927c743797833d8aa}{}{\bfseries Streamed\+Source} (\hyperlink{classv8_1_1_script_compiler_1_1_external_source_stream}{External\+Source\+Stream} $\ast$source\+\_\+stream, Encoding encoding)\label{classv8_1_1_script_compiler_1_1_streamed_source_a4da404a49e48a12927c743797833d8aa}
+
+\item 
+\hypertarget{classv8_1_1_script_compiler_1_1_streamed_source_a845dc408f6e2f98e51d6525836982873}{}const \hyperlink{structv8_1_1_script_compiler_1_1_cached_data}{Cached\+Data} $\ast$ {\bfseries Get\+Cached\+Data} () const \label{classv8_1_1_script_compiler_1_1_streamed_source_a845dc408f6e2f98e51d6525836982873}
+
+\item 
+\hypertarget{classv8_1_1_script_compiler_1_1_streamed_source_a60c3aa01ea04a6cd1aa1b7a5edb74c2b}{}internal\+::\+Streamed\+Source $\ast$ {\bfseries impl} () const \label{classv8_1_1_script_compiler_1_1_streamed_source_a60c3aa01ea04a6cd1aa1b7a5edb74c2b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classv8_1_1_script_compiler_1_1_source}{Source} code which can be streamed into \hyperlink{classv8_1_1_v8}{V8} in pieces. It will be parsed while streaming. It can be compiled after the streaming is complete. \hyperlink{classv8_1_1_script_compiler_1_1_streamed_source}{Streamed\+Source} must be kept alive while the streaming task is ran (see \hyperlink{classv8_1_1_script_compiler_1_1_script_streaming_task}{Script\+Streaming\+Task} below). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

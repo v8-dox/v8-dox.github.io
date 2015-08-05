@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1_array_buffer}{}\section{v8\+:\+:Array\+Buffer Class Reference}
+\label{classv8_1_1_array_buffer}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Array\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1_array_buffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classv8_1_1_array_buffer_ab73b98ba6436b57c5a1b3d29429e0199}{Byte\+Length} () const 
+\item 
+void $\ast$ \hyperlink{classv8_1_1_array_buffer_af29f607b2a1394799065fdaf75cfaef7}{Data} () const 
+\item 
+\hypertarget{classv8_1_1_array_buffer_a604dffdc7629e3b952d14016835d7988}{}{\bfseries V8\+\_\+\+I\+N\+L\+I\+N\+E} (static \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer} $\ast$Cast(\hyperlink{classv8_1_1_value}{Value} $\ast$obj))\label{classv8_1_1_array_buffer_a604dffdc7629e3b952d14016835d7988}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1_array_buffer_abd389f38c2e8aa1414e0312baeea9f05}{New} (size\+\_\+t byte\+\_\+length)
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1_array_buffer_a7202b761fa822282af79258f0c5e231a}{New} (void $\ast$data, size\+\_\+t byte\+\_\+length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An instance of the built-\/in \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer} constructor (E\+S6 draft 15.\+13.\+5). This A\+P\+I is experimental and may change significantly. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_array_buffer_ab73b98ba6436b57c5a1b3d29429e0199}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Byte\+Length@{Byte\+Length}}
+\index{Byte\+Length@{Byte\+Length}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Byte\+Length}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Array\+Buffer\+::\+Byte\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_array_buffer_ab73b98ba6436b57c5a1b3d29429e0199}
+\hyperlink{classv8_1_1_data}{Data} length in bytes. \hypertarget{classv8_1_1_array_buffer_af29f607b2a1394799065fdaf75cfaef7}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Data@{Data}}
+\index{Data@{Data}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ v8\+::\+Array\+Buffer\+::\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1_array_buffer_af29f607b2a1394799065fdaf75cfaef7}
+Raw pointer to the array buffer data \hypertarget{classv8_1_1_array_buffer_abd389f38c2e8aa1414e0312baeea9f05}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!New@{New}}
+\index{New@{New}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array\+Buffer}$>$ v8\+::\+Array\+Buffer\+::\+New (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{byte\+\_\+length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_array_buffer_abd389f38c2e8aa1414e0312baeea9f05}
+Create a new \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer}. Allocate $\vert$byte\+\_\+length$\vert$ bytes. Allocated memory will be owned by a created \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer} and will be deallocated when it is garbage-\/collected. \hypertarget{classv8_1_1_array_buffer_a7202b761fa822282af79258f0c5e231a}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!New@{New}}
+\index{New@{New}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array\+Buffer}$>$ v8\+::\+Array\+Buffer\+::\+New (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{size\+\_\+t}]{byte\+\_\+length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_array_buffer_a7202b761fa822282af79258f0c5e231a}
+Create a new \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer} over an existing memory block. The memory block will not be reclaimed when a created \hyperlink{classv8_1_1_array_buffer}{Array\+Buffer} is garbage-\/collected. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

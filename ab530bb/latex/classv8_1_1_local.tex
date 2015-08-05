@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1_local}{}\section{v8\+:\+:Local$<$ T $>$ Class Template Reference}
+\label{classv8_1_1_local}\index{v8\+::\+Local$<$ T $>$@{v8\+::\+Local$<$ T $>$}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Local$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1_local}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class S $>$ }\\\hyperlink{classv8_1_1_local_af7cf8d2fe7e10a14ad382189712adaff}{Local} (\hyperlink{classv8_1_1_local}{Local}$<$ S $>$ that)
+\item 
+\hypertarget{classv8_1_1_local_aaa90419a2288a960d4a139ff226914b2}{}{\footnotesize template$<$class S $>$ }\\{\bfseries Local} (S $\ast$that)\label{classv8_1_1_local_aaa90419a2288a960d4a139ff226914b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1_local_a8e76791c0614ec0feed0e5a3a9d6e9f8}{}{\footnotesize template$<$class S $>$ }\\static \hyperlink{classv8_1_1_local}{Local}$<$ T $>$ {\bfseries Cast} (\hyperlink{classv8_1_1_local}{Local}$<$ S $>$ that)\label{classv8_1_1_local_a8e76791c0614ec0feed0e5a3a9d6e9f8}
+
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ T $>$ \hyperlink{classv8_1_1_local_ac4024a7e2aea140c6aaa38fc32d5a840}{New} (\hyperlink{classv8_1_1_handle}{Handle}$<$ T $>$ that)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class v8\+::\+Local$<$ T $>$}
+
+A light-\/weight stack-\/allocated object handle. All operations that return objects from within \hyperlink{namespacev8}{v8} return them in local handles. They are created within Handle\+Scopes, and all local handles allocated within a handle scope are destroyed when the handle scope is destroyed. Hence it is not necessary to explicitly deallocate local handles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classv8_1_1_local_af7cf8d2fe7e10a14ad382189712adaff}{}\index{v8\+::\+Local@{v8\+::\+Local}!Local@{Local}}
+\index{Local@{Local}!v8\+::\+Local@{v8\+::\+Local}}
+\subsubsection[{Local}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ {\bf v8\+::\+Local}$<$ T $>$\+::{\bf Local} (
+\begin{DoxyParamCaption}
+\item[{{\bf Local}$<$ S $>$}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1_local_af7cf8d2fe7e10a14ad382189712adaff}
+This check fails when trying to convert between incompatible handles. For example, converting from a Handle$<$\+String$>$ to a Handle$<$\+Number$>$.
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_local_ac4024a7e2aea140c6aaa38fc32d5a840}{}\index{v8\+::\+Local@{v8\+::\+Local}!New@{New}}
+\index{New@{New}!v8\+::\+Local@{v8\+::\+Local}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Local}$<$ T $>$ {\bf v8\+::\+Local}$<$ T $>$\+::New (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ T $>$}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classv8_1_1_local_ac4024a7e2aea140c6aaa38fc32d5a840}
+Create a local handle for the content of another handle. The referee is kept alive by the local handle even when the original handle is destroyed/disposed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8.\+h\end{DoxyCompactItemize}

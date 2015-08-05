@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1_heap_profiler}{}\section{v8\+:\+:Heap\+Profiler Class Reference}
+\label{classv8_1_1_heap_profiler}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classv8_1_1_heap_profiler_a739a665268bba6e640890464ccb60d26}{Get\+Snapshots\+Count} ()
+\item 
+static const \hyperlink{classv8_1_1_heap_snapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1_heap_profiler_ad547f406908880cc7dc0453fe83cc216}{Get\+Snapshot} (int index)
+\item 
+static const \hyperlink{classv8_1_1_heap_snapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1_heap_profiler_a1f77545176060f21239bd1a78e3967a7}{Find\+Snapshot} (unsigned uid)
+\item 
+static const \hyperlink{classv8_1_1_heap_snapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1_heap_profiler_a015cede09e3ca173cff13106ccb91c5b}{Take\+Snapshot} (\hyperlink{classv8_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1_string}{String} $>$ title, Heap\+Snapshot\+::\+Type type=Heap\+Snapshot\+::k\+Full)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for controlling heap profiling. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1_heap_profiler_a1f77545176060f21239bd1a78e3967a7}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Find\+Snapshot@{Find\+Snapshot}}
+\index{Find\+Snapshot@{Find\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Find\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Find\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{uid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_a1f77545176060f21239bd1a78e3967a7}
+Returns a profile by uid. \hypertarget{classv8_1_1_heap_profiler_ad547f406908880cc7dc0453fe83cc216}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Snapshot@{Get\+Snapshot}}
+\index{Get\+Snapshot@{Get\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Get\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Get\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_ad547f406908880cc7dc0453fe83cc216}
+Returns a snapshot by index. \hypertarget{classv8_1_1_heap_profiler_a739a665268bba6e640890464ccb60d26}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Snapshots\+Count@{Get\+Snapshots\+Count}}
+\index{Get\+Snapshots\+Count@{Get\+Snapshots\+Count}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Get\+Snapshots\+Count}]{\setlength{\rightskip}{0pt plus 5cm}static int v8\+::\+Heap\+Profiler\+::\+Get\+Snapshots\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_a739a665268bba6e640890464ccb60d26}
+Returns the number of snapshots taken. \hypertarget{classv8_1_1_heap_profiler_a015cede09e3ca173cff13106ccb91c5b}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Take\+Snapshot@{Take\+Snapshot}}
+\index{Take\+Snapshot@{Take\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
+\subsubsection[{Take\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Take\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{title, }
+\item[{Heap\+Snapshot\+::\+Type}]{type = {\ttfamily HeapSnapshot\+:\+:kFull}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1_heap_profiler_a015cede09e3ca173cff13106ccb91c5b}
+Takes a heap snapshot and returns it. Title may be an empty string. See Heap\+Snapshot\+::\+Type for types description. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deps/v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}
