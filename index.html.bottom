@@ -1,3 +1,18 @@
-</ul>
+  </select>
+</label>
+
+<div>If you want the dox locally, you can find them on <a href="https://github.com/v8-dox/v8-dox.github.io">github</a></div>
+<hr>
+<div>These dox are made possible because of Grokker, one of the best places to work.<br/>
+If you are a JS developer looking for a new gig, send me an email at<br/>
+&#x5b;'chad', String.fromCharCode(64), 'grokker', String.fromCharCode(0x2e), 'com'&#x5d;.join('').</div>
+<script type="text/javascript">
+(function () {
+    var select = document.getElementById('versions');
+    select.addEventListener('change', function() {
+        window.location = select.value + '/html/index.html';
+    });
+}());
+</script>
 </body>
 </html>
