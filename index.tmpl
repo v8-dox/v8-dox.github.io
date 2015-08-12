@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>v8 dox</title>
+<style>
+body { font-family: sans-serif; color: #555; text-align: center; }
+* { margin: 0; padding: 0; font-weight: normal; }
+* + *, body *:first-child { margin-top: 1em; }
+
+h1 { font-size: 150%; }
+a { color: #45639f; transition: all 0.2s; }
+a:hover { text-shadow: 0px 2px 2px #ccc; }
+
+ul, li { list-style-type: none; }
+li a { padding: 0.5em; }
+.column { display: inline-block; max-width: 33.3%; vertical-align: top; }
+</style>
+</head>
+
+<body>
+<a href="https://github.com/v8-dox/v8-dox.github.io"><img style="position: absolute; top: 0; right: 0; border: 0; margin-top: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+<h1>Latest versions of Doxygen dox of the v8 engine</h1>
+<h2>Based on node.js and io.js releases</h2>
+<div>
+  <div class="column">
+    <ul>
+      <li><h2>node.js v0.10.x</h2></li>
+{LATEST_NODE10}
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+      <li><h2>node.js v0.12.x</h2></li>
+{LATEST_NODE12}
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+      <li><h2>io.js</h2></li>
+{LATEST_IOJS}
+    </ul>
+  </div>
+</div>
+<br/>
+<label>View an older relase:
+  <select id="versions">
+{ALL_VERSION_OPTIONS}
+  </select>
+</label>
+
+<div>Generated {GENERATE_TIME}</div>
+<div>If you want the dox locally, you can find them on <a href="https://github.com/v8-dox/v8-dox.github.io">github</a></div>
+<hr>
+<div>These dox are made possible because of Grokker, one of the best places to work.<br/>
+If you are a JS developer looking for a new gig, send me an email at<br/>
+&#x5b;'chad', String.fromCharCode(64), 'grokker', String.fromCharCode(0x2e), 'com'&#x5d;.join('').</div>
+<script type="text/javascript">
+(function () {
+    var select = document.getElementById('versions');
+    select.addEventListener('change', function() {
+        window.location = select.value + '/html/index.html';
+    });
+}());
+</script>
+</body>
+</html>

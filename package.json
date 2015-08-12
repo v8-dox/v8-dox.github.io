@@ -1,0 +1,10 @@
+{
+    "name": "v8dox.com",
+    "version": "1.0.0",
+    "description": "doxygen dox of various v8 versions",
+    "private": true,
+    "devDependencies": {
+        "async": "latest",
+        "byline": "latest"
+    }
+}
