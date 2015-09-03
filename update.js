@@ -319,13 +319,26 @@ var generateNeededDox = function (callback) {
     });
 };
 
+var commitAndPush = function (callback) {
+    var commit_message = 'automated build ';
+    commit_message += new Date().toISOString();
+    return git.commit(commit_message, function (err) {
+        if (err) {
+            console.error('error committing:', err);
+            return callback(err);
+        }
+        return git.push(callback);
+    });
+};
+
 var update = function () {
     return async.series([
         ensureRemotes,
         updateGit,
         fillOutDataStructure,
         generateNeededDox,
-        fillOutIndexTemplate
+        fillOutIndexTemplate,
+        commitAndPush
     ], function (err) {
         if (err) {
             console.error('got an error:', err);

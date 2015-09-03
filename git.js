@@ -65,3 +65,11 @@ exports.addPath = function (path, callback) {
 exports.resetPath = function (path, callback) {
     return command('reset', ['--', path], callback);
 };
+
+exports.commit = function (message, callback) {
+    return command('commit', ['-m', message], callback);
+};
+
+exports.push = function (callback) {
+    return command('push', ['-n'], callback);
+};

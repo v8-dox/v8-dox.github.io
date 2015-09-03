@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['rawoperationdescriptor',['RawOperationDescriptor',['../classv8_1_1RawOperationDescriptor.html',1,'v8']]],
-  ['regexp',['RegExp',['../classv8_1_1RegExp.html',1,'v8']]],
-  ['resolver',['Resolver',['../classv8_1_1Promise_1_1Resolver.html',1,'v8::Promise']]],
-  ['resourceconstraints',['ResourceConstraints',['../classv8_1_1ResourceConstraints.html',1,'v8']]],
-  ['retainedobjectinfo',['RetainedObjectInfo',['../classv8_1_1RetainedObjectInfo.html',1,'v8']]],
-  ['returnvalue',['ReturnValue',['../singletonv8_1_1ReturnValue.html',1,'v8']]]
+  ['rawoperationdescriptor',['RawOperationDescriptor',['../classv8_1_1_raw_operation_descriptor.html',1,'v8']]],
+  ['regexp',['RegExp',['../classv8_1_1_reg_exp.html',1,'v8']]],
+  ['resolver',['Resolver',['../classv8_1_1_promise_1_1_resolver.html',1,'v8::Promise']]],
+  ['resourceconstraints',['ResourceConstraints',['../classv8_1_1_resource_constraints.html',1,'v8']]],
+  ['retainedobjectinfo',['RetainedObjectInfo',['../classv8_1_1_retained_object_info.html',1,'v8']]],
+  ['returnvalue',['ReturnValue',['../classv8_1_1_return_value.html',1,'v8']]]
 ];
