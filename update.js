@@ -38,23 +38,11 @@ var ensureRemotes = function (callback) {
             return callback(err);
         }
         return async.parallel({
-            'nodejs-old': function (cb_parallel) {
-                if (remotes.indexOf('nodejs-old') !== -1) {
-                    return cb_parallel();
-                }
-                git.addRemote('nodejs-old', 'git@github.com:joyent/node.git', cb_parallel);
-            },
             nodejs: function (cb_parallel) {
                 if (remotes.indexOf('nodejs') !== -1) {
                     return cb_parallel();
                 }
                 git.addRemote('nodejs', 'git@github.com:nodejs/node.git', cb_parallel);
-            },
-            iojs: function (cb_parallel) {
-                if (remotes.indexOf('iojs') !== -1) {
-                    return cb_parallel();
-                }
-                git.addRemote('iojs', 'git@github.com:nodejs/io.js.git', cb_parallel);
             }
         }, callback);
     });
@@ -62,12 +50,6 @@ var ensureRemotes = function (callback) {
 
 var updateGit = function (callback) {
     return async.series([
-        function (cb_series) {
-            return git.fetchWithTags('nodejs-old', cb_series);
-        },
-        function (cb_series) {
-            return git.fetchWithTags('iojs', cb_series);
-        },
         function (cb_series) {
             return git.fetchWithTags('nodejs', cb_series);
         }
@@ -296,8 +278,9 @@ var generateNeededDox = function (callback) {
     var last_node10 = getLastThreeHashForVersionRegEx(node10_re);
     var last_node12 = getLastThreeHashForVersionRegEx(node12_re);
     var last_iojs = getLastThreeHashForVersionRegEx(iojs_re);
+    var last_node4 = getLastThreeHashForVersionRegEx(node4_re);
     return async.filter(Object.keys(hash_version), function (hash, cb_filter) {
-        if (hash === last_node10[0] || hash === last_node12[0] || hash === last_iojs[0]) {
+        if (hash === last_node10[0] || hash === last_node12[0] || hash === last_iojs[0] || hash === last_node4[0]) {
             return setImmediate(cb_filter, true);
         }
         return fs.stat(hash, function (err, stat) {
