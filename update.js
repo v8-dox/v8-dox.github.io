@@ -38,11 +38,17 @@ var ensureRemotes = function (callback) {
             return callback(err);
         }
         return async.parallel({
+            'nodejs-old': function (cb_parallel) {
+                if (remotes.indexOf('nodejs-old') !== -1) {
+                    return cb_parallel();
+                }
+                git.addRemote('nodejs-old', 'git@github.com:joyent/node.git', cb_parallel);
+            },
             nodejs: function (cb_parallel) {
                 if (remotes.indexOf('nodejs') !== -1) {
                     return cb_parallel();
                 }
-                git.addRemote('nodejs', 'git@github.com:joyent/node.git', cb_parallel);
+                git.addRemote('nodejs', 'git@github.com:nodejs/node.git', cb_parallel);
             },
             iojs: function (cb_parallel) {
                 if (remotes.indexOf('iojs') !== -1) {
@@ -57,10 +63,13 @@ var ensureRemotes = function (callback) {
 var updateGit = function (callback) {
     return async.series([
         function (cb_series) {
-            return git.fetchWithTags('nodejs', cb_series);
+            return git.fetchWithTags('nodejs-old', cb_series);
         },
         function (cb_series) {
             return git.fetchWithTags('iojs', cb_series);
+        },
+        function (cb_series) {
+            return git.fetchWithTags('nodejs', cb_series);
         }
     ], callback);
 };
@@ -69,10 +78,10 @@ var nameForVersion = function (version) {
     if (version[0] !== 'v') {
         return 'unknown';
     }
-    if (version[1] === '0') {
-        return 'node.js';
+    if (version[1] === '1' || version[1] === '2' || version[1] === '3') {
+        return 'io.js';
     }
-    return 'io.js';
+    return 'node.js';
 };
 
 var getVersionString = function (hash) {
@@ -193,7 +202,8 @@ var getLastThreeHashForVersionRegEx = function (regex) {
 
 var node10_re = /^v0\.10\.[0-9]+$/;
 var node12_re = /^v0\.12\.[0-9]+$/;
-var iojs_re = /^v[1-9]+\.[0-9]+\.[0-9]+$/;
+var iojs_re = /^v[1-3]+\.[0-9]+\.[0-9]+$/;
+var node4_re = /^v[4-9]+\.[0-9]+\.[0-9]+$/;
 
 var fillOutIndexTemplate = function (callback) {
     return async.parallel({
@@ -213,6 +223,12 @@ var fillOutIndexTemplate = function (callback) {
             var hashes = getLastThreeHashForVersionRegEx(iojs_re);
             return setImmediate(cb_parallel, null, hashes.map(function (hash) {
                 return '      <li><a href="' + hash + '/html/index.html">io.js ' + getVersionString(hash) + '</a></li>';
+            }).join('\n'));
+        },
+        LATEST_NODE4: function (cb_parallel) {
+            var hashes = getLastThreeHashForVersionRegEx(node4_re);
+            return setImmediate(cb_parallel, null, hashes.map(function (hash) {
+                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
             }).join('\n'));
         },
         ALL_VERSION_OPTIONS: function (cb_parallel) {
