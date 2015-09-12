@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['weakcallbackdata',['WeakCallbackData',['../classv8_1_1_weak_callback_data.html',1,'v8']]],
-  ['weakcallbackobject',['WeakCallbackObject',['../classv8_1_1_weak_callback_object.html',1,'v8']]]
+  ['weakcallbackdata',['WeakCallbackData',['../classv8_1_1WeakCallbackData.html',1,'v8']]],
+  ['weakcallbackobject',['WeakCallbackObject',['../singletonv8_1_1WeakCallbackObject.html',1,'v8']]]
 ];
