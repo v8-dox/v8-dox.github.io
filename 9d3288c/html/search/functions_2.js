@@ -9,7 +9,7 @@ var searchData=
   ['cancontinue',['CanContinue',['../classv8_1_1TryCatch.html#a2ec467d4653d26c064d749cab98791cb',1,'v8::TryCatch']]],
   ['canmakeexternal',['CanMakeExternal',['../classv8_1_1String.html#a0fe076838af046506ffebbfadcde812a',1,'v8::String']]],
   ['chain',['Chain',['../classv8_1_1Promise.html#af56616dc11de23d6d515b0fa5d42e1eb',1,'v8::Promise']]],
-  ['clear',['Clear',['../classv8_1_1PersistentValueMap.html#acb73f2a873f69adfd15a262ecd90b037',1,'v8::PersistentValueMap::Clear()'],['../classv8_1_1PersistentValueVector.html#ad07f449c2004b4f3d91e58cabde99a53',1,'v8::PersistentValueVector::Clear()'],['../singletonv8_1_1Handle.html#a8d20b7afe6afd613b2c026c6bc863d68',1,'v8::Handle::Clear()']]],
+  ['clear',['Clear',['../classv8_1_1PersistentValueMap.html#acb73f2a873f69adfd15a262ecd90b037',1,'v8::PersistentValueMap::Clear()'],['../classv8_1_1PersistentValueVector.html#ad07f449c2004b4f3d91e58cabde99a53',1,'v8::PersistentValueVector::Clear()'],['../classv8_1_1Handle.html#a8d20b7afe6afd613b2c026c6bc863d68',1,'v8::Handle::Clear()']]],
   ['clearinterrupt',['ClearInterrupt',['../classv8_1_1Isolate.html#a00790d743cec68bbaa8ca7dbf6257f05',1,'v8::Isolate']]],
   ['clearobjectids',['ClearObjectIds',['../classv8_1_1HeapProfiler.html#a8a90c630543ed1875cbf9166239ff8d3',1,'v8::HeapProfiler']]],
   ['clone',['Clone',['../classv8_1_1Object.html#a5018c9d085aa71f65530cf1e073a04ad',1,'v8::Object']]],

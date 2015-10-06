@@ -39,7 +39,7 @@ var searchData=
   ['setsecuritytoken',['SetSecurityToken',['../classv8_1_1Context.html#a288d8549547f6bdf4312f5333f60f24d',1,'v8::Context']]],
   ['setstressruntype',['SetStressRunType',['../classv8_1_1Testing.html#aafa5a4917998aa64134aa750ce5c4b2e',1,'v8::Testing']]],
   ['setverbose',['SetVerbose',['../classv8_1_1TryCatch.html#a032cd889d76bd596e2616df11ced8682',1,'v8::TryCatch']]],
-  ['setwrapperclassid',['SetWrapperClassId',['../singletonv8_1_1Persistent.html#a41c933abe7726d4c314804859ef3acae',1,'v8::Persistent']]],
+  ['setwrapperclassid',['SetWrapperClassId',['../classv8_1_1Persistent.html#a41c933abe7726d4c314804859ef3acae',1,'v8::Persistent']]],
   ['stacktrace',['StackTrace',['../classv8_1_1TryCatch.html#a1ee3e6ee74a4fc50185443ccdc4d3ae7',1,'v8::TryCatch']]],
   ['startheapobjectstracking',['StartHeapObjectsTracking',['../classv8_1_1HeapProfiler.html#a9f3073cb75f69c54b313ee5adfd1cbdc',1,'v8::HeapProfiler']]],
   ['startpreemption',['StartPreemption',['../classv8_1_1Locker.html#a272bf054bb4d8bb51b0101ba7bf3456f',1,'v8::Locker']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handle',['Handle',['../singletonv8_1_1Handle.html#aa7543a3d572565806a66e922634cc2f4',1,'v8::Handle::Handle()'],['../singletonv8_1_1Handle.html#aac16277f1131898a4a2ef664d051cc18',1,'v8::Handle::Handle(T *val)'],['../singletonv8_1_1Handle.html#a64aee8fcde243c8a5abebfe534b3797a',1,'v8::Handle::Handle(Handle&lt; S &gt; that)']]],
+  ['handle',['Handle',['../classv8_1_1Handle.html#aa7543a3d572565806a66e922634cc2f4',1,'v8::Handle::Handle()'],['../classv8_1_1Handle.html#aac16277f1131898a4a2ef664d051cc18',1,'v8::Handle::Handle(T *val)'],['../classv8_1_1Handle.html#a64aee8fcde243c8a5abebfe534b3797a',1,'v8::Handle::Handle(Handle&lt; S &gt; that)']]],
   ['hascaught',['HasCaught',['../classv8_1_1TryCatch.html#a48f704fbf2b82564b5d2a4ff596e4137',1,'v8::TryCatch']]],
   ['haserror',['HasError',['../classv8_1_1ScriptData.html#ab5cea77b299b7dd73b7024fb114fd7e4',1,'v8::ScriptData']]],
   ['hasindexedlookupinterceptor',['HasIndexedLookupInterceptor',['../classv8_1_1Object.html#afd36ea440a254335bde065a4ceafffb3',1,'v8::Object']]],

@@ -3,9 +3,9 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="v8::PersistentBase\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$singletonv8_1_1PersistentBase.html"];
+  Node1 [label="v8::PersistentBase\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1PersistentBase.html"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="v8::Persistent\< T, M \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$singletonv8_1_1Persistent.html"];
+  Node2 [label="v8::Persistent\< T, M \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Persistent.html"];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="v8::UniquePersistent\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$singletonv8_1_1UniquePersistent.html"];
+  Node3 [label="v8::UniquePersistent\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1UniquePersistent.html"];
 }

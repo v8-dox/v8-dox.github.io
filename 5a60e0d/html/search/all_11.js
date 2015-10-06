@@ -44,7 +44,7 @@ var searchData=
   ['setsecuritytoken',['SetSecurityToken',['../classv8_1_1Context.html#a288d8549547f6bdf4312f5333f60f24d',1,'v8::Context']]],
   ['setstressruntype',['SetStressRunType',['../classv8_1_1Testing.html#aafa5a4917998aa64134aa750ce5c4b2e',1,'v8::Testing']]],
   ['setverbose',['SetVerbose',['../classv8_1_1TryCatch.html#a032cd889d76bd596e2616df11ced8682',1,'v8::TryCatch']]],
-  ['setwrapperclassid',['SetWrapperClassId',['../singletonv8_1_1Persistent.html#a41c933abe7726d4c314804859ef3acae',1,'v8::Persistent']]],
+  ['setwrapperclassid',['SetWrapperClassId',['../classv8_1_1Persistent.html#a41c933abe7726d4c314804859ef3acae',1,'v8::Persistent']]],
   ['signature',['Signature',['../classv8_1_1Signature.html',1,'v8']]],
   ['smitagging',['SmiTagging',['../structv8_1_1internal_1_1SmiTagging.html',1,'v8::internal']]],
   ['smitagging_3c_204_20_3e',['SmiTagging&lt; 4 &gt;',['../structv8_1_1internal_1_1SmiTagging_3_014_01_4.html',1,'v8::internal']]],

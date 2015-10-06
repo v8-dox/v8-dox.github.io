@@ -2,11 +2,11 @@ var searchData=
 [
   ['garbagecollectiontype',['GarbageCollectionType',['../classv8_1_1Isolate.html#a5ae00cc99d8aca148c6f5f9698c432c9',1,'v8::Isolate']]],
   ['gctype',['GCType',['../namespacev8.html#ac109d6f27e0c0f9ef4e98bcf7a806cf2',1,'v8']]],
-  ['genericnamedpropertydeletercallback',['GenericNamedPropertyDeleterCallback',['../namespacev8.html#af556375d303cf46f88806b6cb6f81978',1,'v8']]],
-  ['genericnamedpropertyenumeratorcallback',['GenericNamedPropertyEnumeratorCallback',['../namespacev8.html#acf68c9929dca880b32870dc2a1c1690b',1,'v8']]],
-  ['genericnamedpropertygettercallback',['GenericNamedPropertyGetterCallback',['../namespacev8.html#ad9b652a995aeabd7e8e05e219007d358',1,'v8']]],
-  ['genericnamedpropertyquerycallback',['GenericNamedPropertyQueryCallback',['../namespacev8.html#a7526e87112bff033893b819d32b205cb',1,'v8']]],
-  ['genericnamedpropertysettercallback',['GenericNamedPropertySetterCallback',['../namespacev8.html#a2d58c023286f1dd3822f536e780838fb',1,'v8']]],
+  ['genericnamedpropertydeletercallback',['GenericNamedPropertyDeleterCallback',['../namespacev8.html#ad2aecc0406ea4bc02d5a4f84a433b273',1,'v8']]],
+  ['genericnamedpropertyenumeratorcallback',['GenericNamedPropertyEnumeratorCallback',['../namespacev8.html#a20826eb7e52e84fa4f632534e8eddd04',1,'v8']]],
+  ['genericnamedpropertygettercallback',['GenericNamedPropertyGetterCallback',['../namespacev8.html#a24b1801fa53a7c5a71366d8044927563',1,'v8']]],
+  ['genericnamedpropertyquerycallback',['GenericNamedPropertyQueryCallback',['../namespacev8.html#add9f7ab11e4a9a2b9ad2c4536b0e1a64',1,'v8']]],
+  ['genericnamedpropertysettercallback',['GenericNamedPropertySetterCallback',['../namespacev8.html#af74716c6e95a269c6cd4314662fd0a7e',1,'v8']]],
   ['get',['Get',['../classv8_1_1PersistentValueMapBase.html#a16b8f906ea42036c2f37d44813bf2a72',1,'v8::PersistentValueMapBase::Get()'],['../classv8_1_1PersistentValueVector.html#a7b47cacf60ddfa3e2a7f57d788f18b84',1,'v8::PersistentValueVector::Get()']]],
   ['getalignedpointerfromembedderdata',['GetAlignedPointerFromEmbedderData',['../classv8_1_1Context.html#aa3b5c1a1a5d145c6096840898013f559',1,'v8::Context']]],
   ['getalignedpointerfrominternalfield',['GetAlignedPointerFromInternalField',['../classv8_1_1Object.html#a435f68bb7ef0f64dd522c5c910682448',1,'v8::Object::GetAlignedPointerFromInternalField(int index)'],['../classv8_1_1Object.html#a65b5a3dc93c0774594f8b0f2ab5481c8',1,'v8::Object::GetAlignedPointerFromInternalField(const PersistentBase&lt; Object &gt; &amp;object, int index)']]],
@@ -107,7 +107,7 @@ var searchData=
   ['gettype',['GetType',['../classv8_1_1HeapGraphEdge.html#a7f4923098074ee4c47d901f363728d08',1,'v8::HeapGraphEdge::GetType()'],['../classv8_1_1HeapGraphNode.html#a5e07fc855bded52229e62b855fa08c5d',1,'v8::HeapGraphNode::GetType()']]],
   ['getunboundscript',['GetUnboundScript',['../classv8_1_1Script.html#afac25cad452a61897c375c2b881e2070',1,'v8::Script']]],
   ['getversion',['GetVersion',['../classv8_1_1V8.html#afcecc0e9e8b5fa17a06a93f7b5a7538d',1,'v8::V8']]],
-  ['global',['Global',['../singletonv8_1_1Global.html',1,'v8']]],
-  ['global',['Global',['../singletonv8_1_1Global.html#ab1efdf25ff6305e67f3266a6fe90527e',1,'v8::Global::Global()'],['../singletonv8_1_1Global.html#a26d0a7f913252247f819a7df31c927e5',1,'v8::Global::Global(Isolate *isolate, Handle&lt; S &gt; that)'],['../singletonv8_1_1Global.html#a6243ecb28bb97d066065796fa28f7415',1,'v8::Global::Global(Isolate *isolate, const PersistentBase&lt; S &gt; &amp;that)'],['../singletonv8_1_1Global.html#ab8f3c754a58146e6db67012cd74a49cb',1,'v8::Global::Global(Global &amp;&amp;other)'],['../classv8_1_1Context.html#af5cd9f97ef6a3307c1c21f80f4b743eb',1,'v8::Context::Global()']]],
+  ['global',['Global',['../classv8_1_1Global.html',1,'v8']]],
+  ['global',['Global',['../classv8_1_1Global.html#ab1efdf25ff6305e67f3266a6fe90527e',1,'v8::Global::Global()'],['../classv8_1_1Global.html#a26d0a7f913252247f819a7df31c927e5',1,'v8::Global::Global(Isolate *isolate, Handle&lt; S &gt; that)'],['../classv8_1_1Global.html#a6243ecb28bb97d066065796fa28f7415',1,'v8::Global::Global(Isolate *isolate, const PersistentBase&lt; S &gt; &amp;that)'],['../classv8_1_1Global.html#ab8f3c754a58146e6db67012cd74a49cb',1,'v8::Global::Global(Global &amp;&amp;other)'],['../classv8_1_1Context.html#af5cd9f97ef6a3307c1c21f80f4b743eb',1,'v8::Context::Global()']]],
   ['globalvaluemap',['GlobalValueMap',['../classv8_1_1GlobalValueMap.html',1,'v8']]]
 ];

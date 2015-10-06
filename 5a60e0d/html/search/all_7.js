@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['handle',['Handle',['../singletonv8_1_1Handle.html',1,'v8']]],
-  ['handle',['Handle',['../singletonv8_1_1Handle.html#aa7543a3d572565806a66e922634cc2f4',1,'v8::Handle::Handle()'],['../singletonv8_1_1Handle.html#aac16277f1131898a4a2ef664d051cc18',1,'v8::Handle::Handle(T *val)'],['../singletonv8_1_1Handle.html#a64aee8fcde243c8a5abebfe534b3797a',1,'v8::Handle::Handle(Handle&lt; S &gt; that)']]],
-  ['handle_3c_20v8_3a_3acontext_20_3e',['Handle&lt; v8::Context &gt;',['../singletonv8_1_1Handle.html',1,'v8']]],
-  ['handle_3c_20v8_3a_3ainteger_20_3e',['Handle&lt; v8::Integer &gt;',['../singletonv8_1_1Handle.html',1,'v8']]],
-  ['handle_3c_20v8_3a_3avalue_20_3e',['Handle&lt; v8::Value &gt;',['../singletonv8_1_1Handle.html',1,'v8']]],
+  ['handle',['Handle',['../classv8_1_1Handle.html',1,'v8']]],
+  ['handle',['Handle',['../classv8_1_1Handle.html#aa7543a3d572565806a66e922634cc2f4',1,'v8::Handle::Handle()'],['../classv8_1_1Handle.html#aac16277f1131898a4a2ef664d051cc18',1,'v8::Handle::Handle(T *val)'],['../classv8_1_1Handle.html#a64aee8fcde243c8a5abebfe534b3797a',1,'v8::Handle::Handle(Handle&lt; S &gt; that)']]],
+  ['handle_3c_20v8_3a_3acontext_20_3e',['Handle&lt; v8::Context &gt;',['../classv8_1_1Handle.html',1,'v8']]],
+  ['handle_3c_20v8_3a_3ainteger_20_3e',['Handle&lt; v8::Integer &gt;',['../classv8_1_1Handle.html',1,'v8']]],
+  ['handle_3c_20v8_3a_3avalue_20_3e',['Handle&lt; v8::Value &gt;',['../classv8_1_1Handle.html',1,'v8']]],
   ['handlescope',['HandleScope',['../classv8_1_1HandleScope.html',1,'v8']]],
   ['hascaught',['HasCaught',['../classv8_1_1TryCatch.html#a48f704fbf2b82564b5d2a4ff596e4137',1,'v8::TryCatch']]],
   ['haserror',['HasError',['../classv8_1_1ScriptData.html#ab5cea77b299b7dd73b7024fb114fd7e4',1,'v8::ScriptData']]],
@@ -18,5 +18,5 @@ var searchData=
   ['heapsnapshot',['HeapSnapshot',['../classv8_1_1HeapSnapshot.html',1,'v8']]],
   ['heapstatistics',['HeapStatistics',['../classv8_1_1HeapStatistics.html',1,'v8']]],
   ['heapstatsupdate',['HeapStatsUpdate',['../structv8_1_1HeapStatsUpdate.html',1,'v8']]],
-  ['hostdispatchhandler',['HostDispatchHandler',['../classv8_1_1Debug.html#a93a06401b4d8bbdd09f00ff9125578c3',1,'v8::Debug']]]
+  ['hostdispatchhandler',['HostDispatchHandler',['../classv8_1_1Debug.html#a442f686afe7d80928b57b3ff8ac3f6e7',1,'v8::Debug']]]
 ];

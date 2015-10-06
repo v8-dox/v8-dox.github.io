@@ -5,5 +5,5 @@ var searchData=
   ['resolver',['Resolver',['../classv8_1_1Promise_1_1Resolver.html',1,'v8::Promise']]],
   ['resourceconstraints',['ResourceConstraints',['../classv8_1_1ResourceConstraints.html',1,'v8']]],
   ['retainedobjectinfo',['RetainedObjectInfo',['../classv8_1_1RetainedObjectInfo.html',1,'v8']]],
-  ['returnvalue',['ReturnValue',['../singletonv8_1_1ReturnValue.html',1,'v8']]]
+  ['returnvalue',['ReturnValue',['../classv8_1_1ReturnValue.html',1,'v8']]]
 ];

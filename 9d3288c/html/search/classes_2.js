@@ -8,5 +8,5 @@ var searchData=
   ['cpuprofile',['CpuProfile',['../classv8_1_1CpuProfile.html',1,'v8']]],
   ['cpuprofilenode',['CpuProfileNode',['../classv8_1_1CpuProfileNode.html',1,'v8']]],
   ['cpuprofiler',['CpuProfiler',['../classv8_1_1CpuProfiler.html',1,'v8']]],
-  ['customarguments',['CustomArguments',['../singletonv8_1_1internal_1_1CustomArguments.html',1,'v8::internal']]]
+  ['customarguments',['CustomArguments',['../classv8_1_1internal_1_1CustomArguments.html',1,'v8::internal']]]
 ];

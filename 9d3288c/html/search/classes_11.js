@@ -7,7 +7,7 @@ var searchData=
   ['uint8clampedarray',['Uint8ClampedArray',['../classv8_1_1Uint8ClampedArray.html',1,'v8']]],
   ['unboundscript',['UnboundScript',['../classv8_1_1UnboundScript.html',1,'v8']]],
   ['uniqueid',['UniqueId',['../classv8_1_1UniqueId.html',1,'v8']]],
-  ['uniquepersistent',['UniquePersistent',['../singletonv8_1_1UniquePersistent.html',1,'v8']]],
+  ['uniquepersistent',['UniquePersistent',['../classv8_1_1UniquePersistent.html',1,'v8']]],
   ['unlocker',['Unlocker',['../classv8_1_1Unlocker.html',1,'v8']]],
   ['utf8value',['Utf8Value',['../classv8_1_1String_1_1Utf8Value.html',1,'v8::String']]]
 ];

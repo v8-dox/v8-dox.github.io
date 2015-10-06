@@ -7,7 +7,7 @@ var searchData=
   ['cancelterminateexecution',['CancelTerminateExecution',['../classv8_1_1Isolate.html#a75cbe037e7657a7c7bd65e2edf0164d5',1,'v8::Isolate']]],
   ['cancontinue',['CanContinue',['../classv8_1_1TryCatch.html#a2ec467d4653d26c064d749cab98791cb',1,'v8::TryCatch']]],
   ['canmakeexternal',['CanMakeExternal',['../classv8_1_1String.html#a0fe076838af046506ffebbfadcde812a',1,'v8::String']]],
-  ['clear',['Clear',['../classv8_1_1PersistentValueMapBase.html#a1bf074e7a7c24713c9a3d40ddce89e74',1,'v8::PersistentValueMapBase::Clear()'],['../classv8_1_1PersistentValueVector.html#ad07f449c2004b4f3d91e58cabde99a53',1,'v8::PersistentValueVector::Clear()'],['../singletonv8_1_1Local.html#a6fcf63af6bdd697ddd7c3acd16c69899',1,'v8::Local::Clear()']]],
+  ['clear',['Clear',['../classv8_1_1PersistentValueMapBase.html#a1bf074e7a7c24713c9a3d40ddce89e74',1,'v8::PersistentValueMapBase::Clear()'],['../classv8_1_1PersistentValueVector.html#ad07f449c2004b4f3d91e58cabde99a53',1,'v8::PersistentValueVector::Clear()'],['../classv8_1_1Local.html#a6fcf63af6bdd697ddd7c3acd16c69899',1,'v8::Local::Clear()']]],
   ['clearobjectids',['ClearObjectIds',['../classv8_1_1HeapProfiler.html#a8a90c630543ed1875cbf9166239ff8d3',1,'v8::HeapProfiler']]],
   ['clientdata',['ClientData',['../classv8_1_1Debug_1_1ClientData.html',1,'v8::Debug']]],
   ['clone',['Clone',['../classv8_1_1Object.html#a5018c9d085aa71f65530cf1e073a04ad',1,'v8::Object']]],
@@ -34,5 +34,5 @@ var searchData=
   ['createsnapshotdatablob',['CreateSnapshotDataBlob',['../classv8_1_1V8.html#a0afd98f054412cf57318c0657e9a393f',1,'v8::V8']]],
   ['creationcontext',['CreationContext',['../classv8_1_1Object.html#af6966283a7d7e20779961eed434db04d',1,'v8::Object']]],
   ['currentstacktrace',['CurrentStackTrace',['../classv8_1_1StackTrace.html#a030e8de1b13d720bb2bfac5cb8bc914b',1,'v8::StackTrace']]],
-  ['customarguments',['CustomArguments',['../singletonv8_1_1internal_1_1CustomArguments.html',1,'v8::internal']]]
+  ['customarguments',['CustomArguments',['../classv8_1_1internal_1_1CustomArguments.html',1,'v8::internal']]]
 ];

@@ -2,12 +2,12 @@ var searchData=
 [
   ['idlenotification',['IdleNotification',['../classv8_1_1Isolate.html#aea16cbb2e351de9a3ae7be2b7cb48297',1,'v8::Isolate']]],
   ['incontext',['InContext',['../classv8_1_1Isolate.html#afb6bbd31a87d0999dbbe5402447690a9',1,'v8::Isolate']]],
-  ['indexedpropertydeletercallback',['IndexedPropertyDeleterCallback',['../namespacev8.html#a7418cfa2330fbb54371d5cb883f4f974',1,'v8']]],
-  ['indexedpropertyenumeratorcallback',['IndexedPropertyEnumeratorCallback',['../namespacev8.html#aa8e207afeba7b651331fd3a11624630a',1,'v8']]],
-  ['indexedpropertygettercallback',['IndexedPropertyGetterCallback',['../namespacev8.html#a44546925ba002b2296a0ef25794003ef',1,'v8']]],
-  ['indexedpropertyquerycallback',['IndexedPropertyQueryCallback',['../namespacev8.html#af3c68ca291993f86484012c6789e2d6b',1,'v8']]],
-  ['indexedpropertysettercallback',['IndexedPropertySetterCallback',['../namespacev8.html#a15b00cf8b0a84a46c7f3b3bc807fb901',1,'v8']]],
-  ['indexedsecuritycallback',['IndexedSecurityCallback',['../namespacev8.html#ad216c79f4f23bceefdb1469ad4ee65cd',1,'v8']]],
+  ['indexedpropertydeletercallback',['IndexedPropertyDeleterCallback',['../namespacev8.html#a53863728de14cde48dd6543207b2f2da',1,'v8']]],
+  ['indexedpropertyenumeratorcallback',['IndexedPropertyEnumeratorCallback',['../namespacev8.html#adbb0a6d5537371953f9ba807d4f6275e',1,'v8']]],
+  ['indexedpropertygettercallback',['IndexedPropertyGetterCallback',['../namespacev8.html#a48e7816ba64447bf32a25d194588daaf',1,'v8']]],
+  ['indexedpropertyquerycallback',['IndexedPropertyQueryCallback',['../namespacev8.html#a980b62c33eb664783e61e25c3b27f9ee',1,'v8']]],
+  ['indexedpropertysettercallback',['IndexedPropertySetterCallback',['../namespacev8.html#a4ac7cc6185ebc8b6a199f9fa8e6bf5c3',1,'v8']]],
+  ['indexedsecuritycallback',['IndexedSecurityCallback',['../namespacev8.html#aebbcc7837753e51112d944ad96520da1',1,'v8']]],
   ['inherit',['Inherit',['../classv8_1_1FunctionTemplate.html#a18f343e7e5749ed886d6e76a1424216e',1,'v8::FunctionTemplate']]],
   ['initialize',['Initialize',['../classv8_1_1V8.html#a40daec93ce44bdd922567fc121be9db8',1,'v8::V8']]],
   ['initializeicu',['InitializeICU',['../classv8_1_1V8.html#a525b8e053a796b880fa809d0a4fc096a',1,'v8::V8']]],
@@ -34,7 +34,7 @@ var searchData=
   ['isdate',['IsDate',['../classv8_1_1Value.html#a8bc11fab0aded4a805722ab6df173cae',1,'v8::Value']]],
   ['isdead',['IsDead',['../classv8_1_1V8.html#a0d5593ecf0d41035e4d9ee512119f0b7',1,'v8::V8']]],
   ['isdirty',['IsDirty',['../classv8_1_1Object.html#a3c1f8cfb754b5d29d5f1998b2047befd',1,'v8::Object']]],
-  ['isempty',['IsEmpty',['../classv8_1_1PersistentValueVector.html#a9ad869bc3f60fc227fecf202b36b650a',1,'v8::PersistentValueVector::IsEmpty()'],['../singletonv8_1_1Handle.html#a9e58ac49e3f1a029c2c6e217a61c8419',1,'v8::Handle::IsEmpty()']]],
+  ['isempty',['IsEmpty',['../classv8_1_1PersistentValueVector.html#a9ad869bc3f60fc227fecf202b36b650a',1,'v8::PersistentValueVector::IsEmpty()'],['../classv8_1_1Handle.html#a9e58ac49e3f1a029c2c6e217a61c8419',1,'v8::Handle::IsEmpty()']]],
   ['isequivalent',['IsEquivalent',['../classv8_1_1RetainedObjectInfo.html#a286103bb076c85415919c86b1838c990',1,'v8::RetainedObjectInfo']]],
   ['iseval',['IsEval',['../classv8_1_1StackFrame.html#ae45f4d6ff9398a00a0b6534c160ec0c7',1,'v8::StackFrame']]],
   ['isevent',['IsEvent',['../classv8_1_1Debug_1_1Message.html#a36ade83a9c960ce581b1a4051f763785',1,'v8::Debug::Message']]],
@@ -51,7 +51,7 @@ var searchData=
   ['isint8array',['IsInt8Array',['../classv8_1_1Value.html#a10a88a2794271dfcd9c3abd565e8f28a',1,'v8::Value']]],
   ['islocked',['IsLocked',['../classv8_1_1Locker.html#a3ae563ffdd9e8b5a0100f0ae756b3a6a',1,'v8::Locker']]],
   ['isnativeerror',['IsNativeError',['../classv8_1_1Value.html#a579fb52e893cdc24f8b77e5acc77d06d',1,'v8::Value']]],
-  ['isneardeath',['IsNearDeath',['../singletonv8_1_1PersistentBase.html#a4a64c26d91ed6a276aa8a7ca4bb7683a',1,'v8::PersistentBase']]],
+  ['isneardeath',['IsNearDeath',['../classv8_1_1PersistentBase.html#a4a64c26d91ed6a276aa8a7ca4bb7683a',1,'v8::PersistentBase']]],
   ['isnull',['IsNull',['../classv8_1_1Value.html#aa2c6ed8ef832223a7e2cd81e6ac61c78',1,'v8::Value']]],
   ['isnumber',['IsNumber',['../classv8_1_1Value.html#a1bd51e3e55f67c65b9a8f587fbffb7c7',1,'v8::Value']]],
   ['isnumberobject',['IsNumberObject',['../classv8_1_1Value.html#a5f4aa9504a6d8fc3af9489330179fe14',1,'v8::Value']]],
@@ -73,5 +73,5 @@ var searchData=
   ['isuint8array',['IsUint8Array',['../classv8_1_1Value.html#acbe2cd9c9cce96ee498677ba37c8466d',1,'v8::Value']]],
   ['isuint8clampedarray',['IsUint8ClampedArray',['../classv8_1_1Value.html#ad3cb464ab5ef0215bd2cbdd4eb2b7e3d',1,'v8::Value']]],
   ['isundefined',['IsUndefined',['../classv8_1_1Value.html#aea287b745656baa8a12a2ae1d69744b6',1,'v8::Value']]],
-  ['isweak',['IsWeak',['../classv8_1_1PersistentValueMap.html#a26bb44c09b5356e1b174badf4b2f08e1',1,'v8::PersistentValueMap::IsWeak()'],['../singletonv8_1_1PersistentBase.html#a714b7794149df483837a2c6b09d52396',1,'v8::PersistentBase::IsWeak()']]]
+  ['isweak',['IsWeak',['../classv8_1_1PersistentValueMap.html#a26bb44c09b5356e1b174badf4b2f08e1',1,'v8::PersistentValueMap::IsWeak()'],['../classv8_1_1PersistentBase.html#a714b7794149df483837a2c6b09d52396',1,'v8::PersistentBase::IsWeak()']]]
 ];

@@ -52,7 +52,7 @@ var searchData=
   ['setunique',['SetUnique',['../classv8_1_1PersistentValueMap.html#a97ab74c7670e65dd5f95ec2940c4ab11',1,'v8::PersistentValueMap::SetUnique()'],['../classv8_1_1GlobalValueMap.html#aad73de3912571a2f245454d3edea4a41',1,'v8::GlobalValueMap::SetUnique()']]],
   ['setusecountercallback',['SetUseCounterCallback',['../classv8_1_1Isolate.html#ad608b24b2c1b49a97ed4f04500976166',1,'v8::Isolate']]],
   ['setverbose',['SetVerbose',['../classv8_1_1TryCatch.html#a032cd889d76bd596e2616df11ced8682',1,'v8::TryCatch']]],
-  ['setwrapperclassid',['SetWrapperClassId',['../singletonv8_1_1PersistentBase.html#ac4c979164b3ed4dc92319e6f5a108d3d',1,'v8::PersistentBase']]],
+  ['setwrapperclassid',['SetWrapperClassId',['../classv8_1_1PersistentBase.html#ac4c979164b3ed4dc92319e6f5a108d3d',1,'v8::PersistentBase']]],
   ['setwrapperclassinfoprovider',['SetWrapperClassInfoProvider',['../classv8_1_1HeapProfiler.html#a7744cf111ad9c6b0b409841f8ed8bcdd',1,'v8::HeapProfiler']]],
   ['shutdownplatform',['ShutdownPlatform',['../classv8_1_1V8.html#a228fad83cc2fe17f10cea1a6fb6669c7',1,'v8::V8']]],
   ['size',['Size',['../classv8_1_1PersistentValueMapBase.html#ade5c5db2a968fdabe073649e85b837eb',1,'v8::PersistentValueMapBase::Size()'],['../classv8_1_1PersistentValueVector.html#a0e152d147a2553746e56cbf9e6311506',1,'v8::PersistentValueVector::Size()']]],

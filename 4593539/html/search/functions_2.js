@@ -6,7 +6,7 @@ var searchData=
   ['cancelterminateexecution',['CancelTerminateExecution',['../classv8_1_1Isolate.html#a75cbe037e7657a7c7bd65e2edf0164d5',1,'v8::Isolate']]],
   ['cancontinue',['CanContinue',['../classv8_1_1TryCatch.html#a2ec467d4653d26c064d749cab98791cb',1,'v8::TryCatch']]],
   ['canmakeexternal',['CanMakeExternal',['../classv8_1_1String.html#a0fe076838af046506ffebbfadcde812a',1,'v8::String']]],
-  ['clear',['Clear',['../classv8_1_1PersistentValueMapBase.html#a1bf074e7a7c24713c9a3d40ddce89e74',1,'v8::PersistentValueMapBase::Clear()'],['../classv8_1_1PersistentValueVector.html#ad07f449c2004b4f3d91e58cabde99a53',1,'v8::PersistentValueVector::Clear()'],['../singletonv8_1_1Local.html#a6fcf63af6bdd697ddd7c3acd16c69899',1,'v8::Local::Clear()']]],
+  ['clear',['Clear',['../classv8_1_1PersistentValueMapBase.html#a1bf074e7a7c24713c9a3d40ddce89e74',1,'v8::PersistentValueMapBase::Clear()'],['../classv8_1_1PersistentValueVector.html#ad07f449c2004b4f3d91e58cabde99a53',1,'v8::PersistentValueVector::Clear()'],['../classv8_1_1Local.html#a6fcf63af6bdd697ddd7c3acd16c69899',1,'v8::Local::Clear()']]],
   ['clearobjectids',['ClearObjectIds',['../classv8_1_1HeapProfiler.html#a8a90c630543ed1875cbf9166239ff8d3',1,'v8::HeapProfiler']]],
   ['clone',['Clone',['../classv8_1_1Object.html#a5018c9d085aa71f65530cf1e073a04ad',1,'v8::Object']]],
   ['concat',['Concat',['../classv8_1_1String.html#a3d0b9c9208cf5054adb048e360fb73ff',1,'v8::String']]],

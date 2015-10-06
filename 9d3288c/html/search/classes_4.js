@@ -1,7 +1,7 @@
 var searchData=
 [
   ['escapablehandlescope',['EscapableHandleScope',['../classv8_1_1EscapableHandleScope.html',1,'v8']]],
-  ['eternal',['Eternal',['../singletonv8_1_1Eternal.html',1,'v8']]],
+  ['eternal',['Eternal',['../classv8_1_1Eternal.html',1,'v8']]],
   ['eventdetails',['EventDetails',['../classv8_1_1Debug_1_1EventDetails.html',1,'v8::Debug']]],
   ['exception',['Exception',['../classv8_1_1Exception.html',1,'v8']]],
   ['extension',['Extension',['../classv8_1_1Extension.html',1,'v8']]],

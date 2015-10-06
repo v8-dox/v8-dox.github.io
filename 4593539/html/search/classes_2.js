@@ -11,5 +11,5 @@ var searchData=
   ['cpuprofilenode',['CpuProfileNode',['../classv8_1_1CpuProfileNode.html',1,'v8']]],
   ['cpuprofiler',['CpuProfiler',['../classv8_1_1CpuProfiler.html',1,'v8']]],
   ['createparams',['CreateParams',['../structv8_1_1Isolate_1_1CreateParams.html',1,'v8::Isolate']]],
-  ['customarguments',['CustomArguments',['../singletonv8_1_1internal_1_1CustomArguments.html',1,'v8::internal']]]
+  ['customarguments',['CustomArguments',['../classv8_1_1internal_1_1CustomArguments.html',1,'v8::internal']]]
 ];

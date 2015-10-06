@@ -15,13 +15,13 @@ var searchData=
   ['requestgarbagecollectionfortesting',['RequestGarbageCollectionForTesting',['../classv8_1_1Isolate.html#a59fe893ed7e9df52cef2d59b2d98ab23',1,'v8::Isolate']]],
   ['requestinterrupt',['RequestInterrupt',['../classv8_1_1Isolate.html#a971b6094ecc6c7f55eb6f58a71a8afd3',1,'v8::Isolate']]],
   ['reservecapacity',['ReserveCapacity',['../classv8_1_1PersistentValueVector.html#ad4cccfee3a275986578276efe0c78510',1,'v8::PersistentValueVector']]],
-  ['reset',['Reset',['../singletonv8_1_1PersistentBase.html#a174bb1e45b18fd4eeaee033622825bb8',1,'v8::PersistentBase::Reset()'],['../singletonv8_1_1PersistentBase.html#a037c3a1b62263b2c2bb2096a6fba1c47',1,'v8::PersistentBase::Reset(Isolate *isolate, const Handle&lt; S &gt; &amp;other)'],['../singletonv8_1_1PersistentBase.html#af6b8f929b0cbaa83341df48ca3b03ef5',1,'v8::PersistentBase::Reset(Isolate *isolate, const PersistentBase&lt; S &gt; &amp;other)'],['../classv8_1_1TryCatch.html#a3aae8acab4c99b374b7d782763d4c8e1',1,'v8::TryCatch::Reset()']]],
+  ['reset',['Reset',['../classv8_1_1PersistentBase.html#a174bb1e45b18fd4eeaee033622825bb8',1,'v8::PersistentBase::Reset()'],['../classv8_1_1PersistentBase.html#a037c3a1b62263b2c2bb2096a6fba1c47',1,'v8::PersistentBase::Reset(Isolate *isolate, const Handle&lt; S &gt; &amp;other)'],['../classv8_1_1PersistentBase.html#af6b8f929b0cbaa83341df48ca3b03ef5',1,'v8::PersistentBase::Reset(Isolate *isolate, const PersistentBase&lt; S &gt; &amp;other)'],['../classv8_1_1TryCatch.html#a3aae8acab4c99b374b7d782763d4c8e1',1,'v8::TryCatch::Reset()']]],
   ['resolver',['Resolver',['../classv8_1_1Promise_1_1Resolver.html',1,'v8::Promise']]],
   ['resourceconstraints',['ResourceConstraints',['../classv8_1_1ResourceConstraints.html',1,'v8']]],
   ['resourceisembedderdebugscript',['ResourceIsEmbedderDebugScript',['../classv8_1_1ScriptOrigin.html#aa4e6fedf782dd605dc2cee4c8486a894',1,'v8::ScriptOrigin']]],
   ['retainedobjectinfo',['RetainedObjectInfo',['../classv8_1_1RetainedObjectInfo.html',1,'v8']]],
   ['rethrow',['ReThrow',['../classv8_1_1TryCatch.html#a4a7506617800bbc49c3c08bbfefb9c2d',1,'v8::TryCatch']]],
-  ['returnaddresslocationresolver',['ReturnAddressLocationResolver',['../namespacev8.html#ada64a30dd6abd8c4cbf34503cb4d3a7a',1,'v8']]],
-  ['returnvalue',['ReturnValue',['../singletonv8_1_1ReturnValue.html',1,'v8']]],
+  ['returnaddresslocationresolver',['ReturnAddressLocationResolver',['../namespacev8.html#a8ce54c75241be41ff6a25e9944eefd2a',1,'v8']]],
+  ['returnvalue',['ReturnValue',['../classv8_1_1ReturnValue.html',1,'v8']]],
   ['runmicrotasks',['RunMicrotasks',['../classv8_1_1Isolate.html#ac3cbe2a1632eb863912640dcfc98b6c8',1,'v8::Isolate']]]
 ];

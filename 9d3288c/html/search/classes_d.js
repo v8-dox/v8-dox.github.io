@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['persistent',['Persistent',['../singletonv8_1_1Persistent.html',1,'v8']]],
-  ['persistentbase',['PersistentBase',['../singletonv8_1_1PersistentBase.html',1,'v8']]],
+  ['persistent',['Persistent',['../classv8_1_1Persistent.html',1,'v8']]],
+  ['persistentbase',['PersistentBase',['../classv8_1_1PersistentBase.html',1,'v8']]],
   ['persistenthandlevisitor',['PersistentHandleVisitor',['../classv8_1_1PersistentHandleVisitor.html',1,'v8']]],
   ['persistentvaluemap',['PersistentValueMap',['../classv8_1_1PersistentValueMap.html',1,'v8']]],
   ['persistentvaluereference',['PersistentValueReference',['../classv8_1_1PersistentValueMap_1_1PersistentValueReference.html',1,'v8::PersistentValueMap']]],
@@ -10,5 +10,5 @@ var searchData=
   ['primitive',['Primitive',['../classv8_1_1Primitive.html',1,'v8']]],
   ['private',['Private',['../classv8_1_1Private.html',1,'v8']]],
   ['promise',['Promise',['../classv8_1_1Promise.html',1,'v8']]],
-  ['propertycallbackinfo',['PropertyCallbackInfo',['../singletonv8_1_1PropertyCallbackInfo.html',1,'v8']]]
+  ['propertycallbackinfo',['PropertyCallbackInfo',['../classv8_1_1PropertyCallbackInfo.html',1,'v8']]]
 ];
