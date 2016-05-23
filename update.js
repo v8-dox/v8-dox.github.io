@@ -182,33 +182,33 @@ var getLastThreeHashForVersionRegEx = function (regex) {
     });
 };
 
-var node10_re = /^v0\.10\.[0-9]+$/;
 var node12_re = /^v0\.12\.[0-9]+$/;
-var iojs_re = /^v[1-3]+\.[0-9]+\.[0-9]+$/;
-var node4_re = /^v[4-9]+\.[0-9]+\.[0-9]+$/;
+var node4_re = /^v4\.[0-9]+\.[0-9]+$/;
+var node5_re = /^v5\.[0-9]+\.[0-9]+$/;
+var node6_re = /^v[6-9]\.[0-9]+\.[0-9]+$/;
 
 var fillOutIndexTemplate = function (callback) {
     return async.parallel({
-        LATEST_NODE10: function (cb_parallel) {
-            var hashes = getLastThreeHashForVersionRegEx(node10_re);
-            return setImmediate(cb_parallel, null, hashes.map(function (hash) {
-                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
-            }).join('\n'));
-        },
         LATEST_NODE12: function (cb_parallel) {
             var hashes = getLastThreeHashForVersionRegEx(node12_re);
             return setImmediate(cb_parallel, null, hashes.map(function (hash) {
                 return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
             }).join('\n'));
         },
-        LATEST_IOJS: function (cb_parallel) {
-            var hashes = getLastThreeHashForVersionRegEx(iojs_re);
-            return setImmediate(cb_parallel, null, hashes.map(function (hash) {
-                return '      <li><a href="' + hash + '/html/index.html">io.js ' + getVersionString(hash) + '</a></li>';
-            }).join('\n'));
-        },
         LATEST_NODE4: function (cb_parallel) {
             var hashes = getLastThreeHashForVersionRegEx(node4_re);
+            return setImmediate(cb_parallel, null, hashes.map(function (hash) {
+                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
+            }).join('\n'));
+        },
+        LATEST_NODE5: function (cb_parallel) {
+            var hashes = getLastThreeHashForVersionRegEx(node5_re);
+            return setImmediate(cb_parallel, null, hashes.map(function (hash) {
+                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
+            }).join('\n'));
+        },
+        LATEST_NODE6: function (cb_parallel) {
+            var hashes = getLastThreeHashForVersionRegEx(node6_re);
             return setImmediate(cb_parallel, null, hashes.map(function (hash) {
                 return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
             }).join('\n'));
@@ -275,12 +275,12 @@ var fillOutDataStructure = function (callback) {
 };
 
 var generateNeededDox = function (callback) {
-    var last_node10 = getLastThreeHashForVersionRegEx(node10_re);
     var last_node12 = getLastThreeHashForVersionRegEx(node12_re);
-    var last_iojs = getLastThreeHashForVersionRegEx(iojs_re);
     var last_node4 = getLastThreeHashForVersionRegEx(node4_re);
+    var last_node5 = getLastThreeHashForVersionRegEx(node5_re);
+    var last_node6 = getLastThreeHashForVersionRegEx(node6_re);
     return async.filter(Object.keys(hash_version), function (hash, cb_filter) {
-        if (hash === last_node10[0] || hash === last_node12[0] || hash === last_iojs[0] || hash === last_node4[0]) {
+        if (hash === last_node12[0] || hash === last_node4[0] || hash === last_node5[0] || hash === last_node6[0]) {
             return setImmediate(cb_filter, true);
         }
         return fs.stat(hash, function (err, stat) {
