@@ -192,25 +192,25 @@ var fillOutIndexTemplate = function (callback) {
         LATEST_NODE12: function (cb_parallel) {
             var hashes = getLastThreeHashForVersionRegEx(node12_re);
             return setImmediate(cb_parallel, null, hashes.map(function (hash) {
-                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
+                return '      <li><a href="' + hash + '/html/namespacev8.html">node.js ' + getVersionString(hash) + '</a></li>';
             }).join('\n'));
         },
         LATEST_NODE4: function (cb_parallel) {
             var hashes = getLastThreeHashForVersionRegEx(node4_re);
             return setImmediate(cb_parallel, null, hashes.map(function (hash) {
-                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
+                return '      <li><a href="' + hash + '/html/namespacev8.html">node.js ' + getVersionString(hash) + '</a></li>';
             }).join('\n'));
         },
         LATEST_NODE5: function (cb_parallel) {
             var hashes = getLastThreeHashForVersionRegEx(node5_re);
             return setImmediate(cb_parallel, null, hashes.map(function (hash) {
-                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
+                return '      <li><a href="' + hash + '/html/namespacev8.html">node.js ' + getVersionString(hash) + '</a></li>';
             }).join('\n'));
         },
         LATEST_NODE6: function (cb_parallel) {
             var hashes = getLastThreeHashForVersionRegEx(node6_re);
             return setImmediate(cb_parallel, null, hashes.map(function (hash) {
-                return '      <li><a href="' + hash + '/html/index.html">node.js ' + getVersionString(hash) + '</a></li>';
+                return '      <li><a href="' + hash + '/html/namespacev8.html">node.js ' + getVersionString(hash) + '</a></li>';
             }).join('\n'));
         },
         ALL_VERSION_OPTIONS: function (cb_parallel) {
