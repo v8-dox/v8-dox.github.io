@@ -1,0 +1,39 @@
+digraph "v8::ArrayBufferView"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="v8::ArrayBufferView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="v8::Object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Object.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="v8::Value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Value.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="v8::Data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Data.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="v8::DataView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1DataView.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="v8::TypedArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1TypedArray.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="v8::BigInt64Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1BigInt64Array.html"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="v8::BigUint64Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1BigUint64Array.html"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="v8::Float32Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Float32Array.html"];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="v8::Float64Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Float64Array.html"];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="v8::Int16Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Int16Array.html"];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="v8::Int32Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Int32Array.html"];
+  Node6 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="v8::Int8Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Int8Array.html"];
+  Node6 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="v8::Uint16Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Uint16Array.html"];
+  Node6 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="v8::Uint32Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Uint32Array.html"];
+  Node6 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="v8::Uint8Array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Uint8Array.html"];
+  Node6 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="v8::Uint8ClampedArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classv8_1_1Uint8ClampedArray.html"];
+}
